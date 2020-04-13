@@ -49,12 +49,34 @@ rowTab <- function(quart,crossVar,tabType) {
   return(outTab)
 }
 
+# Populates Date Dropdown Box
+Date_Check <- function(KEY){
+  
+  f.curdate <- getCensus(name = "dec/responserate", vintage="2020", key = KEY,
+                         vars = "RESP_DATE",
+                         region = "us:*")
+  
+  currentDate <- f.curdate$RESP_DATE
+  dateFName  <- "./datafiles/nation_Response_Data.csv"
+  
+  f.dateList <- read.csv(dateFName, header=TRUE,
+                         colClasses = c(rep("character",3),rep("numeric",4))) %>% 
+    select("RESP_DATE")
+  f.dateList <- f.dateList %>% arrange(desc(RESP_DATE))
+  dateList <- as.character(f.dateList$RESP_DATE)
+  
+  if(!(currentDate %in% f.dateList$RESP_DATE)) {
+    update_data(currentDate, KEY)
+    dateList <- c(currentDate, dateList)
+  }
+  return(dateList) 
+}
 
 # Updates data from Census API
 update_data <- function(selDate, KEY) {
   #Create nation data for current date
   nationFName  <- "./datafiles/nation_Response_Data.csv"
-  
+
   f.nation <- getCensus(name = "dec/responserate", vintage="2020", key = KEY,
                         vars = c("RESP_DATE",	"NAME","CRRALL",	"CRRINT", "DRRALL",	"DRRINT"),
                         region = "us:*")
@@ -67,8 +89,7 @@ update_data <- function(selDate, KEY) {
   
   if(!(selDate %in% f.nationCum$RESP_DATE)) {
     f.nationCum <- bind_rows(f.nationCum, f.nation)
-    write.csv(f.nationCum, nationFName, row.names = FALSE,
-              colClasses = c(rep("character",3),rep("numeric",4)))
+    write.csv(f.nationCum, nationFName, row.names = FALSE)
   } 
   
   
@@ -89,8 +110,7 @@ update_data <- function(selDate, KEY) {
   
   if(!(selDate %in% f.stateCum$RESP_DATE)) {
     f.stateCum <- bind_rows(f.stateCum, f.state)
-    write.csv(f.stateCum, stateFName, row.names = FALSE,
-              colClasses = c(rep("character",3),rep("numeric",4)))
+    write.csv(f.stateCum, stateFName, row.names = FALSE)
   } 
 
   
@@ -112,8 +132,7 @@ update_data <- function(selDate, KEY) {
   
   if(!(selDate %in% f.countyCum$RESP_DATE)) {
     f.countyCum <- bind_rows(f.countyCum, f.county[,2:8])
-    write.csv(f.countyCum, countyFName, row.names = FALSE,
-              colClasses = c(rep("character",3),rep("numeric",4)))
+    write.csv(f.countyCum, countyFName, row.names = FALSE)
   } 
   
   
@@ -136,8 +155,7 @@ update_data <- function(selDate, KEY) {
   
   if(!(selDate %in% f.placeCum$RESP_DATE)) {
     f.placeCum <- bind_rows(f.placeCum, f.place)
-    write.csv(f.placeCum, placeFName, row.names = FALSE,
-              colClasses = c(rep("character",4),rep("numeric",4)))
+    write.csv(f.placeCum, placeFName, row.names = FALSE)
   } 
   
   
@@ -159,32 +177,11 @@ update_data <- function(selDate, KEY) {
   
   if(!(selDate %in% f.tractCum$RESP_DATE)) {
     f.tractCum <- bind_rows(f.tractCum, f.tract)
-    write.csv(f.tractCum, tractFName, row.names = FALSE,
-              colClasses = c(rep("character",5),rep("numeric",4)))
+    write.csv(f.tractCum, tractFName, row.names = FALSE)
   } 
 }
 
-# Populates Date Dropdown Box
-Date_Check <- function(KEY){
-  f.curdate <- getCensus(name = "dec/responserate", vintage="2020", key = KEY,
-                        vars = "RESP_DATE",
-                        region = "us:*")
-  
-  currentDate <- f.curdate$RESP_DATE
-  dateFName  <- "./datafiles/nation_Response_Data.csv"
-  
-  f.dateList <- read.csv(dateFName, header=TRUE,
-                         colClasses = c(rep("character",3),rep("numeric",4))) %>% 
-                select("RESP_DATE")
-  f.dateList <- f.dateList %>% arrange(desc(RESP_DATE))
-  dateList <- as.character(f.dateList$RESP_DATE)
-  
-  if(!(currentDate %in% f.dateList$RESP_DATE)) {
-    update_data(currentDate, KEY)
-    dateList <- c(currentDate, dateList)
-  }
- return(dateList) 
-}
+
 
 # Generates Leaflet Map
 
