@@ -1,0 +1,459 @@
+state,place,pl_name,county
+08,00320,Acres Green CDP,Douglas County
+08,00620,Aetna Estates CDP,Arapahoe County
+08,00760,Aguilar town,Las Animas County
+08,00870,Air Force Academy CDP,El Paso County
+08,00925,Akron town,Washington County
+08,01090,Alamosa city,Alamosa County
+08,01145,Alamosa East CDP,Alamosa County
+08,01420,Allenspark CDP,Boulder County
+08,01530,Alma town,Park County
+08,01640,Alpine CDP,Rio Grande County
+08,01740,Altona CDP,Boulder County
+08,01915,Amherst CDP,Phillips County
+08,02355,Antonito town,Conejos County
+08,02575,Applewood CDP,Jefferson County
+08,02905,Arboles CDP,Archuleta County
+08,03015,Aristocrat Ranchettes CDP,Weld County
+08,03235,Arriba town,Lincoln County
+08,03455,Arvada city,"Adams County, Jefferson County"
+08,03620,Aspen city,Pitkin County
+08,03730,Aspen Park CDP,Jefferson County
+08,03840,Atwood CDP,Logan County
+08,03950,Ault town,Weld County
+08,04000,Aurora city,"Adams County, Arapahoe County, Douglas County"
+08,04110,Avon town,Eagle County
+08,04165,Avondale CDP,Pueblo County
+08,04620,Bark Ranch CDP,Boulder County
+08,04935,Basalt town,"Eagle County, Pitkin County"
+08,05120,Battlement Mesa CDP,Garfield County
+08,05265,Bayfield town,La Plata County
+08,06090,Bennett town,"Adams County, Arapahoe County"
+08,06172,Berkley CDP,Adams County
+08,06255,Berthoud town,"Larimer County, Weld County"
+08,06530,Bethune town,Kit Carson County
+08,06602,Beulah Valley CDP,Pueblo County
+08,06970,Black Forest CDP,El Paso County
+08,07025,Black Hawk city,Gilpin County
+08,07190,Blanca town,Costilla County
+08,07245,Blende CDP,Pueblo County
+08,07410,Blue River town,Summit County
+08,07420,Blue Sky CDP,Morgan County
+08,07571,Bonanza town,Saguache County
+08,07580,Bonanza Mountain Estates CDP,Boulder County
+08,07795,Boone town,Pueblo County
+08,07850,Boulder city,Boulder County
+08,08070,Bow Mar town,"Arapahoe County, Jefferson County"
+08,08290,Brandon CDP,Kiowa County
+08,08345,Branson town,Las Animas County
+08,08400,Breckenridge town,Summit County
+08,08530,Brick Center CDP,Arapahoe County
+08,08675,Brighton city,"Adams County, Weld County"
+08,09115,Brookside town,Fremont County
+08,09280,Broomfield city,Broomfield County
+08,09555,Brush city,Morgan County
+08,10105,Buena Vista town,Chaffee County
+08,10600,Burlington city,Kit Carson County
+08,10985,Byers CDP,Arapahoe County
+08,11260,Calhan town,El Paso County
+08,11645,Campo town,Baca County
+08,11810,Cañon City city,Fremont County
+08,11975,Capulin CDP,Conejos County
+08,12045,Carbondale town,Garfield County
+08,12325,Cascade-Chipita Park CDP,El Paso County
+08,12387,Castle Pines CDP,Douglas County
+08,12390,Castle Pines North city,Douglas County
+08,12415,Castle Rock town,Douglas County
+08,12450,Cathedral CDP,Hinsdale County
+08,12460,Catherine CDP,Garfield County
+08,12470,Cattle Creek CDP,Garfield County
+08,12635,Cedaredge town,Delta County
+08,12815,Centennial city,Arapahoe County
+08,12855,Center town,"Rio Grande County, Saguache County"
+08,12910,Central City city,"Clear Creek County, Gilpin County"
+08,12945,Chacra CDP,Garfield County
+08,13460,Cheraw town,Otero County
+08,13590,Cherry Creek CDP,Arapahoe County
+08,13845,Cherry Hills Village city,Arapahoe County
+08,14175,Cheyenne Wells town,Cheyenne County
+08,14587,Cimarron Hills CDP,El Paso County
+08,14765,City of Creede town,Mineral County
+08,15165,Clifton CDP,Mesa County
+08,15302,Coal Creek CDP,"Boulder County, Gilpin County, Jefferson County"
+08,15330,Coal Creek town,Fremont County
+08,15440,Coaldale CDP,Fremont County
+08,15550,Cokedale town,Las Animas County
+08,15605,Collbran town,Mesa County
+08,15825,Colona CDP,Ouray County
+08,15935,Colorado City CDP,Pueblo County
+08,16000,Colorado Springs city,El Paso County
+08,16110,Columbine CDP,"Arapahoe County, Jefferson County"
+08,16385,Columbine Valley town,Arapahoe County
+08,16465,Comanche Creek CDP,Arapahoe County
+08,16495,Commerce City city,Adams County
+08,16715,Conejos CDP,Conejos County
+08,17150,Copper Mountain CDP,Summit County
+08,17375,Cortez city,Montezuma County
+08,17485,Cotopaxi CDP,Fremont County
+08,17760,Craig city,Moffat County
+08,17925,Crawford town,Delta County
+08,18310,Crested Butte town,Gunnison County
+08,18420,Crestone town,Saguache County
+08,18530,Cripple Creek city,Teller County
+08,18585,Crisman CDP,Boulder County
+08,18640,Crook town,Logan County
+08,18750,Crowley town,Crowley County
+08,19080,Dacono city,Weld County
+08,19150,Dakota Ridge CDP,Jefferson County
+08,19355,De Beque town,Mesa County
+08,19630,Deer Trail town,Arapahoe County
+08,19795,Del Norte town,Rio Grande County
+08,19850,Delta city,Delta County
+08,20000,Denver city,Denver County
+08,20275,Derby CDP,Adams County
+08,20440,Dillon town,Summit County
+08,20495,Dinosaur town,Moffat County
+08,20605,Divide CDP,Teller County
+08,20770,Dolores town,Montezuma County
+08,21155,Dotsero CDP,Eagle County
+08,21265,Dove Creek town,Dolores County
+08,21330,Dove Valley CDP,Arapahoe County
+08,21390,Downieville-Lawson-Dumont CDP,Clear Creek County
+08,22035,Durango city,La Plata County
+08,22145,Eads town,Kiowa County
+08,22200,Eagle town,Eagle County
+08,22575,East Pleasant View CDP,Jefferson County
+08,22860,Eaton town,Weld County
+08,23025,Eckley town,Yuma County
+08,23135,Edgewater city,Jefferson County
+08,23300,Edwards CDP,Eagle County
+08,23520,Elbert CDP,Elbert County
+08,23575,Eldora CDP,Boulder County
+08,23630,Eldorado Springs CDP,Boulder County
+08,23740,Elizabeth town,Elbert County
+08,23795,El Jebel CDP,Eagle County
+08,24235,Ellicott CDP,El Paso County
+08,24290,El Moro CDP,Las Animas County
+08,24620,Empire town,Clear Creek County
+08,24785,Englewood city,Arapahoe County
+08,24950,Erie town,"Boulder County, Weld County"
+08,25115,Estes Park town,Larimer County
+08,25280,Evans city,Weld County
+08,25390,Evergreen CDP,Jefferson County
+08,25550,Fairmount CDP,Jefferson County
+08,25610,Fairplay town,Park County
+08,26270,Federal Heights city,Adams County
+08,26600,Firestone town,Weld County
+08,26765,Flagler town,Kit Carson County
+08,26875,Fleming town,Logan County
+08,27040,Florence city,Fremont County
+08,27095,Florissant CDP,Teller County
+08,27175,Floyd Hill CDP,Clear Creek County
+08,27370,Fort Carson CDP,El Paso County
+08,27425,Fort Collins city,Larimer County
+08,27535,Fort Garland CDP,Costilla County
+08,27700,Fort Lupton city,Weld County
+08,27810,Fort Morgan city,Morgan County
+08,27865,Fountain city,El Paso County
+08,27975,Fowler town,Otero County
+08,28105,Foxfield town,Arapahoe County
+08,28250,Franktown CDP,Douglas County
+08,28305,Fraser town,Grand County
+08,28360,Frederick town,Weld County
+08,28690,Frisco town,Summit County
+08,28745,Fruita city,Mesa County
+08,28800,Fruitvale CDP,Mesa County
+08,28830,Fulford CDP,Eagle County
+08,29185,Garden City town,Weld County
+08,29295,Garfield CDP,Chaffee County
+08,29625,Genesee CDP,Jefferson County
+08,29680,Genoa town,Lincoln County
+08,29735,Georgetown town,Clear Creek County
+08,29845,Gerrard CDP,Rio Grande County
+08,29955,Gilcrest town,Weld County
+08,30340,Glendale city,Arapahoe County
+08,30350,Glendale CDP,Boulder County
+08,30420,Gleneagle CDP,El Paso County
+08,30780,Glenwood Springs city,Garfield County
+08,30835,Golden city,Jefferson County
+08,30890,Goldfield CDP,Teller County
+08,30945,Gold Hill CDP,Boulder County
+08,31550,Granada town,Prowers County
+08,31605,Granby town,Grand County
+08,31660,Grand Junction city,Mesa County
+08,31715,Grand Lake town,Grand County
+08,31935,Grand View Estates CDP,Douglas County
+08,32155,Greeley city,Weld County
+08,32650,Green Mountain Falls town,"El Paso County, Teller County"
+08,33035,Greenwood Village city,Arapahoe County
+08,33310,Grover town,Weld County
+08,33420,Guffey CDP,Park County
+08,33502,Gunbarrel CDP,Boulder County
+08,33640,Gunnison city,Gunnison County
+08,33695,Gypsum town,Eagle County
+08,34520,Hartman town,Prowers County
+08,34685,Hasty CDP,Bent County
+08,34740,Haswell town,Kiowa County
+08,34960,Haxtun town,Phillips County
+08,35070,Hayden town,Routt County
+08,35400,Heeney CDP,Summit County
+08,35860,Hidden Lake CDP,Boulder County
+08,36410,Highlands Ranch CDP,Douglas County
+08,36610,Hillrose town,Morgan County
+08,36940,Hoehne CDP,Las Animas County
+08,37215,Holly town,Prowers County
+08,37220,Holly Hills CDP,Arapahoe County
+08,37270,Holyoke city,Phillips County
+08,37380,Hooper town,Alamosa County
+08,37545,Hotchkiss town,Delta County
+08,37600,Hot Sulphur Springs town,Grand County
+08,37655,Howard CDP,Fremont County
+08,37820,Hudson town,Weld County
+08,37875,Hugo town,Lincoln County
+08,38370,Idaho Springs city,Clear Creek County
+08,38425,Idalia CDP,Yuma County
+08,38480,Idledale CDP,Jefferson County
+08,38535,Ignacio town,La Plata County
+08,38590,Iliff town,Logan County
+08,38810,Indian Hills CDP,Jefferson County
+08,38910,Inverness CDP,Arapahoe County
+08,39160,Jackson Lake CDP,Morgan County
+08,39195,Jamestown town,Boulder County
+08,39250,Jansen CDP,Las Animas County
+08,39745,Joes CDP,Yuma County
+08,39800,Johnson Village CDP,Chaffee County
+08,39855,Johnstown town,"Larimer County, Weld County"
+08,39965,Julesburg town,Sedgwick County
+08,40185,Keenesburg town,Weld County
+08,40377,Ken Caryl CDP,Jefferson County
+08,40515,Kersey town,Weld County
+08,40550,Keystone CDP,Summit County
+08,40570,Kim town,Las Animas County
+08,40790,Kiowa town,Elbert County
+08,40900,Kirk CDP,Yuma County
+08,41010,Kit Carson town,Cheyenne County
+08,41065,Kittredge CDP,Jefferson County
+08,41560,Kremmling town,Grand County
+08,41835,Lafayette city,Boulder County
+08,42000,Laird CDP,Yuma County
+08,42055,La Jara town,Conejos County
+08,42110,La Junta city,Otero County
+08,42165,La Junta Gardens CDP,Otero County
+08,42330,Lake City town,Hinsdale County
+08,42495,Lakeside town,Jefferson County
+08,43000,Lakewood city,Jefferson County
+08,43110,Lamar city,Prowers County
+08,43220,Laporte CDP,Larimer County
+08,43550,Larkspur town,Douglas County
+08,43605,La Salle town,Weld County
+08,43660,Las Animas city,Bent County
+08,44100,La Veta town,Huerfano County
+08,44270,Lazy Acres CDP,Boulder County
+08,44320,Leadville city,Lake County
+08,44375,Leadville North CDP,Lake County
+08,44595,Lewis CDP,Montezuma County
+08,44695,Leyner CDP,Boulder County
+08,44980,Limon town,Lincoln County
+08,45145,Lincoln Park CDP,Fremont County
+08,45255,Littleton city,"Arapahoe County, Douglas County, Jefferson County"
+08,45530,Lochbuie town,"Adams County, Weld County"
+08,45680,Loghill Village CDP,Ouray County
+08,45695,Log Lane Village town,Morgan County
+08,45750,Loma CDP,Mesa County
+08,45955,Lone Tree city,Douglas County
+08,45970,Longmont city,"Boulder County, Weld County"
+08,46355,Louisville city,Boulder County
+08,46410,Louviers CDP,Douglas County
+08,46465,Loveland city,Larimer County
+08,47015,Lynn CDP,Las Animas County
+08,47070,Lyons town,Boulder County
+08,47345,McCoy CDP,Eagle County
+08,48060,Manassa town,Conejos County
+08,48115,Mancos town,Montezuma County
+08,48445,Manitou Springs city,El Paso County
+08,48500,Manzanola town,Otero County
+08,48555,Marble town,Gunnison County
+08,49325,Maybell CDP,Moffat County
+08,49490,Maysville CDP,Chaffee County
+08,49600,Mead town,Weld County
+08,49875,Meeker town,Rio Blanco County
+08,50012,Meridian CDP,Douglas County
+08,50040,Merino town,Logan County
+08,50380,Midland CDP,Teller County
+08,50480,Milliken town,Weld County
+08,50920,Minturn town,Eagle County
+08,51250,Moffat town,Saguache County
+08,51635,Monte Vista city,Rio Grande County
+08,51690,Montezuma town,Summit County
+08,51745,Montrose city,Montrose County
+08,51800,Monument town,El Paso County
+08,51975,Morgan Heights CDP,Morgan County
+08,52075,Morrison town,Jefferson County
+08,52210,Mountain Meadows CDP,Boulder County
+08,52350,Mountain View town,Jefferson County
+08,52550,Mountain Village town,San Miguel County
+08,52570,Mount Crested Butte town,Gunnison County
+08,52820,Mulford CDP,Garfield County
+08,53120,Naturita town,Montrose County
+08,53175,Nederland town,Boulder County
+08,53395,New Castle town,Garfield County
+08,53780,Niwot CDP,Boulder County
+08,53875,No Name CDP,Garfield County
+08,53945,Norrie CDP,Pitkin County
+08,54330,Northglenn city,"Adams County, Weld County"
+08,54495,North La Junta CDP,Otero County
+08,54750,North Washington CDP,Adams County
+08,54880,Norwood town,San Miguel County
+08,54935,Nucla town,Montrose County
+08,55045,Nunn town,Weld County
+08,55155,Oak Creek town,Routt County
+08,55540,Olathe town,Montrose County
+08,55705,Olney Springs town,Crowley County
+08,55870,Ophir town,San Miguel County
+08,55925,Orchard CDP,Morgan County
+08,55980,Orchard City town,Delta County
+08,56035,Orchard Mesa CDP,Mesa County
+08,56145,Ordway town,Crowley County
+08,56365,Otis town,Washington County
+08,56420,Ouray city,Ouray County
+08,56475,Ovid town,Sedgwick County
+08,56695,Padroni CDP,Logan County
+08,56860,Pagosa Springs town,Archuleta County
+08,56970,Palisade town,Mesa County
+08,57025,Palmer Lake town,El Paso County
+08,57245,Paoli town,Phillips County
+08,57300,Paonia town,Delta County
+08,57400,Parachute town,Garfield County
+08,57445,Paragon Estates CDP,Boulder County
+08,57630,Parker town,Douglas County
+08,57850,Parshall CDP,Grand County
+08,58235,Peetz town,Logan County
+08,58400,Penrose CDP,Fremont County
+08,58510,Peoria CDP,Arapahoe County
+08,58592,Perry Park CDP,Douglas County
+08,58675,Peyton CDP,El Paso County
+08,58758,Phippsburg CDP,Routt County
+08,58960,Piedra CDP,Hinsdale County
+08,59005,Pierce town,Weld County
+08,59240,Pine Brook Hill CDP,Boulder County
+08,59830,Pitkin town,Gunnison County
+08,60160,Platteville town,Weld County
+08,60600,Poncha Springs town,Chaffee County
+08,60655,Ponderosa Park CDP,Elbert County
+08,60765,Portland CDP,Ouray County
+08,61315,Pritchett town,Baca County
+08,62000,Pueblo city,Pueblo County
+08,62220,Pueblo West CDP,Pueblo County
+08,62660,Ramah town,El Paso County
+08,62880,Rangely town,Rio Blanco County
+08,63045,Raymer (New Raymer) town,Weld County
+08,63265,Red Cliff town,Eagle County
+08,63320,Red Feather Lakes CDP,Larimer County
+08,63375,Redlands CDP,Mesa County
+08,63650,Redstone CDP,Pitkin County
+08,63705,Redvale CDP,Montrose County
+08,64090,Rico town,Dolores County
+08,64200,Ridgway town,Ouray County
+08,64255,Rifle city,Garfield County
+08,64870,Rock Creek Park CDP,El Paso County
+08,64970,Rockvale town,Fremont County
+08,65190,Rocky Ford city,Otero County
+08,65685,Rollinsville CDP,Gilpin County
+08,65740,Romeo town,Conejos County
+08,66197,Roxborough Park CDP,Douglas County
+08,66895,Rye town,Pueblo County
+08,66995,Saddle Ridge CDP,Morgan County
+08,67005,Saguache town,Saguache County
+08,67040,St. Ann Highlands CDP,Boulder County
+08,67142,St. Mary's CDP,Clear Creek County
+08,67280,Salida city,Chaffee County
+08,67445,Salt Creek CDP,Pueblo County
+08,67500,San Acacio CDP,Costilla County
+08,67830,Sanford town,Conejos County
+08,68105,San Luis town,Costilla County
+08,68655,Sawpit town,San Miguel County
+08,68847,Security-Widefield CDP,El Paso County
+08,68875,Sedalia CDP,Douglas County
+08,68930,Sedgwick town,Sedgwick County
+08,68985,Segundo CDP,Las Animas County
+08,69040,Seibert town,Kit Carson County
+08,69110,Seven Hills CDP,Boulder County
+08,69150,Severance town,Weld County
+08,69480,Shaw Heights CDP,Adams County
+08,69645,Sheridan city,Arapahoe County
+08,69700,Sheridan Lake town,Kiowa County
+08,69810,Sherrelwood CDP,Adams County
+08,70195,Silt town,Garfield County
+08,70250,Silver Cliff town,Custer County
+08,70360,Silver Plume town,Clear Creek County
+08,70525,Silverthorne town,Summit County
+08,70580,Silverton town,San Juan County
+08,70635,Simla town,Elbert County
+08,71625,Smeltertown CDP,Chaffee County
+08,71755,Snowmass Village town,Pitkin County
+08,71790,Snyder CDP,Morgan County
+08,72320,Southern Ute CDP,La Plata County
+08,72395,South Fork town,Rio Grande County
+08,73330,Springfield town,Baca County
+08,73715,Starkville town,Las Animas County
+08,73825,Steamboat Springs city,Routt County
+08,73935,Sterling city,Logan County
+08,74080,Stonegate CDP,Douglas County
+08,74275,Stonewall Gap CDP,Las Animas County
+08,74375,Strasburg CDP,"Adams County, Arapahoe County"
+08,74430,Stratmoor CDP,El Paso County
+08,74485,Stratton town,Kit Carson County
+08,74815,Sugar City town,Crowley County
+08,74980,Sugarloaf CDP,Boulder County
+08,75585,Sunshine CDP,Boulder County
+08,75640,Superior town,"Boulder County, Jefferson County"
+08,75970,Swink town,Otero County
+08,76190,Tabernash CDP,Grand County
+08,76325,Tall Timber CDP,Boulder County
+08,76795,Telluride town,San Miguel County
+08,77235,The Pinery CDP,Douglas County
+08,77290,Thornton city,"Adams County, Weld County"
+08,77510,Timnath town,Larimer County
+08,77757,Todd Creek CDP,Adams County
+08,78280,Towaoc CDP,Montezuma County
+08,78335,Towner CDP,Kiowa County
+08,78345,Trail Side CDP,Morgan County
+08,78610,Trinidad city,Las Animas County
+08,79100,Twin Lakes CDP,Adams County
+08,79105,Twin Lakes CDP,Lake County
+08,79270,Two Buttes town,Baca County
+08,79785,Upper Bear Creek CDP,Clear Creek County
+08,80040,Vail town,Eagle County
+08,80095,Valdez CDP,Las Animas County
+08,80370,Valmont CDP,Boulder County
+08,80755,Vernon CDP,Yuma County
+08,80865,Victor city,Teller County
+08,81030,Vilas town,Baca County
+08,81305,Vineland CDP,Pueblo County
+08,81690,Vona town,Kit Carson County
+08,82130,Walden town,Jackson County
+08,82350,Walsenburg city,Huerfano County
+08,82460,Walsh town,Baca County
+08,82735,Ward town,Boulder County
+08,82905,Watkins CDP,"Adams County, Arapahoe County"
+08,83120,Welby CDP,Adams County
+08,83175,Weldona CDP,Morgan County
+08,83230,Wellington town,Larimer County
+08,83450,Westcliffe town,Custer County
+08,83500,Westcreek CDP,Douglas County
+08,83835,Westminster city,"Adams County, Jefferson County"
+08,84000,Weston CDP,Las Animas County
+08,84042,West Pleasant View CDP,Jefferson County
+08,84440,Wheat Ridge city,Jefferson County
+08,84770,Wiggins town,Morgan County
+08,85045,Wiley town,Prowers County
+08,85155,Williamsburg town,Fremont County
+08,85485,Windsor town,"Larimer County, Weld County"
+08,85705,Winter Park town,Grand County
+08,85760,Wolcott CDP,Eagle County
+08,86090,Woodland Park city,Teller County
+08,86117,Woodmoor CDP,El Paso County
+08,86200,Woody Creek CDP,Pitkin County
+08,86310,Wray city,Yuma County
+08,86475,Yampa town,Routt County
+08,86750,Yuma city,Yuma County
