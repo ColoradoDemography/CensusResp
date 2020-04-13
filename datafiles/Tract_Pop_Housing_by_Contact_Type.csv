@@ -1,0 +1,1675 @@
+CType2,TRACTGEOID,COUNTYFP10,TRACTCE10,SUM_HOUSING10,SUM_POP10,HDL,HDP,UL
+Other,08001008538,001,008538,0,0,0,0,0
+Other,08001988700,001,988700,0,0,0,0,0
+Other,08007940400,007,940400,1,3,0,0,0
+Other,08014980100,014,980100,0,0,0,0,0
+Other,08014980200,014,980200,0,0,0,0,0
+Other,08014980300,014,980300,0,0,0,0,0
+Other,08037000501,037,000501,106,113,0,0,0
+Other,08037000502,037,000502,0,0,0,0,0
+Other,08037000600,037,000600,0,0,0,0,0
+Other,08037000703,037,000703,0,0,0,0,0
+Other,08041004401,041,004401,0,0,0,0,0
+Other,08041004402,041,004402,0,0,0,0,0
+Other,08059980000,059,980000,0,0,0,0,0
+Other,08067940300,067,940300,0,0,0,0,0
+Other,08067940400,067,940400,3,9,0,0,0
+Other,08101980100,101,980100,0,0,0,0,0
+Other,08107000200,107,000200,12,40,0,0,0
+Other,08113968101,113,968101,2,3,0,0,0
+Other,08113968103,113,968103,0,0,0,0,0
+Home Delivery Packet - English,08003960300,003,960300,1814,4756,0,1,0
+Home Delivery Packet - English,08005007101,005,007101,1775,4578,0,1,0
+Home Delivery Packet - English,08005007103,005,007103,0,0,0,1,0
+Home Delivery Packet - English,08005080100,005,080100,1980,4277,0,1,0
+Home Delivery Packet - English,08005081500,005,081500,2425,3039,0,1,0
+Home Delivery Packet - English,08005081900,005,081900,2485,6332,0,1,0
+Home Delivery Packet - English,08009964600,009,964600,384,586,0,1,0
+Home Delivery Packet - English,08009964700,009,964700,1058,1897,0,1,0
+Home Delivery Packet - English,08011966700,011,966700,2210,6439,0,1,0
+Home Delivery Packet - English,08015000402,015,000402,766,2538,0,1,0
+Home Delivery Packet - English,08017960600,017,960600,238,475,0,1,0
+Home Delivery Packet - English,08021974800,021,974800,251,639,0,1,0
+Home Delivery Packet - English,08021974900,021,974900,995,1982,0,1,0
+Home Delivery Packet - English,08023972600,023,972600,232,229,0,1,0
+Home Delivery Packet - English,08023972700,023,972700,3,0,0,1,0
+Home Delivery Packet - English,08025969600,025,969600,1145,5006,0,1,0
+Home Delivery Packet - English,08029964600,029,964600,1521,3018,0,1,0
+Home Delivery Packet - English,08029964700,029,964700,1870,4010,0,1,0
+Home Delivery Packet - English,08029964800,029,964800,1300,3493,0,1,0
+Home Delivery Packet - English,08029964900,029,964900,2312,5805,0,1,0
+Home Delivery Packet - English,08029965100,029,965100,23,59,0,1,0
+Home Delivery Packet - English,08029965200,029,965200,2362,4462,0,1,0
+Home Delivery Packet - English,08031000800,031,000800,474,1448,0,1,0
+Home Delivery Packet - English,08031004101,031,004101,1508,3648,0,1,0
+Home Delivery Packet - English,08031007089,031,007089,3786,4725,0,1,0
+Home Delivery Packet - English,08031980100,031,980100,0,0,0,1,0
+Home Delivery Packet - English,08033000100,033,000100,229,361,0,1,0
+Home Delivery Packet - English,08039961100,039,961100,627,1307,0,1,0
+Home Delivery Packet - English,08041002102,041,002102,1976,4820,0,1,0
+Home Delivery Packet - English,08041002800,041,002800,0,0,0,1,0
+Home Delivery Packet - English,08041002900,041,002900,2867,5902,0,1,0
+Home Delivery Packet - English,08041003303,041,003303,0,0,0,1,0
+Home Delivery Packet - English,08041003802,041,003802,1,4486,0,1,0
+Home Delivery Packet - English,08041004100,041,004100,0,0,0,1,0
+Home Delivery Packet - English,08041004501,041,004501,1572,6348,0,1,0
+Home Delivery Packet - English,08041006100,041,006100,1722,4454,0,1,0
+Home Delivery Packet - English,08043978100,043,978100,1930,4385,0,1,0
+Home Delivery Packet - English,08043978200,043,978200,0,0,0,1,0
+Home Delivery Packet - English,08043978300,043,978300,2524,5626,0,1,0
+Home Delivery Packet - English,08043978500,043,978500,2633,5902,0,1,0
+Home Delivery Packet - English,08043979100,043,979100,1567,3342,0,1,0
+Home Delivery Packet - English,08043979400,043,979400,0,0,0,1,0
+Home Delivery Packet - English,08043980100,043,980100,0,945,0,1,0
+Home Delivery Packet - English,08043980200,043,980200,0,3085,0,1,0
+Home Delivery Packet - English,08043980300,043,980300,0,3916,0,1,0
+Home Delivery Packet - English,08055960600,055,960600,1762,3094,0,1,0
+Home Delivery Packet - English,08057955600,057,955600,170,97,0,1,0
+Home Delivery Packet - English,08059010211,059,010211,1457,3093,0,1,0
+Home Delivery Packet - English,08059980400,059,980400,0,1128,0,1,0
+Home Delivery Packet - English,08061960100,061,960100,432,785,0,1,0
+Home Delivery Packet - English,08063962200,063,962200,552,1193,0,1,0
+Home Delivery Packet - English,08069001903,069,001903,0,0,0,1,0
+Home Delivery Packet - English,08069002803,069,002803,35,15,0,1,0
+Home Delivery Packet - English,08071000100,071,000100,1472,2955,0,1,0
+Home Delivery Packet - English,08071000300,071,000300,1081,1666,0,1,0
+Home Delivery Packet - English,08071000400,071,000400,1145,2273,0,1,0
+Home Delivery Packet - English,08071000500,071,000500,985,1972,0,1,0
+Home Delivery Packet - English,08071000800,071,000800,884,2311,0,1,0
+Home Delivery Packet - English,08073961800,073,961800,679,1306,0,1,0
+Home Delivery Packet - English,08075965900,075,965900,374,724,0,1,0
+Home Delivery Packet - English,08075966000,075,966000,643,1466,0,1,0
+Home Delivery Packet - English,08075966300,075,966300,1879,3797,0,1,0
+Home Delivery Packet - English,08077001001,077,001001,2386,4764,0,1,0
+Home Delivery Packet - English,08081000600,081,000600,453,876,0,1,0
+Home Delivery Packet - English,08083941100,083,941100,42,87,0,1,0
+Home Delivery Packet - English,08085966100,085,966100,17,26,0,1,0
+Home Delivery Packet - English,08085966201,085,966201,1179,2898,0,1,0
+Home Delivery Packet - English,08085966202,085,966202,1291,3349,0,1,0
+Home Delivery Packet - English,08085966400,085,966400,2880,6110,0,1,0
+Home Delivery Packet - English,08085966501,085,966501,0,0,0,1,0
+Home Delivery Packet - English,08087000100,087,000100,0,0,0,1,0
+Home Delivery Packet - English,08087000800,087,000800,798,1805,0,1,0
+Home Delivery Packet - English,08089968000,089,968000,796,1609,0,1,0
+Home Delivery Packet - English,08089968100,089,968100,1319,2718,0,1,0
+Home Delivery Packet - English,08089968200,089,968200,1216,2673,0,1,0
+Home Delivery Packet - English,08089968300,089,968300,2,5,0,1,0
+Home Delivery Packet - English,08089968400,089,968400,339,670,0,1,0
+Home Delivery Packet - English,08089968500,089,968500,0,0,0,1,0
+Home Delivery Packet - English,08093000300,093,000300,147,247,0,1,0
+Home Delivery Packet - English,08095967700,095,967700,720,1428,0,1,0
+Home Delivery Packet - English,08099000100,099,000100,459,1062,0,1,0
+Home Delivery Packet - English,08099000600,099,000600,0,0,0,1,0
+Home Delivery Packet - English,08099000700,099,000700,720,1498,0,1,0
+Home Delivery Packet - English,08101000200,101,000200,797,1857,0,1,0
+Home Delivery Packet - English,08101000300,101,000300,0,1332,0,1,0
+Home Delivery Packet - English,08101000500,101,000500,1130,2204,0,1,0
+Home Delivery Packet - English,08101000600,101,000600,1064,2136,0,1,0
+Home Delivery Packet - English,08101000800,101,000800,1428,3031,0,1,0
+Home Delivery Packet - English,08101000904,101,000904,2137,4350,0,1,0
+Home Delivery Packet - English,08101001000,101,001000,1943,4758,0,1,0
+Home Delivery Packet - English,08101001100,101,001100,1196,2834,0,1,0
+Home Delivery Packet - English,08101001200,101,001200,916,2126,0,1,0
+Home Delivery Packet - English,08101001400,101,001400,770,1375,0,1,0
+Home Delivery Packet - English,08101001700,101,001700,2015,4196,0,1,0
+Home Delivery Packet - English,08101002000,101,002000,1401,2901,0,1,0
+Home Delivery Packet - English,08101002100,101,002100,761,1526,0,1,0
+Home Delivery Packet - English,08101002200,101,002200,746,1650,0,1,0
+Home Delivery Packet - English,08101002300,101,002300,1678,3454,0,1,0
+Home Delivery Packet - English,08101002400,101,002400,881,1928,0,1,0
+Home Delivery Packet - English,08101002500,101,002500,1290,2782,0,1,0
+Home Delivery Packet - English,08101002600,101,002600,1743,3816,0,1,0
+Home Delivery Packet - English,08101002801,101,002801,2209,5195,0,1,0
+Home Delivery Packet - English,08101002802,101,002802,1656,3586,0,1,0
+Home Delivery Packet - English,08101002901,101,002901,1202,2914,0,1,0
+Home Delivery Packet - English,08101002903,101,002903,3,7,0,1,0
+Home Delivery Packet - English,08101003001,101,003001,0,0,0,1,0
+Home Delivery Packet - English,08101003103,101,003103,0,0,0,1,0
+Home Delivery Packet - English,08101003200,101,003200,0,0,0,1,0
+Home Delivery Packet - English,08101003500,101,003500,1244,2374,0,1,0
+Home Delivery Packet - English,08101003600,101,003600,805,1878,0,1,0
+Home Delivery Packet - English,08105976700,105,976700,2317,5323,0,1,0
+Home Delivery Packet - English,08105976800,105,976800,932,1926,0,1,0
+Home Delivery Packet - English,08105977000,105,977000,0,0,0,1,0
+Home Delivery Packet - English,08109977600,109,977600,474,738,0,1,0
+Home Delivery Packet - English,08113968103,113,968103,0,0,0,1,0
+Home Delivery Packet - English,08113968200,113,968200,48,50,0,1,0
+Home Delivery Packet - English,08115968300,115,968300,1110,1919,0,1,0
+Home Delivery Packet - English,08117000100,117,000100,0,0,0,1,0
+Home Delivery Packet - English,08117000300,117,000300,12,3,0,1,0
+Home Delivery Packet - English,08121924100,121,924100,880,1723,0,1,0
+Home Delivery Packet - English,08121924200,121,924200,1268,2652,0,1,0
+Home Delivery Packet - English,08123000300,123,000300,1,1869,0,1,0
+Home Delivery Packet - English,08123000705,123,000705,640,1495,0,1,0
+Home Delivery Packet - English,08123001003,123,001003,1780,4629,0,1,0
+Home Delivery Packet - English,08123001005,123,001005,0,0,0,1,0
+Home Delivery Packet - English,08123001600,123,001600,0,0,0,1,0
+Home Delivery Packet - English,08123001700,123,001700,1425,3633,0,1,0
+Home Delivery Packet - English,08123001800,123,001800,0,0,0,1,0
+Home Delivery Packet - English,08123001906,123,001906,533,1502,0,1,0
+Home Delivery Packet - English,08123001908,123,001908,984,2584,0,1,0
+Home Delivery Packet - English,08123002006,123,002006,109,290,0,1,0
+Home Delivery Packet - English,08123002101,123,002101,1,3,0,1,0
+Home Delivery Packet - English,08123002501,123,002501,0,0,0,1,0
+Home Delivery Packet - English,08123002502,123,002502,1637,4149,0,1,0
+Home Delivery Packet - English,08125963100,125,963100,1975,4435,0,1,0
+Home Delivery Packet - English,08125963200,125,963200,2329,5316,0,1,0
+Home Delivery Packet - Bilingual,08001007801,001,007801,1372,3732,0,1,0
+Home Delivery Packet - Bilingual,08001007802,001,007802,1516,3758,0,0,0
+Home Delivery Packet - Bilingual,08001008308,001,008308,1973,5557,0,0,0
+Home Delivery Packet - Bilingual,08001008309,001,008309,1149,3254,0,0,0
+Home Delivery Packet - Bilingual,08001008603,001,008603,799,2055,0,0,0
+Home Delivery Packet - Bilingual,08001008705,001,008705,1667,4921,0,0,0
+Home Delivery Packet - Bilingual,08001008709,001,008709,2605,7656,0,0,0
+Home Delivery Packet - Bilingual,08001008801,001,008801,1529,4752,0,0,0
+Home Delivery Packet - Bilingual,08001008802,001,008802,1226,4075,0,0,0
+Home Delivery Packet - Bilingual,08001008901,001,008901,0,0,0,0,0
+Home Delivery Packet - Bilingual,08001009103,001,009103,0,0,0,0,0
+Home Delivery Packet - Bilingual,08001009316,001,009316,2184,5751,0,0,0
+Home Delivery Packet - Bilingual,08001009318,001,009318,2271,5664,0,0,0
+Home Delivery Packet - Bilingual,08001009606,001,009606,1140,2794,0,0,0
+Home Delivery Packet - Bilingual,08023972700,023,972700,75,86,0,0,0
+Home Delivery Packet - Bilingual,08031000902,031,000902,1811,5376,0,0,0
+Home Delivery Packet - Bilingual,08031000904,031,000904,1778,5052,0,0,0
+Home Delivery Packet - Bilingual,08031000905,031,000905,1225,3631,0,0,0
+Home Delivery Packet - Bilingual,08031001401,031,001401,2117,5750,0,0,0
+Home Delivery Packet - Bilingual,08031001500,031,001500,1157,3687,0,0,0
+Home Delivery Packet - Bilingual,08031003500,031,003500,1844,6401,0,0,0
+Home Delivery Packet - Bilingual,08031004503,031,004503,1278,3974,0,0,0
+Home Delivery Packet - Bilingual,08031004504,031,004504,1115,3705,0,0,0
+Home Delivery Packet - Bilingual,08031008305,031,008305,983,3963,0,0,0
+Home Delivery Packet - Bilingual,08031008312,031,008312,2105,6825,0,0,0
+Home Delivery Packet - Bilingual,08031015600,031,015600,2241,6498,0,0,0
+Home Delivery Packet - Bilingual,08069000202,069,000202,0,0,0,0,0
+Home Delivery Packet - Bilingual,08069001304,069,001304,1100,2834,0,0,0
+Home Delivery Packet - Bilingual,08087000300,087,000300,673,1619,0,0,0
+Home Delivery Packet - Bilingual,08099000100,099,000100,0,0,0,0,0
+Home Delivery Packet - Bilingual,08099000200,099,000200,1150,2463,0,0,0
+Home Delivery Packet - Bilingual,08109977700,109,977700,423,982,0,0,0
+Home Delivery Packet - Bilingual,08123000100,123,000100,1418,2468,0,0,0
+Home Delivery Packet - Bilingual,08123000501,123,000501,998,3128,0,0,0
+Home Delivery Packet - Bilingual,08123000600,123,000600,234,1634,0,0,0
+Home Delivery Packet - Bilingual,08123000701,123,000701,616,1602,0,0,0
+Home Delivery Packet - Bilingual,08123000705,123,000705,0,0,0,0,0
+Home Delivery Letter - English,08001007900,001,007900,0,0,1,0,0
+Home Delivery Letter - English,08001008000,001,008000,0,0,1,0,0
+Home Delivery Letter - English,08001008100,001,008100,361,854,1,0,0
+Home Delivery Letter - English,08001008200,001,008200,1581,5484,1,0,0
+Home Delivery Letter - English,08001008353,001,008353,2309,6044,1,0,0
+Home Delivery Letter - English,08001008401,001,008401,1523,3954,1,0,0
+Home Delivery Letter - English,08001008402,001,008402,1568,4119,1,0,0
+Home Delivery Letter - English,08001008505,001,008505,2457,6655,1,0,0
+Home Delivery Letter - English,08001008506,001,008506,2720,5383,1,0,0
+Home Delivery Letter - English,08001008507,001,008507,2117,6099,1,0,0
+Home Delivery Letter - English,08001008508,001,008508,1951,5342,1,0,0
+Home Delivery Letter - English,08001008523,001,008523,2725,7586,1,0,0
+Home Delivery Letter - English,08001008524,001,008524,2533,7814,1,0,0
+Home Delivery Letter - English,08001008526,001,008526,2480,6742,1,0,0
+Home Delivery Letter - English,08001008529,001,008529,3447,7446,1,0,0
+Home Delivery Letter - English,08001008533,001,008533,3127,7650,1,0,0
+Home Delivery Letter - English,08001008534,001,008534,1428,4283,1,0,0
+Home Delivery Letter - English,08001008535,001,008535,1149,3194,1,0,0
+Home Delivery Letter - English,08001008536,001,008536,903,2443,1,0,0
+Home Delivery Letter - English,08001008537,001,008537,1956,6047,1,0,0
+Home Delivery Letter - English,08001008538,001,008538,1869,5305,1,0,0
+Home Delivery Letter - English,08001008539,001,008539,2818,8437,1,0,0
+Home Delivery Letter - English,08001008540,001,008540,2181,6408,1,0,0
+Home Delivery Letter - English,08001008541,001,008541,1556,4277,1,0,0
+Home Delivery Letter - English,08001008542,001,008542,2337,7036,1,0,0
+Home Delivery Letter - English,08001008543,001,008543,2475,6935,1,0,0
+Home Delivery Letter - English,08001008544,001,008544,1369,4181,1,0,0
+Home Delivery Letter - English,08001008545,001,008545,2227,6769,1,0,0
+Home Delivery Letter - English,08001008546,001,008546,1076,2912,1,0,0
+Home Delivery Letter - English,08001008547,001,008547,1198,3525,1,0,0
+Home Delivery Letter - English,08001008548,001,008548,556,1499,1,0,0
+Home Delivery Letter - English,08001008549,001,008549,1323,3906,1,0,0
+Home Delivery Letter - English,08001008550,001,008550,2753,7987,1,0,0
+Home Delivery Letter - English,08001008551,001,008551,208,560,1,0,0
+Home Delivery Letter - English,08001008603,001,008603,0,0,1,0,0
+Home Delivery Letter - English,08001008604,001,008604,1206,4923,1,0,0
+Home Delivery Letter - English,08001008605,001,008605,1387,3679,1,0,0
+Home Delivery Letter - English,08001008606,001,008606,0,0,1,0,0
+Home Delivery Letter - English,08001008802,001,008802,0,0,1,0,0
+Home Delivery Letter - English,08001008901,001,008901,0,0,1,0,0
+Home Delivery Letter - English,08001009001,001,009001,1536,4645,1,0,0
+Home Delivery Letter - English,08001009002,001,009002,3332,9203,1,0,0
+Home Delivery Letter - English,08001009104,001,009104,1845,5200,1,0,0
+Home Delivery Letter - English,08001009202,001,009202,1469,4242,1,0,0
+Home Delivery Letter - English,08001009203,001,009203,1717,4222,1,0,0
+Home Delivery Letter - English,08001009204,001,009204,2599,6500,1,0,0
+Home Delivery Letter - English,08001009206,001,009206,770,2021,1,0,0
+Home Delivery Letter - English,08001009207,001,009207,1569,4425,1,0,0
+Home Delivery Letter - English,08001009304,001,009304,2160,5400,1,0,0
+Home Delivery Letter - English,08001009306,001,009306,1236,3692,1,0,0
+Home Delivery Letter - English,08001009307,001,009307,1281,3774,1,0,0
+Home Delivery Letter - English,08001009310,001,009310,1983,5827,1,0,0
+Home Delivery Letter - English,08001009321,001,009321,1572,3782,1,0,0
+Home Delivery Letter - English,08001009322,001,009322,1618,4246,1,0,0
+Home Delivery Letter - English,08001009323,001,009323,1523,3728,1,0,0
+Home Delivery Letter - English,08001009325,001,009325,2522,5063,1,0,0
+Home Delivery Letter - English,08001009326,001,009326,1125,2554,1,0,0
+Home Delivery Letter - English,08001009327,001,009327,1639,4124,1,0,0
+Home Delivery Letter - English,08001009401,001,009401,1829,4903,1,0,0
+Home Delivery Letter - English,08001009406,001,009406,1755,4259,1,0,0
+Home Delivery Letter - English,08001009407,001,009407,1817,5227,1,0,0
+Home Delivery Letter - English,08001009408,001,009408,1752,4260,1,0,0
+Home Delivery Letter - English,08001009409,001,009409,2185,5248,1,0,0
+Home Delivery Letter - English,08001009410,001,009410,1289,3316,1,0,0
+Home Delivery Letter - English,08001009411,001,009411,1261,2959,1,0,0
+Home Delivery Letter - English,08001009603,001,009603,2445,5921,1,0,0
+Home Delivery Letter - English,08001009604,001,009604,2063,4569,1,0,0
+Home Delivery Letter - English,08001009607,001,009607,1929,4931,1,0,0
+Home Delivery Letter - English,08001009608,001,009608,1151,2849,1,0,0
+Home Delivery Letter - English,08001009752,001,009752,1086,3061,1,0,0
+Home Delivery Letter - English,08001015000,001,015000,1130,2495,1,0,0
+Home Delivery Letter - English,08001060000,001,060000,1511,4747,1,0,0
+Home Delivery Letter - English,08001060100,001,060100,2214,6170,1,0,0
+Home Delivery Letter - English,08001060200,001,060200,1875,3681,1,0,0
+Home Delivery Letter - English,08001061200,001,061200,407,1294,1,0,0
+Home Delivery Letter - English,08003960000,003,960000,701,1427,1,0,0
+Home Delivery Letter - English,08003960100,003,960100,1019,2475,1,0,0
+Home Delivery Letter - English,08003960200,003,960200,2793,6342,1,0,0
+Home Delivery Letter - English,08003960300,003,960300,4,6,1,0,0
+Home Delivery Letter - English,08005004951,005,004951,1176,1883,1,0,0
+Home Delivery Letter - English,08005004952,005,004952,1473,2301,1,0,0
+Home Delivery Letter - English,08005005551,005,005551,1133,3224,1,0,0
+Home Delivery Letter - English,08005005552,005,005552,1135,2414,1,0,0
+Home Delivery Letter - English,08005005553,005,005553,1495,3594,1,0,0
+Home Delivery Letter - English,08005005611,005,005611,1948,4747,1,0,0
+Home Delivery Letter - English,08005005612,005,005612,1529,3616,1,0,0
+Home Delivery Letter - English,08005005614,005,005614,1299,3146,1,0,0
+Home Delivery Letter - English,08005005619,005,005619,1806,4574,1,0,0
+Home Delivery Letter - English,08005005620,005,005620,1740,2539,1,0,0
+Home Delivery Letter - English,08005005621,005,005621,1189,2899,1,0,0
+Home Delivery Letter - English,08005005622,005,005622,974,2326,1,0,0
+Home Delivery Letter - English,08005005623,005,005623,1437,3547,1,0,0
+Home Delivery Letter - English,08005005624,005,005624,823,2106,1,0,0
+Home Delivery Letter - English,08005005625,005,005625,1239,2899,1,0,0
+Home Delivery Letter - English,08005005626,005,005626,1630,3210,1,0,0
+Home Delivery Letter - English,08005005627,005,005627,1820,4271,1,0,0
+Home Delivery Letter - English,08005005628,005,005628,2267,5609,1,0,0
+Home Delivery Letter - English,08005005629,005,005629,821,2215,1,0,0
+Home Delivery Letter - English,08005005630,005,005630,2220,5322,1,0,0
+Home Delivery Letter - English,08005005631,005,005631,1220,3028,1,0,0
+Home Delivery Letter - English,08005005632,005,005632,1176,3189,1,0,0
+Home Delivery Letter - English,08005005633,005,005633,1291,3002,1,0,0
+Home Delivery Letter - English,08005005634,005,005634,1668,2959,1,0,0
+Home Delivery Letter - English,08005005635,005,005635,2046,4789,1,0,0
+Home Delivery Letter - English,08005005636,005,005636,687,1825,1,0,0
+Home Delivery Letter - English,08005005700,005,005700,1917,3593,1,0,0
+Home Delivery Letter - English,08005005800,005,005800,1253,2391,1,0,0
+Home Delivery Letter - English,08005005951,005,005951,2505,4032,1,0,0
+Home Delivery Letter - English,08005005952,005,005952,1665,3091,1,0,0
+Home Delivery Letter - English,08005006000,005,006000,1410,2693,1,0,0
+Home Delivery Letter - English,08005006100,005,006100,1414,2672,1,0,0
+Home Delivery Letter - English,08005006200,005,006200,1329,2864,1,0,0
+Home Delivery Letter - English,08005006300,005,006300,1208,2621,1,0,0
+Home Delivery Letter - English,08005006400,005,006400,1313,2975,1,0,0
+Home Delivery Letter - English,08005006501,005,006501,1268,1678,1,0,0
+Home Delivery Letter - English,08005006502,005,006502,1507,3171,1,0,0
+Home Delivery Letter - English,08005006601,005,006601,2658,5610,1,0,0
+Home Delivery Letter - English,08005006603,005,006603,1374,3210,1,0,0
+Home Delivery Letter - English,08005006604,005,006604,1898,3761,1,0,0
+Home Delivery Letter - English,08005006704,005,006704,1541,4239,1,0,0
+Home Delivery Letter - English,08005006705,005,006705,610,1748,1,0,0
+Home Delivery Letter - English,08005006706,005,006706,2055,4720,1,0,0
+Home Delivery Letter - English,08005006707,005,006707,1884,4530,1,0,0
+Home Delivery Letter - English,08005006708,005,006708,1978,4979,1,0,0
+Home Delivery Letter - English,08005006709,005,006709,2069,4882,1,0,0
+Home Delivery Letter - English,08005006711,005,006711,1448,3869,1,0,0
+Home Delivery Letter - English,08005006712,005,006712,638,1219,1,0,0
+Home Delivery Letter - English,08005006713,005,006713,746,1209,1,0,0
+Home Delivery Letter - English,08005006808,005,006808,1837,5475,1,0,0
+Home Delivery Letter - English,08005006815,005,006815,1797,4057,1,0,0
+Home Delivery Letter - English,08005006854,005,006854,1113,2383,1,0,0
+Home Delivery Letter - English,08005006855,005,006855,1917,5097,1,0,0
+Home Delivery Letter - English,08005006856,005,006856,3211,7648,1,0,0
+Home Delivery Letter - English,08005006857,005,006857,870,2158,1,0,0
+Home Delivery Letter - English,08005006858,005,006858,2797,4143,1,0,0
+Home Delivery Letter - English,08005007101,005,007101,0,0,1,0,0
+Home Delivery Letter - English,08005007103,005,007103,569,1585,1,0,0
+Home Delivery Letter - English,08005007104,005,007104,1203,3714,1,0,0
+Home Delivery Letter - English,08005007105,005,007105,1237,3103,1,0,0
+Home Delivery Letter - English,08005007106,005,007106,1477,4294,1,0,0
+Home Delivery Letter - English,08005007107,005,007107,1559,4430,1,0,0
+Home Delivery Letter - English,08005007703,005,007703,1692,4075,1,0,0
+Home Delivery Letter - English,08005007704,005,007704,2007,4797,1,0,0
+Home Delivery Letter - English,08005015100,005,015100,1048,2521,1,0,0
+Home Delivery Letter - English,08005080000,005,080000,1367,3437,1,0,0
+Home Delivery Letter - English,08005080200,005,080200,2004,5086,1,0,0
+Home Delivery Letter - English,08005080300,005,080300,2401,5701,1,0,0
+Home Delivery Letter - English,08005080400,005,080400,2073,4500,1,0,0
+Home Delivery Letter - English,08005080500,005,080500,1766,3059,1,0,0
+Home Delivery Letter - English,08005080600,005,080600,1984,3730,1,0,0
+Home Delivery Letter - English,08005080700,005,080700,2030,5545,1,0,0
+Home Delivery Letter - English,08005080900,005,080900,1383,3977,1,0,0
+Home Delivery Letter - English,08005081000,005,081000,2602,5450,1,0,0
+Home Delivery Letter - English,08005081100,005,081100,2726,5376,1,0,0
+Home Delivery Letter - English,08005081200,005,081200,2002,4462,1,0,0
+Home Delivery Letter - English,08005081400,005,081400,1654,4171,1,0,0
+Home Delivery Letter - English,08005081500,005,081500,0,0,1,0,0
+Home Delivery Letter - English,08005081600,005,081600,1927,4859,1,0,0
+Home Delivery Letter - English,08005081700,005,081700,959,2782,1,0,0
+Home Delivery Letter - English,08005082000,005,082000,1888,3797,1,0,0
+Home Delivery Letter - English,08005082100,005,082100,2506,6750,1,0,0
+Home Delivery Letter - English,08005082200,005,082200,2271,5627,1,0,0
+Home Delivery Letter - English,08005082300,005,082300,1481,3636,1,0,0
+Home Delivery Letter - English,08005082400,005,082400,1605,4265,1,0,0
+Home Delivery Letter - English,08005082500,005,082500,778,2310,1,0,0
+Home Delivery Letter - English,08005082600,005,082600,2243,5059,1,0,0
+Home Delivery Letter - English,08005082700,005,082700,1223,3499,1,0,0
+Home Delivery Letter - English,08005082800,005,082800,1950,5030,1,0,0
+Home Delivery Letter - English,08005082900,005,082900,1775,4522,1,0,0
+Home Delivery Letter - English,08005083000,005,083000,1185,3245,1,0,0
+Home Delivery Letter - English,08005083100,005,083100,2625,6739,1,0,0
+Home Delivery Letter - English,08005083200,005,083200,2744,8692,1,0,0
+Home Delivery Letter - English,08005083300,005,083300,1864,4399,1,0,0
+Home Delivery Letter - English,08005083400,005,083400,2240,6685,1,0,0
+Home Delivery Letter - English,08005083500,005,083500,2192,5274,1,0,0
+Home Delivery Letter - English,08005083600,005,083600,1762,3661,1,0,0
+Home Delivery Letter - English,08005083700,005,083700,1774,4356,1,0,0
+Home Delivery Letter - English,08005083800,005,083800,1190,2842,1,0,0
+Home Delivery Letter - English,08005083900,005,083900,1656,2853,1,0,0
+Home Delivery Letter - English,08005084000,005,084000,803,2327,1,0,0
+Home Delivery Letter - English,08005084100,005,084100,1667,4435,1,0,0
+Home Delivery Letter - English,08005084200,005,084200,1386,3548,1,0,0
+Home Delivery Letter - English,08005084300,005,084300,1220,3456,1,0,0
+Home Delivery Letter - English,08005084400,005,084400,1073,3143,1,0,0
+Home Delivery Letter - English,08005084500,005,084500,1293,2708,1,0,0
+Home Delivery Letter - English,08005084600,005,084600,2052,5196,1,0,0
+Home Delivery Letter - English,08005084700,005,084700,1750,4665,1,0,0
+Home Delivery Letter - English,08005084800,005,084800,1197,3444,1,0,0
+Home Delivery Letter - English,08005084900,005,084900,1040,3066,1,0,0
+Home Delivery Letter - English,08005085000,005,085000,622,1805,1,0,0
+Home Delivery Letter - English,08005085100,005,085100,1949,6698,1,0,0
+Home Delivery Letter - English,08005085200,005,085200,922,2809,1,0,0
+Home Delivery Letter - English,08005085300,005,085300,983,2284,1,0,0
+Home Delivery Letter - English,08005085400,005,085400,1405,4320,1,0,0
+Home Delivery Letter - English,08005085500,005,085500,1742,5316,1,0,0
+Home Delivery Letter - English,08005085600,005,085600,1006,3203,1,0,0
+Home Delivery Letter - English,08005085700,005,085700,1833,4611,1,0,0
+Home Delivery Letter - English,08005085800,005,085800,639,1706,1,0,0
+Home Delivery Letter - English,08005085900,005,085900,1023,3248,1,0,0
+Home Delivery Letter - English,08005086000,005,086000,2499,7684,1,0,0
+Home Delivery Letter - English,08005086100,005,086100,1548,4784,1,0,0
+Home Delivery Letter - English,08005086200,005,086200,1853,5814,1,0,0
+Home Delivery Letter - English,08005086300,005,086300,1587,3696,1,0,0
+Home Delivery Letter - English,08005086400,005,086400,723,1980,1,0,0
+Home Delivery Letter - English,08005086500,005,086500,2050,4632,1,0,0
+Home Delivery Letter - English,08005086600,005,086600,2185,4075,1,0,0
+Home Delivery Letter - English,08005086700,005,086700,1124,3611,1,0,0
+Home Delivery Letter - English,08005086800,005,086800,3183,6106,1,0,0
+Home Delivery Letter - English,08005086900,005,086900,1446,2823,1,0,0
+Home Delivery Letter - English,08005087000,005,087000,2267,4550,1,0,0
+Home Delivery Letter - English,08005087100,005,087100,1499,2505,1,0,0
+Home Delivery Letter - English,08005087200,005,087200,1898,3768,1,0,0
+Home Delivery Letter - English,08005087300,005,087300,3341,7087,1,0,0
+Home Delivery Letter - English,08007940400,007,940400,0,0,1,0,0
+Home Delivery Letter - English,08007974200,007,974200,3627,5225,1,0,0
+Home Delivery Letter - English,08007974300,007,974300,1640,2431,1,0,0
+Home Delivery Letter - English,08007974400,007,974400,709,893,1,0,0
+Home Delivery Letter - English,08013012101,013,012101,2111,4770,1,0,0
+Home Delivery Letter - English,08013012102,013,012102,3056,6466,1,0,0
+Home Delivery Letter - English,08013012103,013,012103,1742,3804,1,0,0
+Home Delivery Letter - English,08013012104,013,012104,1065,2538,1,0,0
+Home Delivery Letter - English,08013012105,013,012105,2472,5589,1,0,0
+Home Delivery Letter - English,08013012201,013,012201,1756,3388,1,0,0
+Home Delivery Letter - English,08013012202,013,012202,3309,5847,1,0,0
+Home Delivery Letter - English,08013012203,013,012203,3271,6081,1,0,0
+Home Delivery Letter - English,08013012204,013,012204,1937,3556,1,0,0
+Home Delivery Letter - English,08013012300,013,012300,792,6196,1,0,0
+Home Delivery Letter - English,08013012401,013,012401,2004,5699,1,0,0
+Home Delivery Letter - English,08013012501,013,012501,1192,2451,1,0,0
+Home Delivery Letter - English,08013012505,013,012505,1806,4102,1,0,0
+Home Delivery Letter - English,08013012507,013,012507,1715,4202,1,0,0
+Home Delivery Letter - English,08013012508,013,012508,1349,2833,1,0,0
+Home Delivery Letter - English,08013012509,013,012509,1304,3247,1,0,0
+Home Delivery Letter - English,08013012510,013,012510,1940,4175,1,0,0
+Home Delivery Letter - English,08013012511,013,012511,2785,6265,1,0,0
+Home Delivery Letter - English,08013012603,013,012603,1530,3384,1,0,0
+Home Delivery Letter - English,08013012605,013,012605,760,1529,1,0,0
+Home Delivery Letter - English,08013012607,013,012607,2842,4258,1,0,0
+Home Delivery Letter - English,08013012608,013,012608,1001,2239,1,0,0
+Home Delivery Letter - English,08013012701,013,012701,2263,5448,1,0,0
+Home Delivery Letter - English,08013012705,013,012705,2052,3507,1,0,0
+Home Delivery Letter - English,08013012707,013,012707,699,2194,1,0,0
+Home Delivery Letter - English,08013012708,013,012708,2237,5123,1,0,0
+Home Delivery Letter - English,08013012709,013,012709,700,1811,1,0,0
+Home Delivery Letter - English,08013012710,013,012710,1543,3685,1,0,0
+Home Delivery Letter - English,08013012800,013,012800,3822,10822,1,0,0
+Home Delivery Letter - English,08013012903,013,012903,913,2195,1,0,0
+Home Delivery Letter - English,08013012904,013,012904,2219,5156,1,0,0
+Home Delivery Letter - English,08013012905,013,012905,1077,2456,1,0,0
+Home Delivery Letter - English,08013012907,013,012907,1218,2922,1,0,0
+Home Delivery Letter - English,08013013003,013,013003,2251,5452,1,0,0
+Home Delivery Letter - English,08013013004,013,013004,1209,3414,1,0,0
+Home Delivery Letter - English,08013013005,013,013005,1327,3084,1,0,0
+Home Delivery Letter - English,08013013006,013,013006,2261,5304,1,0,0
+Home Delivery Letter - English,08013013201,013,013201,633,1531,1,0,0
+Home Delivery Letter - English,08013013202,013,013202,588,1375,1,0,0
+Home Delivery Letter - English,08013013205,013,013205,2015,4922,1,0,0
+Home Delivery Letter - English,08013013207,013,013207,1904,4276,1,0,0
+Home Delivery Letter - English,08013013208,013,013208,2657,5755,1,0,0
+Home Delivery Letter - English,08013013210,013,013210,1795,5032,1,0,0
+Home Delivery Letter - English,08013013211,013,013211,2152,5612,1,0,0
+Home Delivery Letter - English,08013013212,013,013212,1875,4345,1,0,0
+Home Delivery Letter - English,08013013213,013,013213,2949,7271,1,0,0
+Home Delivery Letter - English,08013013302,013,013302,2445,5132,1,0,0
+Home Delivery Letter - English,08013013305,013,013305,1948,4859,1,0,0
+Home Delivery Letter - English,08013013306,013,013306,1734,4589,1,0,0
+Home Delivery Letter - English,08013013307,013,013307,1661,3604,1,0,0
+Home Delivery Letter - English,08013013308,013,013308,1680,3465,1,0,0
+Home Delivery Letter - English,08013013401,013,013401,1489,3275,1,0,0
+Home Delivery Letter - English,08013013402,013,013402,2846,7573,1,0,0
+Home Delivery Letter - English,08013013503,013,013503,1996,5478,1,0,0
+Home Delivery Letter - English,08013013506,013,013506,1412,4058,1,0,0
+Home Delivery Letter - English,08013013507,013,013507,1169,3397,1,0,0
+Home Delivery Letter - English,08013013508,013,013508,2424,6575,1,0,0
+Home Delivery Letter - English,08013013601,013,013601,1011,2174,1,0,0
+Home Delivery Letter - English,08013013602,013,013602,843,597,1,0,0
+Home Delivery Letter - English,08013013701,013,013701,2858,5933,1,0,0
+Home Delivery Letter - English,08013013702,013,013702,2241,4169,1,0,0
+Home Delivery Letter - English,08013060600,013,060600,2524,5325,1,0,0
+Home Delivery Letter - English,08013060700,013,060700,1360,3089,1,0,0
+Home Delivery Letter - English,08013060800,013,060800,2486,6107,1,0,0
+Home Delivery Letter - English,08013060900,013,060900,1853,4139,1,0,0
+Home Delivery Letter - English,08013061300,013,061300,1004,3417,1,0,0
+Home Delivery Letter - English,08013061400,013,061400,1286,3990,1,0,0
+Home Delivery Letter - English,08014030000,014,030000,1436,3378,1,0,0
+Home Delivery Letter - English,08014030100,014,030100,921,2183,1,0,0
+Home Delivery Letter - English,08014030200,014,030200,665,1672,1,0,0
+Home Delivery Letter - English,08014030300,014,030300,1466,3325,1,0,0
+Home Delivery Letter - English,08014030400,014,030400,1348,3789,1,0,0
+Home Delivery Letter - English,08014030500,014,030500,2107,5911,1,0,0
+Home Delivery Letter - English,08014030600,014,030600,2135,6166,1,0,0
+Home Delivery Letter - English,08014030700,014,030700,1172,2968,1,0,0
+Home Delivery Letter - English,08014030800,014,030800,1870,5420,1,0,0
+Home Delivery Letter - English,08014030900,014,030900,2255,5938,1,0,0
+Home Delivery Letter - English,08014031000,014,031000,1981,4841,1,0,0
+Home Delivery Letter - English,08014031100,014,031100,1778,2606,1,0,0
+Home Delivery Letter - English,08014031200,014,031200,1486,3059,1,0,0
+Home Delivery Letter - English,08014031300,014,031300,591,1648,1,0,0
+Home Delivery Letter - English,08014031400,014,031400,1166,2583,1,0,0
+Home Delivery Letter - English,08014980100,014,980100,0,0,1,0,0
+Home Delivery Letter - English,08014980200,014,980200,0,0,1,0,0
+Home Delivery Letter - English,08014980300,014,980300,0,0,1,0,0
+Home Delivery Letter - English,08015000100,015,000100,1445,2541,1,0,0
+Home Delivery Letter - English,08015000200,015,000200,2190,4245,1,0,0
+Home Delivery Letter - English,08015000300,015,000300,1446,2216,1,0,0
+Home Delivery Letter - English,08015000401,015,000401,2172,3166,1,0,0
+Home Delivery Letter - English,08015000402,015,000402,0,0,1,0,0
+Home Delivery Letter - English,08019014700,019,014700,2635,4561,1,0,0
+Home Delivery Letter - English,08019014800,019,014800,26,64,1,0,0
+Home Delivery Letter - English,08019014900,019,014900,190,170,1,0,0
+Home Delivery Letter - English,08027970100,027,970100,2668,3181,1,0,0
+Home Delivery Letter - English,08029964800,029,964800,0,0,1,0,0
+Home Delivery Letter - English,08029964900,029,964900,0,0,1,0,0
+Home Delivery Letter - English,08029965000,029,965000,2063,4332,1,0,0
+Home Delivery Letter - English,08029965100,029,965100,1827,3989,1,0,0
+Home Delivery Letter - English,08031000102,031,000102,1609,3109,1,0,0
+Home Delivery Letter - English,08031000201,031,000201,0,0,1,0,0
+Home Delivery Letter - English,08031000202,031,000202,1600,3916,1,0,0
+Home Delivery Letter - English,08031000301,031,000301,2713,5003,1,0,0
+Home Delivery Letter - English,08031000302,031,000302,2133,4036,1,0,0
+Home Delivery Letter - English,08031000303,031,000303,2379,4504,1,0,0
+Home Delivery Letter - English,08031000401,031,000401,1457,3209,1,0,0
+Home Delivery Letter - English,08031000402,031,000402,3024,5314,1,0,0
+Home Delivery Letter - English,08031000501,031,000501,976,1814,1,0,0
+Home Delivery Letter - English,08031000502,031,000502,2778,5424,1,0,0
+Home Delivery Letter - English,08031000600,031,000600,0,0,1,0,0
+Home Delivery Letter - English,08031000701,031,000701,1905,4166,1,0,0
+Home Delivery Letter - English,08031000702,031,000702,2144,5574,1,0,0
+Home Delivery Letter - English,08031000904,031,000904,63,75,1,0,0
+Home Delivery Letter - English,08031001101,031,001101,996,2601,1,0,0
+Home Delivery Letter - English,08031001102,031,001102,1659,3115,1,0,0
+Home Delivery Letter - English,08031001403,031,001403,1289,2218,1,0,0
+Home Delivery Letter - English,08031001600,031,001600,4171,7685,1,0,0
+Home Delivery Letter - English,08031001701,031,001701,3618,4350,1,0,0
+Home Delivery Letter - English,08031001702,031,001702,3257,3648,1,0,0
+Home Delivery Letter - English,08031001800,031,001800,1851,3209,1,0,0
+Home Delivery Letter - English,08031001901,031,001901,1052,2910,1,0,0
+Home Delivery Letter - English,08031001902,031,001902,69,705,1,0,0
+Home Delivery Letter - English,08031002000,031,002000,1345,1577,1,0,0
+Home Delivery Letter - English,08031002100,031,002100,2697,4879,1,0,0
+Home Delivery Letter - English,08031002300,031,002300,2150,4831,1,0,0
+Home Delivery Letter - English,08031002402,031,002402,877,1687,1,0,0
+Home Delivery Letter - English,08031002403,031,002403,2099,3338,1,0,0
+Home Delivery Letter - English,08031002601,031,002601,2409,3087,1,0,0
+Home Delivery Letter - English,08031002602,031,002602,1804,2736,1,0,0
+Home Delivery Letter - English,08031002701,031,002701,3823,4600,1,0,0
+Home Delivery Letter - English,08031002702,031,002702,4117,5323,1,0,0
+Home Delivery Letter - English,08031002703,031,002703,3817,4785,1,0,0
+Home Delivery Letter - English,08031002801,031,002801,1721,2583,1,0,0
+Home Delivery Letter - English,08031002802,031,002802,2951,4213,1,0,0
+Home Delivery Letter - English,08031002803,031,002803,3293,4158,1,0,0
+Home Delivery Letter - English,08031002901,031,002901,1557,2602,1,0,0
+Home Delivery Letter - English,08031002902,031,002902,2034,3791,1,0,0
+Home Delivery Letter - English,08031003001,031,003001,2840,5393,1,0,0
+Home Delivery Letter - English,08031003002,031,003002,1380,2553,1,0,0
+Home Delivery Letter - English,08031003003,031,003003,1228,3138,1,0,0
+Home Delivery Letter - English,08031003004,031,003004,2741,6237,1,0,0
+Home Delivery Letter - English,08031003101,031,003101,812,1455,1,0,0
+Home Delivery Letter - English,08031003102,031,003102,2009,3389,1,0,0
+Home Delivery Letter - English,08031003201,031,003201,3706,4970,1,0,0
+Home Delivery Letter - English,08031003202,031,003202,2128,3001,1,0,0
+Home Delivery Letter - English,08031003203,031,003203,1364,3001,1,0,0
+Home Delivery Letter - English,08031003300,031,003300,1515,3099,1,0,0
+Home Delivery Letter - English,08031003401,031,003401,1439,2420,1,0,0
+Home Delivery Letter - English,08031003402,031,003402,2080,4485,1,0,0
+Home Delivery Letter - English,08031003603,031,003603,1506,3106,1,0,0
+Home Delivery Letter - English,08031003701,031,003701,1851,2907,1,0,0
+Home Delivery Letter - English,08031003702,031,003702,2895,4357,1,0,0
+Home Delivery Letter - English,08031003703,031,003703,1798,2779,1,0,0
+Home Delivery Letter - English,08031003800,031,003800,4163,5589,1,0,0
+Home Delivery Letter - English,08031003901,031,003901,2444,4172,1,0,0
+Home Delivery Letter - English,08031003902,031,003902,1862,3892,1,0,0
+Home Delivery Letter - English,08031004002,031,004002,1387,3133,1,0,0
+Home Delivery Letter - English,08031004003,031,004003,2011,4121,1,0,0
+Home Delivery Letter - English,08031004004,031,004004,868,1808,1,0,0
+Home Delivery Letter - English,08031004005,031,004005,1866,3002,1,0,0
+Home Delivery Letter - English,08031004006,031,004006,2159,4489,1,0,0
+Home Delivery Letter - English,08031004102,031,004102,1504,4173,1,0,0
+Home Delivery Letter - English,08031004103,031,004103,2173,5093,1,0,0
+Home Delivery Letter - English,08031004104,031,004104,1865,4289,1,0,0
+Home Delivery Letter - English,08031004106,031,004106,2565,10138,1,0,0
+Home Delivery Letter - English,08031004107,031,004107,1773,3810,1,0,0
+Home Delivery Letter - English,08031004201,031,004201,1996,4481,1,0,0
+Home Delivery Letter - English,08031004202,031,004202,1639,4109,1,0,0
+Home Delivery Letter - English,08031004301,031,004301,3049,4469,1,0,0
+Home Delivery Letter - English,08031004302,031,004302,1261,2467,1,0,0
+Home Delivery Letter - English,08031004303,031,004303,1651,4067,1,0,0
+Home Delivery Letter - English,08031004304,031,004304,2871,5456,1,0,0
+Home Delivery Letter - English,08031004306,031,004306,2245,4807,1,0,0
+Home Delivery Letter - English,08031004403,031,004403,2012,4213,1,0,0
+Home Delivery Letter - English,08031004404,031,004404,2606,5978,1,0,0
+Home Delivery Letter - English,08031004405,031,004405,3738,7316,1,0,0
+Home Delivery Letter - English,08031004601,031,004601,1896,5415,1,0,0
+Home Delivery Letter - English,08031004603,031,004603,1985,5327,1,0,0
+Home Delivery Letter - English,08031004700,031,004700,2254,6198,1,0,0
+Home Delivery Letter - English,08031004801,031,004801,1071,2858,1,0,0
+Home Delivery Letter - English,08031005001,031,005001,1099,2586,1,0,0
+Home Delivery Letter - English,08031005002,031,005002,3505,6612,1,0,0
+Home Delivery Letter - English,08031005102,031,005102,1593,3368,1,0,0
+Home Delivery Letter - English,08031005104,031,005104,1682,3111,1,0,0
+Home Delivery Letter - English,08031005200,031,005200,1399,3052,1,0,0
+Home Delivery Letter - English,08031005300,031,005300,633,1206,1,0,0
+Home Delivery Letter - English,08031005502,031,005502,605,1856,1,0,0
+Home Delivery Letter - English,08031005503,031,005503,1819,4644,1,0,0
+Home Delivery Letter - English,08031006701,031,006701,1818,2018,1,0,0
+Home Delivery Letter - English,08031006804,031,006804,1375,2184,1,0,0
+Home Delivery Letter - English,08031006809,031,006809,3763,6979,1,0,0
+Home Delivery Letter - English,08031006810,031,006810,2649,5207,1,0,0
+Home Delivery Letter - English,08031006811,031,006811,3373,5865,1,0,0
+Home Delivery Letter - English,08031006812,031,006812,1832,3108,1,0,0
+Home Delivery Letter - English,08031006813,031,006813,2517,3871,1,0,0
+Home Delivery Letter - English,08031006814,031,006814,2195,4703,1,0,0
+Home Delivery Letter - English,08031006901,031,006901,2978,5808,1,0,0
+Home Delivery Letter - English,08031007006,031,007006,2591,4464,1,0,0
+Home Delivery Letter - English,08031007013,031,007013,1874,3096,1,0,0
+Home Delivery Letter - English,08031007088,031,007088,2585,4168,1,0,0
+Home Delivery Letter - English,08031007089,031,007089,0,0,1,0,0
+Home Delivery Letter - English,08031008389,031,008389,2287,7516,1,0,0
+Home Delivery Letter - English,08031008390,031,008390,2614,7703,1,0,0
+Home Delivery Letter - English,08031008391,031,008391,2317,7020,1,0,0
+Home Delivery Letter - English,08031011902,031,011902,2886,6695,1,0,0
+Home Delivery Letter - English,08031011903,031,011903,933,2194,1,0,0
+Home Delivery Letter - English,08031012001,031,012001,1035,2032,1,0,0
+Home Delivery Letter - English,08031012010,031,012010,2516,4995,1,0,0
+Home Delivery Letter - English,08031012014,031,012014,2946,6137,1,0,0
+Home Delivery Letter - English,08031015300,031,015300,2550,3832,1,0,0
+Home Delivery Letter - English,08031015400,031,015400,1686,3934,1,0,0
+Home Delivery Letter - English,08031015500,031,015500,1917,3313,1,0,0
+Home Delivery Letter - English,08031015700,031,015700,2184,5535,1,0,0
+Home Delivery Letter - English,08031980000,031,980000,547,1165,1,0,0
+Home Delivery Letter - English,08035013901,035,013901,2646,6540,1,0,0
+Home Delivery Letter - English,08035013904,035,013904,1754,3742,1,0,0
+Home Delivery Letter - English,08035013905,035,013905,1427,3733,1,0,0
+Home Delivery Letter - English,08035013907,035,013907,1810,4596,1,0,0
+Home Delivery Letter - English,08035013908,035,013908,2375,6306,1,0,0
+Home Delivery Letter - English,08035013909,035,013909,2198,6169,1,0,0
+Home Delivery Letter - English,08035013910,035,013910,2075,6263,1,0,0
+Home Delivery Letter - English,08035013911,035,013911,2122,6586,1,0,0
+Home Delivery Letter - English,08035014001,035,014001,2643,6242,1,0,0
+Home Delivery Letter - English,08035014005,035,014005,1715,4382,1,0,0
+Home Delivery Letter - English,08035014006,035,014006,1712,5205,1,0,0
+Home Delivery Letter - English,08035014007,035,014007,1280,2410,1,0,0
+Home Delivery Letter - English,08035014008,035,014008,2150,6637,1,0,0
+Home Delivery Letter - English,08035014009,035,014009,1145,3587,1,0,0
+Home Delivery Letter - English,08035014010,035,014010,2102,5466,1,0,0
+Home Delivery Letter - English,08035014011,035,014011,944,1692,1,0,0
+Home Delivery Letter - English,08035014012,035,014012,2675,7440,1,0,0
+Home Delivery Letter - English,08035014013,035,014013,1194,3742,1,0,0
+Home Delivery Letter - English,08035014107,035,014107,1330,3718,1,0,0
+Home Delivery Letter - English,08035014108,035,014108,1804,4894,1,0,0
+Home Delivery Letter - English,08035014109,035,014109,1062,2259,1,0,0
+Home Delivery Letter - English,08035014110,035,014110,2308,5406,1,0,0
+Home Delivery Letter - English,08035014112,035,014112,1448,3834,1,0,0
+Home Delivery Letter - English,08035014113,035,014113,994,2930,1,0,0
+Home Delivery Letter - English,08035014114,035,014114,1367,3517,1,0,0
+Home Delivery Letter - English,08035014115,035,014115,1676,4249,1,0,0
+Home Delivery Letter - English,08035014116,035,014116,2179,4440,1,0,0
+Home Delivery Letter - English,08035014122,035,014122,2563,6572,1,0,0
+Home Delivery Letter - English,08035014123,035,014123,1314,3087,1,0,0
+Home Delivery Letter - English,08035014124,035,014124,1744,5456,1,0,0
+Home Delivery Letter - English,08035014125,035,014125,1011,2579,1,0,0
+Home Delivery Letter - English,08035014126,035,014126,786,1283,1,0,0
+Home Delivery Letter - English,08035014127,035,014127,1776,5220,1,0,0
+Home Delivery Letter - English,08035014128,035,014128,1783,4611,1,0,0
+Home Delivery Letter - English,08035014129,035,014129,1228,3740,1,0,0
+Home Delivery Letter - English,08035014130,035,014130,2417,7591,1,0,0
+Home Delivery Letter - English,08035014131,035,014131,1812,3283,1,0,0
+Home Delivery Letter - English,08035014132,035,014132,1706,5726,1,0,0
+Home Delivery Letter - English,08035014133,035,014133,2147,6346,1,0,0
+Home Delivery Letter - English,08035014134,035,014134,1945,5897,1,0,0
+Home Delivery Letter - English,08035014135,035,014135,794,2412,1,0,0
+Home Delivery Letter - English,08035014136,035,014136,2974,8411,1,0,0
+Home Delivery Letter - English,08035014137,035,014137,2886,9410,1,0,0
+Home Delivery Letter - English,08035014138,035,014138,1702,2902,1,0,0
+Home Delivery Letter - English,08035014139,035,014139,1588,4052,1,0,0
+Home Delivery Letter - English,08035014140,035,014140,1774,5531,1,0,0
+Home Delivery Letter - English,08035014202,035,014202,678,1619,1,0,0
+Home Delivery Letter - English,08035014203,035,014203,2309,6272,1,0,0
+Home Delivery Letter - English,08035014204,035,014204,1136,3188,1,0,0
+Home Delivery Letter - English,08035014300,035,014300,493,706,1,0,0
+Home Delivery Letter - English,08035014403,035,014403,1991,5003,1,0,0
+Home Delivery Letter - English,08035014404,035,014404,1068,2301,1,0,0
+Home Delivery Letter - English,08035014405,035,014405,2464,7765,1,0,0
+Home Delivery Letter - English,08035014406,035,014406,2626,7382,1,0,0
+Home Delivery Letter - English,08035014503,035,014503,2202,5592,1,0,0
+Home Delivery Letter - English,08035014504,035,014504,1907,4647,1,0,0
+Home Delivery Letter - English,08035014505,035,014505,1917,4101,1,0,0
+Home Delivery Letter - English,08035014506,035,014506,1261,3435,1,0,0
+Home Delivery Letter - English,08035014602,035,014602,938,2254,1,0,0
+Home Delivery Letter - English,08035014603,035,014603,2261,6739,1,0,0
+Home Delivery Letter - English,08035014604,035,014604,1304,4022,1,0,0
+Home Delivery Letter - English,08037000100,037,000100,0,0,1,0,0
+Home Delivery Letter - English,08037000200,037,000200,250,603,1,0,0
+Home Delivery Letter - English,08037000301,037,000301,2217,5800,1,0,0
+Home Delivery Letter - English,08037000302,037,000302,747,1547,1,0,0
+Home Delivery Letter - English,08037000401,037,000401,607,1721,1,0,0
+Home Delivery Letter - English,08037000403,037,000403,67,153,1,0,0
+Home Delivery Letter - English,08037000600,037,000600,0,0,1,0,0
+Home Delivery Letter - English,08037000701,037,000701,1300,1257,1,0,0
+Home Delivery Letter - English,08037000702,037,000702,2702,1202,1,0,0
+Home Delivery Letter - English,08037000703,037,000703,2145,2609,1,0,0
+Home Delivery Letter - English,08039961204,039,961204,2363,6687,1,0,0
+Home Delivery Letter - English,08039961205,039,961205,726,1617,1,0,0
+Home Delivery Letter - English,08039961206,039,961206,1279,3412,1,0,0
+Home Delivery Letter - English,08039961207,039,961207,1328,3558,1,0,0
+Home Delivery Letter - English,08039961208,039,961208,990,2548,1,0,0
+Home Delivery Letter - English,08039961209,039,961209,908,2336,1,0,0
+Home Delivery Letter - English,08041000101,041,000101,3021,5902,1,0,0
+Home Delivery Letter - English,08041000102,041,000102,1342,3169,1,0,0
+Home Delivery Letter - English,08041000202,041,000202,1958,4548,1,0,0
+Home Delivery Letter - English,08041000203,041,000203,1810,3855,1,0,0
+Home Delivery Letter - English,08041000301,041,000301,1467,2997,1,0,0
+Home Delivery Letter - English,08041000302,041,000302,1966,3789,1,0,0
+Home Delivery Letter - English,08041000400,041,000400,1193,2285,1,0,0
+Home Delivery Letter - English,08041000500,041,000500,1061,1973,1,0,0
+Home Delivery Letter - English,08041000600,041,000600,1327,3013,1,0,0
+Home Delivery Letter - English,08041000700,041,000700,1531,3182,1,0,0
+Home Delivery Letter - English,08041000800,041,000800,1419,2613,1,0,0
+Home Delivery Letter - English,08041000900,041,000900,1223,2337,1,0,0
+Home Delivery Letter - English,08041001000,041,001000,1138,2303,1,0,0
+Home Delivery Letter - English,08041001101,041,001101,783,1262,1,0,0
+Home Delivery Letter - English,08041001104,041,001104,1570,3156,1,0,0
+Home Delivery Letter - English,08041001301,041,001301,1226,2276,1,0,0
+Home Delivery Letter - English,08041001302,041,001302,2588,5068,1,0,0
+Home Delivery Letter - English,08041001400,041,001400,1905,3458,1,0,0
+Home Delivery Letter - English,08041001500,041,001500,1154,2368,1,0,0
+Home Delivery Letter - English,08041001600,041,001600,1174,3712,1,0,0
+Home Delivery Letter - English,08041001700,041,001700,922,1564,1,0,0
+Home Delivery Letter - English,08041001800,041,001800,1080,1985,1,0,0
+Home Delivery Letter - English,08041001900,041,001900,2365,4326,1,0,0
+Home Delivery Letter - English,08041002000,041,002000,2912,6338,1,0,0
+Home Delivery Letter - English,08041002101,041,002101,2000,3672,1,0,0
+Home Delivery Letter - English,08041002200,041,002200,1519,2737,1,0,0
+Home Delivery Letter - English,08041002300,041,002300,972,1546,1,0,0
+Home Delivery Letter - English,08041002400,041,002400,2666,4589,1,0,0
+Home Delivery Letter - English,08041002501,041,002501,1482,3345,1,0,0
+Home Delivery Letter - English,08041002502,041,002502,2113,3804,1,0,0
+Home Delivery Letter - English,08041002700,041,002700,1601,2997,1,0,0
+Home Delivery Letter - English,08041002800,041,002800,2721,5595,1,0,0
+Home Delivery Letter - English,08041003000,041,003000,2598,4555,1,0,0
+Home Delivery Letter - English,08041003100,041,003100,2070,4423,1,0,0
+Home Delivery Letter - English,08041003303,041,003303,2557,5405,1,0,0
+Home Delivery Letter - English,08041003305,041,003305,3007,6603,1,0,0
+Home Delivery Letter - English,08041003306,041,003306,1181,3064,1,0,0
+Home Delivery Letter - English,08041003307,041,003307,1520,3468,1,0,0
+Home Delivery Letter - English,08041003308,041,003308,2865,5845,1,0,0
+Home Delivery Letter - English,08041003400,041,003400,1557,2901,1,0,0
+Home Delivery Letter - English,08041003701,041,003701,2057,5390,1,0,0
+Home Delivery Letter - English,08041003702,041,003702,2013,5273,1,0,0
+Home Delivery Letter - English,08041003705,041,003705,2337,5532,1,0,0
+Home Delivery Letter - English,08041003706,041,003706,1764,4359,1,0,0
+Home Delivery Letter - English,08041003707,041,003707,1639,4242,1,0,0
+Home Delivery Letter - English,08041003708,041,003708,1340,2914,1,0,0
+Home Delivery Letter - English,08041003709,041,003709,2774,5971,1,0,0
+Home Delivery Letter - English,08041003801,041,003801,643,2078,1,0,0
+Home Delivery Letter - English,08041003802,041,003802,0,0,1,0,0
+Home Delivery Letter - English,08041003902,041,003902,3117,9493,1,0,0
+Home Delivery Letter - English,08041003905,041,003905,1639,3548,1,0,0
+Home Delivery Letter - English,08041003906,041,003906,2529,5985,1,0,0
+Home Delivery Letter - English,08041003909,041,003909,2495,6174,1,0,0
+Home Delivery Letter - English,08041004008,041,004008,23,27,1,0,0
+Home Delivery Letter - English,08041004009,041,004009,696,1602,1,0,0
+Home Delivery Letter - English,08041004100,041,004100,1891,4691,1,0,0
+Home Delivery Letter - English,08041004200,041,004200,1511,3837,1,0,0
+Home Delivery Letter - English,08041004300,041,004300,2188,6302,1,0,0
+Home Delivery Letter - English,08041004403,041,004403,5,13,1,0,0
+Home Delivery Letter - English,08041004502,041,004502,1513,4366,1,0,0
+Home Delivery Letter - English,08041004503,041,004503,4072,12193,1,0,0
+Home Delivery Letter - English,08041004506,041,004506,1735,4780,1,0,0
+Home Delivery Letter - English,08041004507,041,004507,1094,3096,1,0,0
+Home Delivery Letter - English,08041004508,041,004508,2649,6507,1,0,0
+Home Delivery Letter - English,08041004510,041,004510,2549,7545,1,0,0
+Home Delivery Letter - English,08041004511,041,004511,2559,6897,1,0,0
+Home Delivery Letter - English,08041004601,041,004601,1605,4149,1,0,0
+Home Delivery Letter - English,08041004602,041,004602,1838,4289,1,0,0
+Home Delivery Letter - English,08041004603,041,004603,1493,4079,1,0,0
+Home Delivery Letter - English,08041004701,041,004701,1865,4680,1,0,0
+Home Delivery Letter - English,08041004702,041,004702,845,2162,1,0,0
+Home Delivery Letter - English,08041004703,041,004703,2438,6182,1,0,0
+Home Delivery Letter - English,08041004705,041,004705,2947,7706,1,0,0
+Home Delivery Letter - English,08041004706,041,004706,1715,4994,1,0,0
+Home Delivery Letter - English,08041004800,041,004800,1931,4693,1,0,0
+Home Delivery Letter - English,08041004901,041,004901,1526,3601,1,0,0
+Home Delivery Letter - English,08041004902,041,004902,2033,5367,1,0,0
+Home Delivery Letter - English,08041005000,041,005000,2107,5150,1,0,0
+Home Delivery Letter - English,08041005104,041,005104,2285,6164,1,0,0
+Home Delivery Letter - English,08041005105,041,005105,2391,7154,1,0,0
+Home Delivery Letter - English,08041005106,041,005106,3600,9712,1,0,0
+Home Delivery Letter - English,08041005107,041,005107,2424,6963,1,0,0
+Home Delivery Letter - English,08041005108,041,005108,2892,8377,1,0,0
+Home Delivery Letter - English,08041005109,041,005109,2877,7285,1,0,0
+Home Delivery Letter - English,08041005110,041,005110,1598,4070,1,0,0
+Home Delivery Letter - English,08041005111,041,005111,2405,6571,1,0,0
+Home Delivery Letter - English,08041005202,041,005202,1442,2466,1,0,0
+Home Delivery Letter - English,08041005300,041,005300,1796,4478,1,0,0
+Home Delivery Letter - English,08041005400,041,005400,2233,5615,1,0,0
+Home Delivery Letter - English,08041005501,041,005501,1774,4366,1,0,0
+Home Delivery Letter - English,08041005502,041,005502,1863,4369,1,0,0
+Home Delivery Letter - English,08041005601,041,005601,2049,4881,1,0,0
+Home Delivery Letter - English,08041005602,041,005602,1308,3076,1,0,0
+Home Delivery Letter - English,08041005700,041,005700,2516,5636,1,0,0
+Home Delivery Letter - English,08041005800,041,005800,1236,2933,1,0,0
+Home Delivery Letter - English,08041005900,041,005900,2819,6573,1,0,0
+Home Delivery Letter - English,08041006000,041,006000,2726,6188,1,0,0
+Home Delivery Letter - English,08041006200,041,006200,2028,4565,1,0,0
+Home Delivery Letter - English,08041006301,041,006301,1642,4664,1,0,0
+Home Delivery Letter - English,08041006302,041,006302,2390,5106,1,0,0
+Home Delivery Letter - English,08041006400,041,006400,2610,6932,1,0,0
+Home Delivery Letter - English,08041006501,041,006501,1147,3299,1,0,0
+Home Delivery Letter - English,08041006502,041,006502,2266,6349,1,0,0
+Home Delivery Letter - English,08041006600,041,006600,1238,2539,1,0,0
+Home Delivery Letter - English,08041006700,041,006700,3142,5728,1,0,0
+Home Delivery Letter - English,08041006801,041,006801,1773,4032,1,0,0
+Home Delivery Letter - English,08041006802,041,006802,1403,3849,1,0,0
+Home Delivery Letter - English,08041006901,041,006901,1751,5494,1,0,0
+Home Delivery Letter - English,08041006902,041,006902,1790,4910,1,0,0
+Home Delivery Letter - English,08041007000,041,007000,1553,4455,1,0,0
+Home Delivery Letter - English,08041007101,041,007101,1618,4565,1,0,0
+Home Delivery Letter - English,08041007102,041,007102,2911,9449,1,0,0
+Home Delivery Letter - English,08041007201,041,007201,2548,6559,1,0,0
+Home Delivery Letter - English,08041007202,041,007202,3275,9317,1,0,0
+Home Delivery Letter - English,08041007300,041,007300,3205,9131,1,0,0
+Home Delivery Letter - English,08041007400,041,007400,2890,8095,1,0,0
+Home Delivery Letter - English,08041007500,041,007500,2840,7717,1,0,0
+Home Delivery Letter - English,08041007601,041,007601,2187,6301,1,0,0
+Home Delivery Letter - English,08041007602,041,007602,1344,3484,1,0,0
+Home Delivery Letter - English,08041007700,041,007700,2707,5413,1,0,0
+Home Delivery Letter - English,08041007800,041,007800,1697,4470,1,0,0
+Home Delivery Letter - English,08041007900,041,007900,1393,2216,1,0,0
+Home Delivery Letter - English,08041008000,041,008000,2025,3995,1,0,0
+Home Delivery Letter - English,08043978100,043,978100,0,0,1,0,0
+Home Delivery Letter - English,08043978200,043,978200,1842,3926,1,0,0
+Home Delivery Letter - English,08043978300,043,978300,0,0,1,0,0
+Home Delivery Letter - English,08043978400,043,978400,962,2150,1,0,0
+Home Delivery Letter - English,08043978600,043,978600,1692,3101,1,0,0
+Home Delivery Letter - English,08043978800,043,978800,1281,2490,1,0,0
+Home Delivery Letter - English,08043979000,043,979000,2068,2718,1,0,0
+Home Delivery Letter - English,08043979100,043,979100,0,0,1,0,0
+Home Delivery Letter - English,08043979200,043,979200,814,1754,1,0,0
+Home Delivery Letter - English,08043979400,043,979400,820,1890,1,0,0
+Home Delivery Letter - English,08045951600,045,951600,1544,3903,1,0,0
+Home Delivery Letter - English,08045951701,045,951701,1665,4136,1,0,0
+Home Delivery Letter - English,08045951702,045,951702,1650,3526,1,0,0
+Home Delivery Letter - English,08045951802,045,951802,1470,3303,1,0,0
+Home Delivery Letter - English,08045951803,045,951803,2199,5910,1,0,0
+Home Delivery Letter - English,08045951804,045,951804,1874,4118,1,0,0
+Home Delivery Letter - English,08045951901,045,951901,1833,4741,1,0,0
+Home Delivery Letter - English,08045951902,045,951902,2661,6929,1,0,0
+Home Delivery Letter - English,08045952001,045,952001,1945,5136,1,0,0
+Home Delivery Letter - English,08045952002,045,952002,3061,8035,1,0,0
+Home Delivery Letter - English,08045952100,045,952100,2947,5724,1,0,0
+Home Delivery Letter - English,08047013800,047,013800,2321,3979,1,0,0
+Home Delivery Letter - English,08049000100,049,000100,204,281,1,0,0
+Home Delivery Letter - English,08049000201,049,000201,422,180,1,0,0
+Home Delivery Letter - English,08049000202,049,000202,620,337,1,0,0
+Home Delivery Letter - English,08051963600,051,963600,2214,3468,1,0,0
+Home Delivery Letter - English,08051963700,051,963700,2784,6124,1,0,0
+Home Delivery Letter - English,08051963800,051,963800,1040,1600,1,0,0
+Home Delivery Letter - English,08051963900,051,963900,914,748,1,0,0
+Home Delivery Letter - English,08053973100,053,973100,56,0,1,0,0
+Home Delivery Letter - English,08055960900,055,960900,1257,1451,1,0,0
+Home Delivery Letter - English,08057955600,057,955600,0,0,1,0,0
+Home Delivery Letter - English,08059009806,059,009806,1459,3541,1,0,0
+Home Delivery Letter - English,08059009807,059,009807,808,1611,1,0,0
+Home Delivery Letter - English,08059009808,059,009808,2694,5709,1,0,0
+Home Delivery Letter - English,08059009815,059,009815,1887,4956,1,0,0
+Home Delivery Letter - English,08059009823,059,009823,1709,4659,1,0,0
+Home Delivery Letter - English,08059009824,059,009824,1851,5028,1,0,0
+Home Delivery Letter - English,08059009827,059,009827,2466,6180,1,0,0
+Home Delivery Letter - English,08059009828,059,009828,2218,5344,1,0,0
+Home Delivery Letter - English,08059009829,059,009829,668,1857,1,0,0
+Home Delivery Letter - English,08059009830,059,009830,1016,2046,1,0,0
+Home Delivery Letter - English,08059009831,059,009831,1316,2190,1,0,0
+Home Delivery Letter - English,08059009832,059,009832,976,2501,1,0,0
+Home Delivery Letter - English,08059009833,059,009833,2428,5555,1,0,0
+Home Delivery Letter - English,08059009834,059,009834,2062,4307,1,0,0
+Home Delivery Letter - English,08059009835,059,009835,1432,3575,1,0,0
+Home Delivery Letter - English,08059009836,059,009836,1394,3796,1,0,0
+Home Delivery Letter - English,08059009837,059,009837,958,2750,1,0,0
+Home Delivery Letter - English,08059009838,059,009838,1622,4360,1,0,0
+Home Delivery Letter - English,08059009839,059,009839,839,2484,1,0,0
+Home Delivery Letter - English,08059009840,059,009840,1564,3685,1,0,0
+Home Delivery Letter - English,08059009841,059,009841,858,2201,1,0,0
+Home Delivery Letter - English,08059009842,059,009842,1086,2942,1,0,0
+Home Delivery Letter - English,08059009843,059,009843,3081,7375,1,0,0
+Home Delivery Letter - English,08059009845,059,009845,1735,3823,1,0,0
+Home Delivery Letter - English,08059009846,059,009846,1968,4764,1,0,0
+Home Delivery Letter - English,08059009847,059,009847,1374,3269,1,0,0
+Home Delivery Letter - English,08059009848,059,009848,1147,2519,1,0,0
+Home Delivery Letter - English,08059009849,059,009849,2380,5683,1,0,0
+Home Delivery Letter - English,08059009850,059,009850,1129,2553,1,0,0
+Home Delivery Letter - English,08059009851,059,009851,1555,3908,1,0,0
+Home Delivery Letter - English,08059009852,059,009852,1439,3528,1,0,0
+Home Delivery Letter - English,08059009900,059,009900,1166,2451,1,0,0
+Home Delivery Letter - English,08059010000,059,010000,1343,4535,1,0,0
+Home Delivery Letter - English,08059010100,059,010100,2157,4360,1,0,0
+Home Delivery Letter - English,08059010205,059,010205,993,2326,1,0,0
+Home Delivery Letter - English,08059010206,059,010206,1667,3942,1,0,0
+Home Delivery Letter - English,08059010208,059,010208,2173,5707,1,0,0
+Home Delivery Letter - English,08059010209,059,010209,2566,6152,1,0,0
+Home Delivery Letter - English,08059010210,059,010210,1445,3460,1,0,0
+Home Delivery Letter - English,08059010212,059,010212,1814,4481,1,0,0
+Home Delivery Letter - English,08059010213,059,010213,1886,4786,1,0,0
+Home Delivery Letter - English,08059010303,059,010303,2244,5333,1,0,0
+Home Delivery Letter - English,08059010304,059,010304,1161,2819,1,0,0
+Home Delivery Letter - English,08059010305,059,010305,1667,3641,1,0,0
+Home Delivery Letter - English,08059010306,059,010306,1118,2750,1,0,0
+Home Delivery Letter - English,08059010307,059,010307,2092,4579,1,0,0
+Home Delivery Letter - English,08059010308,059,010308,2391,5426,1,0,0
+Home Delivery Letter - English,08059010402,059,010402,2633,5080,1,0,0
+Home Delivery Letter - English,08059010403,059,010403,2633,5279,1,0,0
+Home Delivery Letter - English,08059010405,059,010405,1514,2514,1,0,0
+Home Delivery Letter - English,08059010502,059,010502,2378,5100,1,0,0
+Home Delivery Letter - English,08059010503,059,010503,2095,4462,1,0,0
+Home Delivery Letter - English,08059010504,059,010504,1343,2835,1,0,0
+Home Delivery Letter - English,08059010603,059,010603,1616,3137,1,0,0
+Home Delivery Letter - English,08059010604,059,010604,1115,2310,1,0,0
+Home Delivery Letter - English,08059010701,059,010701,2095,3905,1,0,0
+Home Delivery Letter - English,08059010702,059,010702,2441,5060,1,0,0
+Home Delivery Letter - English,08059010801,059,010801,1133,2497,1,0,0
+Home Delivery Letter - English,08059010901,059,010901,2106,4793,1,0,0
+Home Delivery Letter - English,08059010902,059,010902,1206,2310,1,0,0
+Home Delivery Letter - English,08059011000,059,011000,2448,5500,1,0,0
+Home Delivery Letter - English,08059011100,059,011100,2913,6135,1,0,0
+Home Delivery Letter - English,08059011202,059,011202,1783,4567,1,0,0
+Home Delivery Letter - English,08059011300,059,011300,1517,3115,1,0,0
+Home Delivery Letter - English,08059011401,059,011401,1238,2822,1,0,0
+Home Delivery Letter - English,08059011402,059,011402,1919,3839,1,0,0
+Home Delivery Letter - English,08059011550,059,011550,2981,6198,1,0,0
+Home Delivery Letter - English,08059011601,059,011601,1449,4021,1,0,0
+Home Delivery Letter - English,08059011701,059,011701,2040,4376,1,0,0
+Home Delivery Letter - English,08059011702,059,011702,2272,5382,1,0,0
+Home Delivery Letter - English,08059011708,059,011708,1662,4074,1,0,0
+Home Delivery Letter - English,08059011709,059,011709,1556,3362,1,0,0
+Home Delivery Letter - English,08059011710,059,011710,1897,3937,1,0,0
+Home Delivery Letter - English,08059011711,059,011711,1873,4017,1,0,0
+Home Delivery Letter - English,08059011712,059,011712,1799,4061,1,0,0
+Home Delivery Letter - English,08059011720,059,011720,2078,5177,1,0,0
+Home Delivery Letter - English,08059011721,059,011721,1249,2686,1,0,0
+Home Delivery Letter - English,08059011723,059,011723,1691,3110,1,0,0
+Home Delivery Letter - English,08059011724,059,011724,1547,4340,1,0,0
+Home Delivery Letter - English,08059011725,059,011725,700,1776,1,0,0
+Home Delivery Letter - English,08059011726,059,011726,2204,5754,1,0,0
+Home Delivery Letter - English,08059011727,059,011727,1541,3641,1,0,0
+Home Delivery Letter - English,08059011728,059,011728,1123,2566,1,0,0
+Home Delivery Letter - English,08059011729,059,011729,2087,3871,1,0,0
+Home Delivery Letter - English,08059011730,059,011730,1710,3618,1,0,0
+Home Delivery Letter - English,08059011731,059,011731,2124,4227,1,0,0
+Home Delivery Letter - English,08059011732,059,011732,2637,4331,1,0,0
+Home Delivery Letter - English,08059011733,059,011733,736,1530,1,0,0
+Home Delivery Letter - English,08059011803,059,011803,1999,5276,1,0,0
+Home Delivery Letter - English,08059011804,059,011804,1627,3915,1,0,0
+Home Delivery Letter - English,08059011805,059,011805,2649,4628,1,0,0
+Home Delivery Letter - English,08059011806,059,011806,2233,4829,1,0,0
+Home Delivery Letter - English,08059011904,059,011904,1091,2030,1,0,0
+Home Delivery Letter - English,08059011951,059,011951,1422,3103,1,0,0
+Home Delivery Letter - English,08059012022,059,012022,2280,5518,1,0,0
+Home Delivery Letter - English,08059012023,059,012023,1296,3386,1,0,0
+Home Delivery Letter - English,08059012024,059,012024,1923,4988,1,0,0
+Home Delivery Letter - English,08059012026,059,012026,1241,2478,1,0,0
+Home Delivery Letter - English,08059012027,059,012027,695,1632,1,0,0
+Home Delivery Letter - English,08059012030,059,012030,1672,3719,1,0,0
+Home Delivery Letter - English,08059012031,059,012031,1631,3739,1,0,0
+Home Delivery Letter - English,08059012032,059,012032,1069,2574,1,0,0
+Home Delivery Letter - English,08059012033,059,012033,1272,2860,1,0,0
+Home Delivery Letter - English,08059012034,059,012034,1360,3459,1,0,0
+Home Delivery Letter - English,08059012035,059,012035,1825,5294,1,0,0
+Home Delivery Letter - English,08059012036,059,012036,1420,3706,1,0,0
+Home Delivery Letter - English,08059012037,059,012037,1558,3331,1,0,0
+Home Delivery Letter - English,08059012038,059,012038,1204,3160,1,0,0
+Home Delivery Letter - English,08059012039,059,012039,1987,5312,1,0,0
+Home Delivery Letter - English,08059012041,059,012041,2068,5253,1,0,0
+Home Delivery Letter - English,08059012042,059,012042,1382,3851,1,0,0
+Home Delivery Letter - English,08059012043,059,012043,1967,5124,1,0,0
+Home Delivery Letter - English,08059012044,059,012044,1510,3730,1,0,0
+Home Delivery Letter - English,08059012045,059,012045,2223,5909,1,0,0
+Home Delivery Letter - English,08059012046,059,012046,844,2207,1,0,0
+Home Delivery Letter - English,08059012047,059,012047,1677,4053,1,0,0
+Home Delivery Letter - English,08059012048,059,012048,1086,2418,1,0,0
+Home Delivery Letter - English,08059012049,059,012049,1369,3752,1,0,0
+Home Delivery Letter - English,08059012050,059,012050,1791,3942,1,0,0
+Home Delivery Letter - English,08059012051,059,012051,1289,3425,1,0,0
+Home Delivery Letter - English,08059012052,059,012052,2088,5326,1,0,0
+Home Delivery Letter - English,08059012053,059,012053,1434,3794,1,0,0
+Home Delivery Letter - English,08059012054,059,012054,1659,4150,1,0,0
+Home Delivery Letter - English,08059012055,059,012055,1573,3706,1,0,0
+Home Delivery Letter - English,08059012057,059,012057,2618,5705,1,0,0
+Home Delivery Letter - English,08059012058,059,012058,1749,3389,1,0,0
+Home Delivery Letter - English,08059012059,059,012059,1180,3245,1,0,0
+Home Delivery Letter - English,08059012060,059,012060,1394,3336,1,0,0
+Home Delivery Letter - English,08059015800,059,015800,1850,3523,1,0,0
+Home Delivery Letter - English,08059015900,059,015900,1460,3411,1,0,0
+Home Delivery Letter - English,08059060300,059,060300,1612,4687,1,0,0
+Home Delivery Letter - English,08059060400,059,060400,1227,3482,1,0,0
+Home Delivery Letter - English,08059060500,059,060500,1671,4040,1,0,0
+Home Delivery Letter - English,08063962100,063,962100,2003,5352,1,0,0
+Home Delivery Letter - English,08063962300,063,962300,358,598,1,0,0
+Home Delivery Letter - English,08065961700,065,961700,2782,4837,1,0,0
+Home Delivery Letter - English,08067970600,067,970600,4429,8426,1,0,0
+Home Delivery Letter - English,08067970701,067,970701,2141,4515,1,0,0
+Home Delivery Letter - English,08067970703,067,970703,2395,5084,1,0,0
+Home Delivery Letter - English,08067970704,067,970704,3217,3730,1,0,0
+Home Delivery Letter - English,08067970800,067,970800,2735,6703,1,0,0
+Home Delivery Letter - English,08067970900,067,970900,1828,3851,1,0,0
+Home Delivery Letter - English,08067971000,067,971000,1430,3132,1,0,0
+Home Delivery Letter - English,08067971100,067,971100,2346,4314,1,0,0
+Home Delivery Letter - English,08069000100,069,000100,1550,2487,1,0,0
+Home Delivery Letter - English,08069000201,069,000201,1160,2461,1,0,0
+Home Delivery Letter - English,08069000202,069,000202,1267,2594,1,0,0
+Home Delivery Letter - English,08069000300,069,000300,1233,2851,1,0,0
+Home Delivery Letter - English,08069000401,069,000401,887,1850,1,0,0
+Home Delivery Letter - English,08069000402,069,000402,1255,2578,1,0,0
+Home Delivery Letter - English,08069000503,069,000503,2222,5082,1,0,0
+Home Delivery Letter - English,08069000504,069,000504,1278,2820,1,0,0
+Home Delivery Letter - English,08069000505,069,000505,1396,3229,1,0,0
+Home Delivery Letter - English,08069000506,069,000506,1196,2818,1,0,0
+Home Delivery Letter - English,08069000600,069,000600,747,6073,1,0,0
+Home Delivery Letter - English,08069000700,069,000700,1349,2733,1,0,0
+Home Delivery Letter - English,08069000801,069,000801,750,1560,1,0,0
+Home Delivery Letter - English,08069000802,069,000802,546,1214,1,0,0
+Home Delivery Letter - English,08069000901,069,000901,2434,4868,1,0,0
+Home Delivery Letter - English,08069000902,069,000902,1644,3358,1,0,0
+Home Delivery Letter - English,08069001003,069,001003,2659,5080,1,0,0
+Home Delivery Letter - English,08069001004,069,001004,1423,3351,1,0,0
+Home Delivery Letter - English,08069001007,069,001007,1736,3002,1,0,0
+Home Delivery Letter - English,08069001008,069,001008,890,1921,1,0,0
+Home Delivery Letter - English,08069001009,069,001009,2697,6149,1,0,0
+Home Delivery Letter - English,08069001010,069,001010,1228,2753,1,0,0
+Home Delivery Letter - English,08069001104,069,001104,2450,5671,1,0,0
+Home Delivery Letter - English,08069001106,069,001106,2272,5246,1,0,0
+Home Delivery Letter - English,08069001107,069,001107,2273,5329,1,0,0
+Home Delivery Letter - English,08069001109,069,001109,2004,4961,1,0,0
+Home Delivery Letter - English,08069001110,069,001110,2368,4884,1,0,0
+Home Delivery Letter - English,08069001111,069,001111,1059,2056,1,0,0
+Home Delivery Letter - English,08069001112,069,001112,1702,4646,1,0,0
+Home Delivery Letter - English,08069001113,069,001113,1301,3636,1,0,0
+Home Delivery Letter - English,08069001114,069,001114,889,2311,1,0,0
+Home Delivery Letter - English,08069001301,069,001301,1242,2863,1,0,0
+Home Delivery Letter - English,08069001304,069,001304,0,0,1,0,0
+Home Delivery Letter - English,08069001305,069,001305,829,2189,1,0,0
+Home Delivery Letter - English,08069001306,069,001306,686,2003,1,0,0
+Home Delivery Letter - English,08069001307,069,001307,1730,4161,1,0,0
+Home Delivery Letter - English,08069001308,069,001308,1890,4501,1,0,0
+Home Delivery Letter - English,08069001601,069,001601,755,1681,1,0,0
+Home Delivery Letter - English,08069001602,069,001602,1908,4573,1,0,0
+Home Delivery Letter - English,08069001603,069,001603,1914,5222,1,0,0
+Home Delivery Letter - English,08069001605,069,001605,962,3189,1,0,0
+Home Delivery Letter - English,08069001606,069,001606,1194,2935,1,0,0
+Home Delivery Letter - English,08069001607,069,001607,1456,3726,1,0,0
+Home Delivery Letter - English,08069001608,069,001608,1701,5116,1,0,0
+Home Delivery Letter - English,08069001704,069,001704,3465,7876,1,0,0
+Home Delivery Letter - English,08069001706,069,001706,2708,6647,1,0,0
+Home Delivery Letter - English,08069001707,069,001707,2079,5200,1,0,0
+Home Delivery Letter - English,08069001708,069,001708,1253,3236,1,0,0
+Home Delivery Letter - English,08069001709,069,001709,4836,11580,1,0,0
+Home Delivery Letter - English,08069001804,069,001804,1605,3711,1,0,0
+Home Delivery Letter - English,08069001806,069,001806,2975,7133,1,0,0
+Home Delivery Letter - English,08069001807,069,001807,2242,5566,1,0,0
+Home Delivery Letter - English,08069001808,069,001808,1897,4596,1,0,0
+Home Delivery Letter - English,08069001809,069,001809,3958,10495,1,0,0
+Home Delivery Letter - English,08069001901,069,001901,1760,3846,1,0,0
+Home Delivery Letter - English,08069001902,069,001902,2083,4466,1,0,0
+Home Delivery Letter - English,08069001903,069,001903,1888,2845,1,0,0
+Home Delivery Letter - English,08069002005,069,002005,2066,5130,1,0,0
+Home Delivery Letter - English,08069002007,069,002007,1691,3019,1,0,0
+Home Delivery Letter - English,08069002008,069,002008,1505,3498,1,0,0
+Home Delivery Letter - English,08069002010,069,002010,934,2466,1,0,0
+Home Delivery Letter - English,08069002011,069,002011,2019,5231,1,0,0
+Home Delivery Letter - English,08069002300,069,002300,1535,3340,1,0,0
+Home Delivery Letter - English,08069002401,069,002401,597,599,1,0,0
+Home Delivery Letter - English,08069002402,069,002402,1993,2801,1,0,0
+Home Delivery Letter - English,08069002501,069,002501,2885,7401,1,0,0
+Home Delivery Letter - English,08069002502,069,002502,2278,6247,1,0,0
+Home Delivery Letter - English,08069002503,069,002503,1108,2600,1,0,0
+Home Delivery Letter - English,08069002600,069,002600,2427,6317,1,0,0
+Home Delivery Letter - English,08069002700,069,002700,2144,5192,1,0,0
+Home Delivery Letter - English,08069002801,069,002801,2476,3060,1,0,0
+Home Delivery Letter - English,08069002802,069,002802,4055,5633,1,0,0
+Home Delivery Letter - English,08071000200,071,000200,1105,2371,1,0,0
+Home Delivery Letter - English,08073961700,073,961700,428,1749,1,0,0
+Home Delivery Letter - English,08073961800,073,961800,0,0,1,0,0
+Home Delivery Letter - English,08075965900,075,965900,0,0,1,0,0
+Home Delivery Letter - English,08075966100,075,966100,3219,7348,1,0,0
+Home Delivery Letter - English,08075966200,075,966200,1465,3078,1,0,0
+Home Delivery Letter - English,08075966400,075,966400,609,4584,1,0,0
+Home Delivery Letter - English,08077000200,077,000200,1226,2110,1,0,0
+Home Delivery Letter - English,08077000300,077,000300,817,1362,1,0,0
+Home Delivery Letter - English,08077000400,077,000400,1660,3513,1,0,0
+Home Delivery Letter - English,08077000500,077,000500,827,2891,1,0,0
+Home Delivery Letter - English,08077000601,077,000601,2116,4246,1,0,0
+Home Delivery Letter - English,08077000602,077,000602,2268,4781,1,0,0
+Home Delivery Letter - English,08077000700,077,000700,1910,4411,1,0,0
+Home Delivery Letter - English,08077000800,077,000800,2951,8230,1,0,0
+Home Delivery Letter - English,08077000900,077,000900,1212,2971,1,0,0
+Home Delivery Letter - English,08077001002,077,001002,3158,6459,1,0,0
+Home Delivery Letter - English,08077001101,077,001101,3442,8132,1,0,0
+Home Delivery Letter - English,08077001102,077,001102,1916,4709,1,0,0
+Home Delivery Letter - English,08077001200,077,001200,892,2098,1,0,0
+Home Delivery Letter - English,08077001301,077,001301,3717,8825,1,0,0
+Home Delivery Letter - English,08077001302,077,001302,1923,4909,1,0,0
+Home Delivery Letter - English,08077001402,077,001402,2438,5998,1,0,0
+Home Delivery Letter - English,08077001403,077,001403,1526,3582,1,0,0
+Home Delivery Letter - English,08077001404,077,001404,2137,4708,1,0,0
+Home Delivery Letter - English,08077001501,077,001501,4946,12544,1,0,0
+Home Delivery Letter - English,08077001502,077,001502,2824,7149,1,0,0
+Home Delivery Letter - English,08077001600,077,001600,1507,3631,1,0,0
+Home Delivery Letter - English,08077001702,077,001702,1756,3769,1,0,0
+Home Delivery Letter - English,08077001703,077,001703,1730,4271,1,0,0
+Home Delivery Letter - English,08077001705,077,001705,2170,5500,1,0,0
+Home Delivery Letter - English,08077001706,077,001706,2295,6008,1,0,0
+Home Delivery Letter - English,08077001707,077,001707,2181,5559,1,0,0
+Home Delivery Letter - English,08077001800,077,001800,773,1643,1,0,0
+Home Delivery Letter - English,08077001900,077,001900,2203,4943,1,0,0
+Home Delivery Letter - English,08079973600,079,973600,349,134,1,0,0
+Home Delivery Letter - English,08081000300,081,000300,1313,3138,1,0,0
+Home Delivery Letter - English,08081000400,081,000400,1863,4523,1,0,0
+Home Delivery Letter - English,08081000500,081,000500,2005,4526,1,0,0
+Home Delivery Letter - English,08081000600,081,000600,4,4,1,0,0
+Home Delivery Letter - English,08083941100,083,941100,1,1,1,0,0
+Home Delivery Letter - English,08083969000,083,969000,1288,2353,1,0,0
+Home Delivery Letter - English,08083969100,083,969100,1527,2990,1,0,0
+Home Delivery Letter - English,08083969200,083,969200,1186,2491,1,0,0
+Home Delivery Letter - English,08083969300,083,969300,2620,5742,1,0,0
+Home Delivery Letter - English,08083969400,083,969400,1767,3885,1,0,0
+Home Delivery Letter - English,08083969600,083,969600,2059,4747,1,0,0
+Home Delivery Letter - English,08085966100,085,966100,0,0,1,0,0
+Home Delivery Letter - English,08085966202,085,966202,0,0,1,0,0
+Home Delivery Letter - English,08085966300,085,966300,2847,6205,1,0,0
+Home Delivery Letter - English,08085966501,085,966501,1215,2796,1,0,0
+Home Delivery Letter - English,08085966502,085,966502,1640,3932,1,0,0
+Home Delivery Letter - English,08085966503,085,966503,1406,3309,1,0,0
+Home Delivery Letter - English,08085966601,085,966601,1786,4392,1,0,0
+Home Delivery Letter - English,08085966602,085,966602,1960,4371,1,0,0
+Home Delivery Letter - English,08087000100,087,000100,1136,2326,1,0,0
+Home Delivery Letter - English,08087000200,087,000200,969,2363,1,0,0
+Home Delivery Letter - English,08087000400,087,000400,1884,4420,1,0,0
+Home Delivery Letter - English,08087000500,087,000500,919,2425,1,0,0
+Home Delivery Letter - English,08087000600,087,000600,4,4,1,0,0
+Home Delivery Letter - English,08087000700,087,000700,2484,5925,1,0,0
+Home Delivery Letter - English,08089968200,089,968200,0,0,1,0,0
+Home Delivery Letter - English,08089968300,089,968300,1577,3204,1,0,0
+Home Delivery Letter - English,08089968400,089,968400,0,0,1,0,0
+Home Delivery Letter - English,08089968500,089,968500,719,1627,1,0,0
+Home Delivery Letter - English,08089968600,089,968600,2377,5018,1,0,0
+Home Delivery Letter - English,08091967600,091,967600,1683,2636,1,0,0
+Home Delivery Letter - English,08093000100,093,000100,3032,5362,1,0,0
+Home Delivery Letter - English,08093000200,093,000200,1570,3399,1,0,0
+Home Delivery Letter - English,08093000300,093,000300,0,0,1,0,0
+Home Delivery Letter - English,08093000400,093,000400,314,156,1,0,0
+Home Delivery Letter - English,08093000500,093,000500,1404,1345,1,0,0
+Home Delivery Letter - English,08095967600,095,967600,1289,2888,1,0,0
+Home Delivery Letter - English,08097000100,097,000100,1785,3453,1,0,0
+Home Delivery Letter - English,08097000401,097,000401,3248,4222,1,0,0
+Home Delivery Letter - English,08097000402,097,000402,2408,2388,1,0,0
+Home Delivery Letter - English,08097000500,097,000500,1062,1625,1,0,0
+Home Delivery Letter - English,08099000300,099,000300,2346,4975,1,0,0
+Home Delivery Letter - English,08099000600,099,000600,275,597,1,0,0
+Home Delivery Letter - English,08101000100,101,000100,1284,2692,1,0,0
+Home Delivery Letter - English,08101000400,101,000400,1268,2602,1,0,0
+Home Delivery Letter - English,08101000902,101,000902,2464,5802,1,0,0
+Home Delivery Letter - English,08101000903,101,000903,34,777,1,0,0
+Home Delivery Letter - English,08101000905,101,000905,1283,2202,1,0,0
+Home Delivery Letter - English,08101001500,101,001500,1082,2025,1,0,0
+Home Delivery Letter - English,08101001600,101,001600,810,1710,1,0,0
+Home Delivery Letter - English,08101001800,101,001800,1076,2176,1,0,0
+Home Delivery Letter - English,08101001900,101,001900,791,1445,1,0,0
+Home Delivery Letter - English,08101002700,101,002700,2377,5434,1,0,0
+Home Delivery Letter - English,08101002801,101,002801,33,73,1,0,0
+Home Delivery Letter - English,08101002804,101,002804,949,1797,1,0,0
+Home Delivery Letter - English,08101002806,101,002806,1669,3440,1,0,0
+Home Delivery Letter - English,08101002807,101,002807,1818,4430,1,0,0
+Home Delivery Letter - English,08101002808,101,002808,1141,2989,1,0,0
+Home Delivery Letter - English,08101002903,101,002903,2649,5894,1,0,0
+Home Delivery Letter - English,08101002906,101,002906,1494,3905,1,0,0
+Home Delivery Letter - English,08101002911,101,002911,945,2611,1,0,0
+Home Delivery Letter - English,08101002912,101,002912,601,1609,1,0,0
+Home Delivery Letter - English,08101002913,101,002913,1235,3134,1,0,0
+Home Delivery Letter - English,08101002914,101,002914,1190,3210,1,0,0
+Home Delivery Letter - English,08101002915,101,002915,987,2525,1,0,0
+Home Delivery Letter - English,08101002916,101,002916,1283,3004,1,0,0
+Home Delivery Letter - English,08101002917,101,002917,1091,2935,1,0,0
+Home Delivery Letter - English,08101002918,101,002918,2422,6646,1,0,0
+Home Delivery Letter - English,08101003001,101,003001,555,1244,1,0,0
+Home Delivery Letter - English,08101003004,101,003004,959,2721,1,0,0
+Home Delivery Letter - English,08101003103,101,003103,811,1858,1,0,0
+Home Delivery Letter - English,08101003104,101,003104,926,2210,1,0,0
+Home Delivery Letter - English,08101003105,101,003105,1230,3204,1,0,0
+Home Delivery Letter - English,08101003106,101,003106,475,1283,1,0,0
+Home Delivery Letter - English,08101003200,101,003200,1311,2995,1,0,0
+Home Delivery Letter - English,08101003600,101,003600,0,0,1,0,0
+Home Delivery Letter - English,08101980100,101,980100,0,0,1,0,0
+Home Delivery Letter - English,08103951100,103,951100,1393,2647,1,0,0
+Home Delivery Letter - English,08103951200,103,951200,1193,2760,1,0,0
+Home Delivery Letter - English,08105976800,105,976800,3,4,1,0,0
+Home Delivery Letter - English,08105977000,105,977000,2254,3911,1,0,0
+Home Delivery Letter - English,08107000100,107,000100,613,948,1,0,0
+Home Delivery Letter - English,08107000300,107,000300,250,468,1,0,0
+Home Delivery Letter - English,08107000400,107,000400,1314,3295,1,0,0
+Home Delivery Letter - English,08107000500,107,000500,803,1617,1,0,0
+Home Delivery Letter - English,08107000600,107,000600,1454,2924,1,0,0
+Home Delivery Letter - English,08107000700,107,000700,4802,4111,1,0,0
+Home Delivery Letter - English,08107000800,107,000800,623,1071,1,0,0
+Home Delivery Letter - English,08111972600,111,972600,163,22,1,0,0
+Home Delivery Letter - English,08113968102,113,968102,1100,1037,1,0,0
+Home Delivery Letter - English,08113968103,113,968103,418,728,1,0,0
+Home Delivery Letter - English,08117000100,117,000100,888,1657,1,0,0
+Home Delivery Letter - English,08117000200,117,000200,3486,3572,1,0,0
+Home Delivery Letter - English,08117000401,117,000401,536,1031,1,0,0
+Home Delivery Letter - English,08117000402,117,000402,634,502,1,0,0
+Home Delivery Letter - English,08119010103,119,010103,3164,7341,1,0,0
+Home Delivery Letter - English,08119010104,119,010104,850,1743,1,0,0
+Home Delivery Letter - English,08119010105,119,010105,3061,5769,1,0,0
+Home Delivery Letter - English,08119010106,119,010106,2565,4556,1,0,0
+Home Delivery Letter - English,08119010201,119,010201,777,1030,1,0,0
+Home Delivery Letter - English,08119010202,119,010202,3,0,1,0,0
+Home Delivery Letter - English,08123000200,123,000200,1004,3207,1,0,0
+Home Delivery Letter - English,08123000401,123,000401,1466,3166,1,0,0
+Home Delivery Letter - English,08123000402,123,000402,1462,3362,1,0,0
+Home Delivery Letter - English,08123000502,123,000502,1395,3313,1,0,0
+Home Delivery Letter - English,08123000800,123,000800,1321,2867,1,0,0
+Home Delivery Letter - English,08123000900,123,000900,1137,2806,1,0,0
+Home Delivery Letter - English,08123001003,123,001003,0,0,1,0,0
+Home Delivery Letter - English,08123001005,123,001005,2274,6459,1,0,0
+Home Delivery Letter - English,08123001006,123,001006,1548,4313,1,0,0
+Home Delivery Letter - English,08123001100,123,001100,2032,4503,1,0,0
+Home Delivery Letter - English,08123001201,123,001201,1777,3802,1,0,0
+Home Delivery Letter - English,08123001202,123,001202,975,2327,1,0,0
+Home Delivery Letter - English,08123001300,123,001300,2366,6232,1,0,0
+Home Delivery Letter - English,08123001404,123,001404,986,2613,1,0,0
+Home Delivery Letter - English,08123001405,123,001405,1371,3781,1,0,0
+Home Delivery Letter - English,08123001406,123,001406,2279,5306,1,0,0
+Home Delivery Letter - English,08123001407,123,001407,643,1933,1,0,0
+Home Delivery Letter - English,08123001408,123,001408,799,2046,1,0,0
+Home Delivery Letter - English,08123001409,123,001409,1532,3267,1,0,0
+Home Delivery Letter - English,08123001410,123,001410,1368,2850,1,0,0
+Home Delivery Letter - English,08123001411,123,001411,1068,2433,1,0,0
+Home Delivery Letter - English,08123001412,123,001412,845,2208,1,0,0
+Home Delivery Letter - English,08123001413,123,001413,1084,2750,1,0,0
+Home Delivery Letter - English,08123001414,123,001414,725,1949,1,0,0
+Home Delivery Letter - English,08123001415,123,001415,1228,3670,1,0,0
+Home Delivery Letter - English,08123001416,123,001416,826,1950,1,0,0
+Home Delivery Letter - English,08123001417,123,001417,796,2257,1,0,0
+Home Delivery Letter - English,08123001500,123,001500,2578,6493,1,0,0
+Home Delivery Letter - English,08123001600,123,001600,1296,3341,1,0,0
+Home Delivery Letter - English,08123001700,123,001700,0,0,1,0,0
+Home Delivery Letter - English,08123001800,123,001800,1345,3425,1,0,0
+Home Delivery Letter - English,08123001902,123,001902,2582,7743,1,0,0
+Home Delivery Letter - English,08123001907,123,001907,1025,2720,1,0,0
+Home Delivery Letter - English,08123002004,123,002004,1418,3729,1,0,0
+Home Delivery Letter - English,08123002005,123,002005,199,561,1,0,0
+Home Delivery Letter - English,08123002007,123,002007,1425,3969,1,0,0
+Home Delivery Letter - English,08123002008,123,002008,1777,4621,1,0,0
+Home Delivery Letter - English,08123002009,123,002009,506,1299,1,0,0
+Home Delivery Letter - English,08123002010,123,002010,783,1964,1,0,0
+Home Delivery Letter - English,08123002011,123,002011,144,334,1,0,0
+Home Delivery Letter - English,08123002012,123,002012,277,892,1,0,0
+Home Delivery Letter - English,08123002013,123,002013,942,2760,1,0,0
+Home Delivery Letter - English,08123002014,123,002014,335,778,1,0,0
+Home Delivery Letter - English,08123002015,123,002015,396,1148,1,0,0
+Home Delivery Letter - English,08123002016,123,002016,426,1241,1,0,0
+Home Delivery Letter - English,08123002017,123,002017,211,600,1,0,0
+Home Delivery Letter - English,08123002018,123,002018,310,893,1,0,0
+Home Delivery Letter - English,08123002019,123,002019,1285,3413,1,0,0
+Home Delivery Letter - English,08123002020,123,002020,1565,4990,1,0,0
+Home Delivery Letter - English,08123002021,123,002021,247,622,1,0,0
+Home Delivery Letter - English,08123002101,123,002101,2463,6902,1,0,0
+Home Delivery Letter - English,08123002102,123,002102,3545,9969,1,0,0
+Home Delivery Letter - English,08123002103,123,002103,2863,7609,1,0,0
+Home Delivery Letter - English,08123002203,123,002203,354,887,1,0,0
+Home Delivery Letter - English,08123002204,123,002204,805,2013,1,0,0
+Home Delivery Letter - English,08123002205,123,002205,1837,4605,1,0,0
+Home Delivery Letter - English,08123002206,123,002206,1360,3582,1,0,0
+Home Delivery Letter - English,08123002207,123,002207,698,1916,1,0,0
+Home Delivery Letter - English,08123002208,123,002208,1593,4268,1,0,0
+Home Delivery Letter - English,08123002209,123,002209,476,901,1,0,0
+Home Delivery Letter - English,08123002210,123,002210,264,783,1,0,0
+Home Delivery Letter - English,08123002300,123,002300,1113,2795,1,0,0
+Home Delivery Letter - English,08123002501,123,002501,1888,4318,1,0,0
+Home Delivery Letter - English,08123002502,123,002502,6,14,1,0,0
+Home Delivery Letter - Bilingual,08001007900,001,007900,1995,5555,0,0,0
+Home Delivery Letter - Bilingual,08001008000,001,008000,1899,5742,0,0,0
+Home Delivery Letter - Bilingual,08001008535,001,008535,0,0,0,0,0
+Home Delivery Letter - Bilingual,08001008541,001,008541,0,0,0,0,0
+Home Delivery Letter - Bilingual,08001008606,001,008606,2280,5931,0,0,0
+Home Delivery Letter - Bilingual,08001008706,001,008706,1721,5436,0,0,0
+Home Delivery Letter - Bilingual,08001008901,001,008901,769,2316,0,0,0
+Home Delivery Letter - Bilingual,08001009101,001,009101,1403,4112,0,0,0
+Home Delivery Letter - Bilingual,08001009103,001,009103,1139,3462,0,0,0
+Home Delivery Letter - Bilingual,08001009207,001,009207,3,4,0,0,0
+Home Delivery Letter - Bilingual,08001009308,001,009308,1405,4087,0,0,0
+Home Delivery Letter - Bilingual,08001009309,001,009309,1491,3613,0,0,0
+Home Delivery Letter - Bilingual,08001009319,001,009319,983,2605,0,0,0
+Home Delivery Letter - Bilingual,08001009320,001,009320,1272,2672,0,0,0
+Home Delivery Letter - Bilingual,08001009501,001,009501,1158,3156,0,0,0
+Home Delivery Letter - Bilingual,08001009502,001,009502,1264,3633,0,0,0
+Home Delivery Letter - Bilingual,08001009553,001,009553,1127,2959,0,0,0
+Home Delivery Letter - Bilingual,08001009751,001,009751,1420,3626,0,0,0
+Home Delivery Letter - Bilingual,08001015000,001,015000,0,0,0,0,0
+Home Delivery Letter - Bilingual,08005007201,005,007201,1347,3589,0,0,0
+Home Delivery Letter - Bilingual,08005007202,005,007202,1414,3915,0,0,0
+Home Delivery Letter - Bilingual,08005007301,005,007301,1050,2548,0,0,0
+Home Delivery Letter - Bilingual,08005007302,005,007302,1961,4927,0,0,0
+Home Delivery Letter - Bilingual,08005007400,005,007400,1691,4992,0,0,0
+Home Delivery Letter - Bilingual,08005007500,005,007500,808,2458,0,0,0
+Home Delivery Letter - Bilingual,08005007600,005,007600,1300,3256,0,0,0
+Home Delivery Letter - Bilingual,08005007702,005,007702,1623,4168,0,0,0
+Home Delivery Letter - Bilingual,08005080800,005,080800,1133,2661,0,0,0
+Home Delivery Letter - Bilingual,08005081300,005,081300,1114,3119,0,0,0
+Home Delivery Letter - Bilingual,08005081800,005,081800,1672,5421,0,0,0
+Home Delivery Letter - Bilingual,08013013505,013,013505,1696,3831,0,0,0
+Home Delivery Letter - Bilingual,08031000201,031,000201,1497,3874,0,0,0
+Home Delivery Letter - Bilingual,08031000600,031,000600,1358,2552,0,0,0
+Home Delivery Letter - Bilingual,08031000903,031,000903,1915,6111,0,0,0
+Home Delivery Letter - Bilingual,08031001000,031,001000,1245,3941,0,0,0
+Home Delivery Letter - Bilingual,08031001301,031,001301,1620,4972,0,0,0
+Home Delivery Letter - Bilingual,08031001302,031,001302,1340,3926,0,0,0
+Home Delivery Letter - Bilingual,08031001402,031,001402,1423,4070,0,0,0
+Home Delivery Letter - Bilingual,08031002100,031,002100,0,0,0,0,0
+Home Delivery Letter - Bilingual,08031003500,031,003500,0,0,0,0,0
+Home Delivery Letter - Bilingual,08031003601,031,003601,1789,4651,0,0,0
+Home Delivery Letter - Bilingual,08031003602,031,003602,1620,4337,0,0,0
+Home Delivery Letter - Bilingual,08031004505,031,004505,1264,4357,0,0,0
+Home Delivery Letter - Bilingual,08031004506,031,004506,1060,3450,0,0,0
+Home Delivery Letter - Bilingual,08031004602,031,004602,2302,7037,0,0,0
+Home Delivery Letter - Bilingual,08031007037,031,007037,1886,3763,0,0,0
+Home Delivery Letter - Bilingual,08031008304,031,008304,914,3637,0,0,0
+Home Delivery Letter - Bilingual,08031008306,031,008306,1812,5451,0,0,0
+Home Delivery Letter - Bilingual,08031008386,031,008386,1146,4511,0,0,0
+Home Delivery Letter - Bilingual,08031008387,031,008387,1556,5961,0,0,0
+Home Delivery Letter - Bilingual,08031008388,031,008388,2682,6962,0,0,0
+Home Delivery Letter - Bilingual,08037000100,037,000100,288,489,0,0,0
+Home Delivery Letter - Bilingual,08037000200,037,000200,6,20,0,0,0
+Home Delivery Letter - Bilingual,08037000402,037,000402,908,1431,0,0,0
+Home Delivery Letter - Bilingual,08037000502,037,000502,116,151,0,0,0
+Home Delivery Letter - Bilingual,08037000503,037,000503,592,238,0,0,0
+Home Delivery Letter - Bilingual,08041005201,041,005201,1977,4328,0,0,0
+Home Delivery Letter - Bilingual,08059010406,059,010406,999,2428,0,0,0
+Home Delivery Letter - Bilingual,08059011602,059,011602,1653,4006,0,0,0
+Home Delivery Letter - Bilingual,08065961900,065,961900,886,1878,0,0,0
+Home Delivery Letter - Bilingual,08087000200,087,000200,0,0,0,0,0
+Home Delivery Letter - Bilingual,08087000600,087,000600,2264,6526,0,0,0
+Home Delivery Letter - Bilingual,08087000800,087,000800,2,4,0,0,0
+Home Delivery Letter - Bilingual,08117000100,117,000100,0,0,0,0,0
+Home Delivery Letter - Bilingual,08123000703,123,000703,2040,6796,0,0,0
+Home Delivery Letter - Bilingual,08123000704,123,000704,227,661,0,0,0
+Home Delivery Letter - Bilingual,08123001004,123,001004,1622,4208,0,0,0
+Home Delivery Letter - Bilingual,08123001905,123,001905,1380,4262,0,0,0
+Home Delivery Letter - Bilingual,08123001907,123,001907,0,0,0,0,0
+Census Enumerator,08001008353,001,008353,0,0,0,0,1
+Census Enumerator,08001008401,001,008401,157,361,0,0,1
+Census Enumerator,08001008402,001,008402,114,233,0,0,1
+Census Enumerator,08001008533,001,008533,0,0,0,0,1
+Census Enumerator,08001008535,001,008535,33,104,0,0,1
+Census Enumerator,08001008536,001,008536,0,0,0,0,1
+Census Enumerator,08001008541,001,008541,0,0,0,0,1
+Census Enumerator,08001008551,001,008551,3,11,0,0,1
+Census Enumerator,08001008603,001,008603,0,0,0,0,1
+Census Enumerator,08001008606,001,008606,0,0,0,0,1
+Census Enumerator,08001008802,001,008802,0,0,0,0,1
+Census Enumerator,08001008901,001,008901,0,0,0,0,1
+Census Enumerator,08001009103,001,009103,0,0,0,0,1
+Census Enumerator,08001009607,001,009607,0,0,0,0,1
+Census Enumerator,08001009608,001,009608,0,0,0,0,1
+Census Enumerator,08003960000,003,960000,184,348,0,0,1
+Census Enumerator,08003960100,003,960100,22,57,0,0,1
+Census Enumerator,08003960300,003,960300,17,34,0,0,1
+Census Enumerator,08005005553,005,005553,0,0,0,0,1
+Census Enumerator,08005005634,005,005634,0,0,0,0,1
+Census Enumerator,08005007101,005,007101,297,529,0,0,1
+Census Enumerator,08005007104,005,007104,324,1244,0,0,1
+Census Enumerator,08005082600,005,082600,0,0,0,0,1
+Census Enumerator,08005083000,005,083000,0,0,0,0,1
+Census Enumerator,08007940400,007,940400,911,1185,0,0,1
+Census Enumerator,08007974200,007,974200,264,124,0,0,1
+Census Enumerator,08007974300,007,974300,623,1056,0,0,1
+Census Enumerator,08007974400,007,974400,987,1167,0,0,1
+Census Enumerator,08009964600,009,964600,721,1152,0,0,1
+Census Enumerator,08009964700,009,964700,85,153,0,0,1
+Census Enumerator,08011966700,011,966700,32,60,0,0,1
+Census Enumerator,08013012510,013,012510,74,141,0,0,1
+Census Enumerator,08013012707,013,012707,0,0,0,0,1
+Census Enumerator,08013012905,013,012905,11,25,0,0,1
+Census Enumerator,08013013205,013,013205,78,156,0,0,1
+Census Enumerator,08013013210,013,013210,0,0,0,0,1
+Census Enumerator,08013013601,013,013601,759,1657,0,0,1
+Census Enumerator,08013013602,013,013602,651,315,0,0,1
+Census Enumerator,08013013701,013,013701,267,401,0,0,1
+Census Enumerator,08013013702,013,013702,1165,1783,0,0,1
+Census Enumerator,08013060700,013,060700,2,2,0,0,1
+Census Enumerator,08014030300,014,030300,259,382,0,0,1
+Census Enumerator,08014030700,014,030700,10,20,0,0,1
+Census Enumerator,08015000200,015,000200,39,60,0,0,1
+Census Enumerator,08015000300,015,000300,371,693,0,0,1
+Census Enumerator,08015000401,015,000401,812,1365,0,0,1
+Census Enumerator,08015000402,015,000402,779,985,0,0,1
+Census Enumerator,08017960600,017,960600,737,1361,0,0,1
+Census Enumerator,08019014700,019,014700,335,398,0,0,1
+Census Enumerator,08019014800,019,014800,847,1546,0,0,1
+Census Enumerator,08019014900,019,014900,1652,2349,0,0,1
+Census Enumerator,08021974800,021,974800,1521,3248,0,0,1
+Census Enumerator,08021974900,021,974900,1519,2387,0,0,1
+Census Enumerator,08023972600,023,972600,1024,1417,0,0,1
+Census Enumerator,08023972700,023,972700,1279,1792,0,0,1
+Census Enumerator,08025969600,025,969600,414,817,0,0,1
+Census Enumerator,08027970100,027,970100,1288,1074,0,0,1
+Census Enumerator,08029964600,029,964600,588,985,0,0,1
+Census Enumerator,08029964700,029,964700,51,82,0,0,1
+Census Enumerator,08029964800,029,964800,0,0,0,0,1
+Census Enumerator,08029965000,029,965000,402,685,0,0,1
+Census Enumerator,08029965100,029,965100,10,30,0,0,1
+Census Enumerator,08029965200,029,965200,243,2,0,0,1
+Census Enumerator,08031001500,031,001500,0,0,0,0,1
+Census Enumerator,08033000100,033,000100,1239,1703,0,0,1
+Census Enumerator,08035014008,035,014008,0,0,0,0,1
+Census Enumerator,08035014131,035,014131,0,0,0,0,1
+Census Enumerator,08035014202,035,014202,102,226,0,0,1
+Census Enumerator,08035014300,035,014300,67,24,0,0,1
+Census Enumerator,08035014403,035,014403,36,73,0,0,1
+Census Enumerator,08035014404,035,014404,14,22,0,0,1
+Census Enumerator,08037000100,037,000100,349,756,0,0,1
+Census Enumerator,08037000200,037,000200,2108,6141,0,0,1
+Census Enumerator,08037000302,037,000302,447,920,0,0,1
+Census Enumerator,08037000401,037,000401,1989,3809,0,0,1
+Census Enumerator,08037000402,037,000402,1096,3081,0,0,1
+Census Enumerator,08037000403,037,000403,3194,8094,0,0,1
+Census Enumerator,08037000501,037,000501,3116,864,0,0,1
+Census Enumerator,08037000502,037,000502,1676,3080,0,0,1
+Census Enumerator,08037000503,037,000503,3069,6207,0,0,1
+Census Enumerator,08037000600,037,000600,753,1398,0,0,1
+Census Enumerator,08037000701,037,000701,40,13,0,0,1
+Census Enumerator,08037000702,037,000702,1128,277,0,0,1
+Census Enumerator,08037000703,037,000703,296,223,0,0,1
+Census Enumerator,08039961100,039,961100,331,703,0,0,1
+Census Enumerator,08039961205,039,961205,49,90,0,0,1
+Census Enumerator,08039961207,039,961207,65,153,0,0,1
+Census Enumerator,08039961208,039,961208,267,660,0,0,1
+Census Enumerator,08039961209,039,961209,6,15,0,0,1
+Census Enumerator,08041001101,041,001101,11,24,0,0,1
+Census Enumerator,08041003305,041,003305,0,0,0,0,1
+Census Enumerator,08041003306,041,003306,0,0,0,0,1
+Census Enumerator,08041003400,041,003400,642,802,0,0,1
+Census Enumerator,08041003701,041,003701,989,2123,0,0,1
+Census Enumerator,08041003705,041,003705,78,1,0,0,1
+Census Enumerator,08041003801,041,003801,77,118,0,0,1
+Census Enumerator,08041003909,041,003909,163,361,0,0,1
+Census Enumerator,08041004008,041,004008,378,1460,0,0,1
+Census Enumerator,08041004300,041,004300,15,58,0,0,1
+Census Enumerator,08041004401,041,004401,2582,8339,0,0,1
+Census Enumerator,08041004402,041,004402,47,5474,0,0,1
+Census Enumerator,08041004403,041,004403,303,1464,0,0,1
+Census Enumerator,08041004508,041,004508,0,0,0,0,1
+Census Enumerator,08041004603,041,004603,0,0,0,0,1
+Census Enumerator,08041005104,041,005104,27,95,0,0,1
+Census Enumerator,08041006200,041,006200,36,104,0,0,1
+Census Enumerator,08041007300,041,007300,43,96,0,0,1
+Census Enumerator,08043978100,043,978100,0,0,0,0,1
+Census Enumerator,08043978200,043,978200,15,18,0,0,1
+Census Enumerator,08043979000,043,979000,753,744,0,0,1
+Census Enumerator,08043979400,043,979400,341,832,0,0,1
+Census Enumerator,08045951600,045,951600,13,9,0,0,1
+Census Enumerator,08045951701,045,951701,0,0,0,0,1
+Census Enumerator,08045951802,045,951802,107,261,0,0,1
+Census Enumerator,08045951803,045,951803,11,24,0,0,1
+Census Enumerator,08045951804,045,951804,30,84,0,0,1
+Census Enumerator,08045951901,045,951901,0,0,0,0,1
+Census Enumerator,08045951902,045,951902,66,168,0,0,1
+Census Enumerator,08045952001,045,952001,11,25,0,0,1
+Census Enumerator,08045952002,045,952002,33,40,0,0,1
+Census Enumerator,08045952100,045,952100,189,317,0,0,1
+Census Enumerator,08047013800,047,013800,1239,1462,0,0,1
+Census Enumerator,08049000100,049,000100,1681,2630,0,0,1
+Census Enumerator,08049000201,049,000201,5317,4637,0,0,1
+Census Enumerator,08049000202,049,000202,7817,6778,0,0,1
+Census Enumerator,08051963600,051,963600,916,326,0,0,1
+Census Enumerator,08051963700,051,963700,0,0,0,0,1
+Census Enumerator,08051963800,051,963800,3110,2901,0,0,1
+Census Enumerator,08051963900,051,963900,434,157,0,0,1
+Census Enumerator,08053973100,053,973100,1332,843,0,0,1
+Census Enumerator,08055960600,055,960600,102,179,0,0,1
+Census Enumerator,08055960900,055,960900,1954,1987,0,0,1
+Census Enumerator,08057955600,057,955600,1116,1297,0,0,1
+Census Enumerator,08059009806,059,009806,0,0,0,0,1
+Census Enumerator,08059009808,059,009808,3,5,0,0,1
+Census Enumerator,08059009845,059,009845,105,187,0,0,1
+Census Enumerator,08059009846,059,009846,17,22,0,0,1
+Census Enumerator,08059009849,059,009849,29,35,0,0,1
+Census Enumerator,08059009851,059,009851,0,0,0,0,1
+Census Enumerator,08059009852,059,009852,0,0,0,0,1
+Census Enumerator,08059011720,059,011720,1,0,0,0,1
+Census Enumerator,08059011731,059,011731,0,0,0,0,1
+Census Enumerator,08059012026,059,012026,444,890,0,0,1
+Census Enumerator,08059012027,059,012027,654,1320,0,0,1
+Census Enumerator,08059012034,059,012034,0,0,0,0,1
+Census Enumerator,08059012036,059,012036,4,1,0,0,1
+Census Enumerator,08059012050,059,012050,0,0,0,0,1
+Census Enumerator,08059012058,059,012058,342,271,0,0,1
+Census Enumerator,08061960100,061,960100,373,613,0,0,1
+Census Enumerator,08063962100,063,962100,87,245,0,0,1
+Census Enumerator,08063962200,063,962200,162,292,0,0,1
+Census Enumerator,08063962300,063,962300,365,590,0,0,1
+Census Enumerator,08065961700,065,961700,131,303,0,0,1
+Census Enumerator,08065961900,065,961900,472,292,0,0,1
+Census Enumerator,08067940300,067,940300,2374,5575,0,0,1
+Census Enumerator,08067940400,067,940400,2383,5366,0,0,1
+Census Enumerator,08067970600,067,970600,350,451,0,0,1
+Census Enumerator,08067970701,067,970701,25,32,0,0,1
+Census Enumerator,08067970703,067,970703,26,60,0,0,1
+Census Enumerator,08067970704,067,970704,113,28,0,0,1
+Census Enumerator,08067970800,067,970800,33,15,0,0,1
+Census Enumerator,08067971000,067,971000,14,22,0,0,1
+Census Enumerator,08067971100,067,971100,18,21,0,0,1
+Census Enumerator,08069001301,069,001301,384,834,0,0,1
+Census Enumerator,08069001305,069,001305,0,0,0,0,1
+Census Enumerator,08069001307,069,001307,0,0,0,0,1
+Census Enumerator,08069001601,069,001601,0,0,0,0,1
+Census Enumerator,08069001605,069,001605,0,0,0,0,1
+Census Enumerator,08069001706,069,001706,0,0,0,0,1
+Census Enumerator,08069001709,069,001709,0,0,0,0,1
+Census Enumerator,08069001808,069,001808,20,111,0,0,1
+Census Enumerator,08069001903,069,001903,814,920,0,0,1
+Census Enumerator,08069002007,069,002007,74,125,0,0,1
+Census Enumerator,08069002010,069,002010,22,52,0,0,1
+Census Enumerator,08069002011,069,002011,0,0,0,0,1
+Census Enumerator,08069002401,069,002401,1882,618,0,0,1
+Census Enumerator,08069002402,069,002402,451,162,0,0,1
+Census Enumerator,08069002501,069,002501,75,172,0,0,1
+Census Enumerator,08069002502,069,002502,741,1871,0,0,1
+Census Enumerator,08069002503,069,002503,14,20,0,0,1
+Census Enumerator,08069002600,069,002600,0,0,0,0,1
+Census Enumerator,08069002801,069,002801,156,129,0,0,1
+Census Enumerator,08069002802,069,002802,243,228,0,0,1
+Census Enumerator,08069002803,069,002803,117,77,0,0,1
+Census Enumerator,08071000100,071,000100,745,975,0,0,1
+Census Enumerator,08071000300,071,000300,486,518,0,0,1
+Census Enumerator,08071000400,071,000400,17,11,0,0,1
+Census Enumerator,08071000800,071,000800,297,455,0,0,1
+Census Enumerator,08073961700,073,961700,810,1614,0,0,1
+Census Enumerator,08073961800,073,961800,503,798,0,0,1
+Census Enumerator,08075965900,075,965900,188,366,0,0,1
+Census Enumerator,08075966000,075,966000,377,782,0,0,1
+Census Enumerator,08075966200,075,966200,39,33,0,0,1
+Census Enumerator,08075966300,075,966300,66,283,0,0,1
+Census Enumerator,08075966400,075,966400,122,248,0,0,1
+Census Enumerator,08077000602,077,000602,23,22,0,0,1
+Census Enumerator,08077000800,077,000800,0,0,0,0,1
+Census Enumerator,08077000900,077,000900,0,0,0,0,1
+Census Enumerator,08077001200,077,001200,0,0,0,0,1
+Census Enumerator,08077001402,077,001402,0,0,0,0,1
+Census Enumerator,08077001403,077,001403,0,0,0,0,1
+Census Enumerator,08077001501,077,001501,178,266,0,0,1
+Census Enumerator,08077001502,077,001502,23,65,0,0,1
+Census Enumerator,08077001600,077,001600,0,0,0,0,1
+Census Enumerator,08077001702,077,001702,311,686,0,0,1
+Census Enumerator,08077001707,077,001707,14,41,0,0,1
+Census Enumerator,08077001800,077,001800,1072,1781,0,0,1
+Census Enumerator,08077001900,077,001900,116,146,0,0,1
+Census Enumerator,08079973600,079,973600,852,578,0,0,1
+Census Enumerator,08081000600,081,000600,558,728,0,0,1
+Census Enumerator,08083941100,083,941100,540,1500,0,0,1
+Census Enumerator,08083969000,083,969000,587,1027,0,0,1
+Census Enumerator,08083969100,083,969100,227,166,0,0,1
+Census Enumerator,08083969200,083,969200,184,403,0,0,1
+Census Enumerator,08083969300,083,969300,8,12,0,0,1
+Census Enumerator,08083969400,083,969400,25,26,0,0,1
+Census Enumerator,08083969600,083,969600,33,105,0,0,1
+Census Enumerator,08085966100,085,966100,1545,2723,0,0,1
+Census Enumerator,08085966201,085,966201,11,8,0,0,1
+Census Enumerator,08085966202,085,966202,395,1077,0,0,1
+Census Enumerator,08085966501,085,966501,78,80,0,0,1
+Census Enumerator,08087000100,087,000100,140,274,0,0,1
+Census Enumerator,08087000200,087,000200,91,232,0,0,1
+Census Enumerator,08087000300,087,000300,55,78,0,0,1
+Census Enumerator,08087000600,087,000600,35,104,0,0,1
+Census Enumerator,08087000700,087,000700,36,54,0,0,1
+Census Enumerator,08089968000,089,968000,9,8,0,0,1
+Census Enumerator,08089968200,089,968200,18,35,0,0,1
+Census Enumerator,08089968300,089,968300,286,610,0,0,1
+Census Enumerator,08089968400,089,968400,216,449,0,0,1
+Census Enumerator,08089968500,089,968500,95,205,0,0,1
+Census Enumerator,08089968600,089,968600,0,0,0,0,1
+Census Enumerator,08091967600,091,967600,1400,1800,0,0,1
+Census Enumerator,08093000100,093,000100,212,225,0,0,1
+Census Enumerator,08093000200,093,000200,243,248,0,0,1
+Census Enumerator,08093000300,093,000300,2307,2447,0,0,1
+Census Enumerator,08093000400,093,000400,3346,1943,0,0,1
+Census Enumerator,08093000500,093,000500,1372,834,0,0,1
+Census Enumerator,08095967600,095,967600,63,123,0,0,1
+Census Enumerator,08095967700,095,967700,15,3,0,0,1
+Census Enumerator,08097000100,097,000100,3169,4228,0,0,1
+Census Enumerator,08097000401,097,000401,349,249,0,0,1
+Census Enumerator,08097000402,097,000402,330,175,0,0,1
+Census Enumerator,08097000500,097,000500,602,808,0,0,1
+Census Enumerator,08099000100,099,000100,191,400,0,0,1
+Census Enumerator,08099000200,099,000200,12,7,0,0,1
+Census Enumerator,08099000600,099,000600,425,827,0,0,1
+Census Enumerator,08099000700,099,000700,364,722,0,0,1
+Census Enumerator,08101000300,101,000300,0,0,0,0,1
+Census Enumerator,08101000500,101,000500,0,0,0,0,1
+Census Enumerator,08101000600,101,000600,11,17,0,0,1
+Census Enumerator,08101002000,101,002000,25,39,0,0,1
+Census Enumerator,08101002300,101,002300,12,22,0,0,1
+Census Enumerator,08101002600,101,002600,42,64,0,0,1
+Census Enumerator,08101002804,101,002804,1442,2864,0,0,1
+Census Enumerator,08101002806,101,002806,62,79,0,0,1
+Census Enumerator,08101002912,101,002912,69,80,0,0,1
+Census Enumerator,08101002913,101,002913,147,184,0,0,1
+Census Enumerator,08101003001,101,003001,0,0,0,0,1
+Census Enumerator,08101003103,101,003103,23,27,0,0,1
+Census Enumerator,08101003200,101,003200,238,577,0,0,1
+Census Enumerator,08101003500,101,003500,0,0,0,0,1
+Census Enumerator,08101003600,101,003600,197,318,0,0,1
+Census Enumerator,08101980100,101,980100,0,0,0,0,1
+Census Enumerator,08103951100,103,951100,704,1211,0,0,1
+Census Enumerator,08103951200,103,951200,19,48,0,0,1
+Census Enumerator,08105977000,105,977000,1124,818,0,0,1
+Census Enumerator,08107000100,107,000100,882,1203,0,0,1
+Census Enumerator,08107000200,107,000200,843,1885,0,0,1
+Census Enumerator,08107000300,107,000300,1056,1867,0,0,1
+Census Enumerator,08107000400,107,000400,79,148,0,0,1
+Census Enumerator,08107000500,107,000500,1241,2353,0,0,1
+Census Enumerator,08107000600,107,000600,103,215,0,0,1
+Census Enumerator,08107000700,107,000700,1642,484,0,0,1
+Census Enumerator,08107000800,107,000800,586,880,0,0,1
+Census Enumerator,08109977600,109,977600,2035,2405,0,0,1
+Census Enumerator,08109977700,109,977700,911,1983,0,0,1
+Census Enumerator,08111972600,111,972600,593,677,0,0,1
+Census Enumerator,08113968101,113,968101,2056,2236,0,0,1
+Census Enumerator,08113968102,113,968102,1176,583,0,0,1
+Census Enumerator,08113968103,113,968103,1042,1278,0,0,1
+Census Enumerator,08113968200,113,968200,796,1444,0,0,1
+Census Enumerator,08115968300,115,968300,305,460,0,0,1
+Census Enumerator,08117000100,117,000100,4961,5749,0,0,1
+Census Enumerator,08117000200,117,000200,4130,3713,0,0,1
+Census Enumerator,08117000300,117,000300,5196,3673,0,0,1
+Census Enumerator,08117000401,117,000401,6203,3223,0,0,1
+Census Enumerator,08117000402,117,000402,3796,4871,0,0,1
+Census Enumerator,08119010103,119,010103,82,127,0,0,1
+Census Enumerator,08119010104,119,010104,115,172,0,0,1
+Census Enumerator,08119010105,119,010105,280,276,0,0,1
+Census Enumerator,08119010106,119,010106,69,87,0,0,1
+Census Enumerator,08119010201,119,010201,1101,1644,0,0,1
+Census Enumerator,08119010202,119,010202,576,605,0,0,1
+Census Enumerator,08121924100,121,924100,252,426,0,0,1
+Census Enumerator,08121924200,121,924200,34,13,0,0,1
+Census Enumerator,08123000705,123,000705,23,46,0,0,1
+Census Enumerator,08123000800,123,000800,398,534,0,0,1
+Census Enumerator,08123001003,123,001003,28,89,0,0,1
+Census Enumerator,08123001004,123,001004,82,225,0,0,1
+Census Enumerator,08123001006,123,001006,72,118,0,0,1
+Census Enumerator,08123001202,123,001202,168,458,0,0,1
+Census Enumerator,08123001300,123,001300,90,226,0,0,1
+Census Enumerator,08123001410,123,001410,81,155,0,0,1
+Census Enumerator,08123001412,123,001412,86,101,0,0,1
+Census Enumerator,08123001413,123,001413,15,41,0,0,1
+Census Enumerator,08123001414,123,001414,90,203,0,0,1
+Census Enumerator,08123001415,123,001415,21,66,0,0,1
+Census Enumerator,08123001416,123,001416,14,49,0,0,1
+Census Enumerator,08123001417,123,001417,14,37,0,0,1
+Census Enumerator,08123001500,123,001500,23,54,0,0,1
+Census Enumerator,08123001600,123,001600,399,1005,0,0,1
+Census Enumerator,08123001700,123,001700,341,1020,0,0,1
+Census Enumerator,08123001800,123,001800,316,797,0,0,1
+Census Enumerator,08123001905,123,001905,33,60,0,0,1
+Census Enumerator,08123001907,123,001907,22,55,0,0,1
+Census Enumerator,08123001908,123,001908,105,416,0,0,1
+Census Enumerator,08123002006,123,002006,24,49,0,0,1
+Census Enumerator,08123002007,123,002007,494,1141,0,0,1
+Census Enumerator,08123002009,123,002009,14,33,0,0,1
+Census Enumerator,08123002014,123,002014,297,677,0,0,1
+Census Enumerator,08123002016,123,002016,665,1782,0,0,1
+Census Enumerator,08123002101,123,002101,128,414,0,0,1
+Census Enumerator,08123002102,123,002102,9,20,0,0,1
+Census Enumerator,08123002103,123,002103,166,400,0,0,1
+Census Enumerator,08123002203,123,002203,5,6,0,0,1
+Census Enumerator,08123002207,123,002207,1,2,0,0,1
+Census Enumerator,08123002208,123,002208,140,320,0,0,1
+Census Enumerator,08123002209,123,002209,1,3,0,0,1
+Census Enumerator,08123002300,123,002300,744,1824,0,0,1
+Census Enumerator,08123002501,123,002501,302,525,0,0,1
+Census Enumerator,08123002502,123,002502,581,1493,0,0,1
+Census Enumerator,08125963100,125,963100,64,167,0,0,1
+Census Enumerator,08125963200,125,963200,98,125,0,0,1
