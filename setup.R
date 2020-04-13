@@ -231,7 +231,7 @@ genMap <- function(selDate) {
   mapTitle <- "Cumulative Response Rate"
   
   outMap <- leaflet(f.COTractsM) %>%
-    addTiles() %>% setView(lng = -105.358887, lat = 39.113014, zoom=7) %>%
+    addTiles() %>% setView(lng = -105.358887, lat = 39.113014, zoom=6) %>%
     addPolygons(stroke = TRUE, color="black", weight = 0.7, opacity = 0.4, smoothFactor = 0.2, fillOpacity = 0.4,
                 fillColor = ~pal(RespLeg), label =  ~htmlEscape(VLabel)
     ) %>%
@@ -396,17 +396,24 @@ genReport <- function(selDate) {
   #Merging UL Area data
   f.CTYarea <- read.csv("./datafiles/County_CType2.csv", header=TRUE,
                         colClasses = c(rep("character",3),rep("numeric",3))) 
-  
   f.CTYSum <- f.CTYarea %>%
     group_by(county,contact2) %>%
     summarize(housingunits = sum(housingunits),
               population = sum(population),
               SqMeters = sum(SqMeters)) 
   
+  f.CTYSumCTY <- f.CTYarea %>%
+    group_by(county) %>%
+    summarize(housingunits = sum(housingunits),
+              population = sum(population),
+              SqMeters = sum(SqMeters))
+  
   f.CTYSum2 <- f.CTYSum %>%
     gather(measure, value, housingunits:SqMeters) %>%
     spread(contact2,value) %>%
     mutate_if(is.numeric, ~replace(., is.na(.), 0))
+  
+  
   names(f.CTYSum2) <- c("county","measure","HDL","HDP","Other","UL")
   f.CTYSum3 <- f.CTYSum2 %>%
     group_by(county,measure) %>%
@@ -423,22 +430,31 @@ genReport <- function(selDate) {
   names(f.CTYSumPop)[3:11] <-sapply(names(f.CTYSumPop)[3:11], function(x) paste0(x,"_Pop"))
   
   
-  f.countyMaxUL <- inner_join(f.countyMax,f.CTYSumHU, by= "county") %>%
-    inner_join(.,f.CTYSumPop, by="county")
+  f.countyMaxUL <- inner_join(f.countyMax,f.CTYSumCTY, by = "county") %>%
+                   inner_join(., f.CTYSumHU, by= "county") %>%
+                   inner_join(.,f.CTYSumPop, by="county")
+  f.countyMaxUL$housingunits <- format(f.countyMaxUL$housingunits,big.mark=",",scientific=FALSE)
+  f.countyMaxUL$population <- format(f.countyMaxUL$population,big.mark=",",scientific=FALSE)
   
   
-  countyTAB <- flextable(f.countyMaxUL[,c(2,4,5,20,30,10)]) %>% 
+  countyTAB <- flextable(f.countyMaxUL[,c(2,11,12,23,33,4,5,10)]) %>% 
     set_header_labels(NAME = "County", 
-                      CRRALL = "Cumulative Total Response Rate", CRRINT = "Cumulative Internet Response Rate", 
-                      "ULPCT_HU" = "Percent of Housing Units in Update/ Leave Blocks",
-                      "ULPCT_Pop" =  "Percent of Population in Update/ Leave Blocks",
-                      "CRRALL_Rank" = "County Ranking") %>%
+                      housingunits = "Housing Units in County",
+                      population = "Estimated Population in County",
+                      ULPCT_HU = "Percent of Housing Units in Update/ Leave Blocks",
+                      ULPCT_Pop =  "Percent of Population in Update/ Leave Blocks",
+                      CRRALL = "Cumulative Total Response Rate", 
+                      CRRINT = "Cumulative Internet Response Rate", 
+                      CRRALL_Rank = "County Ranking") %>%
     align(i=1, part= "header", align="center") %>%
     align(j=1,part= "body", align="left") %>%
-    align(j=2:6,part= "body", align="right") %>%
+    align(j=2:8,part= "body", align="right") %>%
+    border(border.top = fp_border(color = "black"),
+           border.bottom = fp_border(color = "black"),
+           border.left = fp_border(color = "black"),
+           border.right = fp_border(color = "black"), part="all") %>%
     autofit() %>%
-    width(j=1, width=1.4) %>%
-    width(j=2:6, width=1) 
+    width(width=1)  
     
   
 
@@ -843,14 +859,14 @@ genReport <- function(selDate) {
     body_add_par("Frequency Table", style="Normal") %>% 
     body_add_flextable(value = placeFreq) %>%  
     body_add_par("", style="Normal") %>%
-    body_add_par("High and Low Response Places", style="heading 3") %>%  
-    body_add_par("This table extracts response rate for places using the Cumulative Total Response Rate. ", style="Normal") %>%
-    body_add_par("", style="Normal") %>%
-    body_add_par("25 Places/Municipalities with the Highest Cumulative Total Response Rate", style="Normal") %>%
-    body_add_flextable(value = placeTABHI) %>%
-    body_add_break(pos="after") %>%
-    body_add_par("50 Places/Municipalities with the Lowest Cumulative Total Response Rate", style="Normal") %>%
-    body_add_flextable(value = placeTABLOW) %>%
+   # body_add_par("High and Low Response Places", style="heading 3") %>%  
+   # body_add_par("This table extracts response rate for places using the Cumulative Total Response Rate. ", style="Normal") %>%
+   # body_add_par("", style="Normal") %>%
+   # body_add_par("25 Places/Municipalities with the Highest Cumulative Total Response Rate", style="Normal") %>%
+   # body_add_flextable(value = placeTABHI) %>%
+   # body_add_break(pos="after") %>%
+   # body_add_par("50 Places/Municipalities with the Lowest Cumulative Total Response Rate", style="Normal") %>%
+   # body_add_flextable(value = placeTABLOW) %>%
     body_add_break(pos="after") %>%
     body_add_par("Tract-level Results", style= "heading 2") %>%
     body_add_par("", style="Normal") %>% 

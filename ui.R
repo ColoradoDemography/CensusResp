@@ -1,4 +1,4 @@
-# SYA by Race Chart Dashboard
+# Census Response Rate Map Dashboard
 # Adam Bickford January 2020
 # These are the UI Object and the refers to the web objects in the index.html file...
 
