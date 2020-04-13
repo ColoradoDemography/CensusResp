@@ -53,7 +53,7 @@ rowTab <- function(quart,crossVar,tabType) {
 # Updates data from Census API
 update_data <- function(selDate, KEY) {
   #Create nation data for current date
-  nationFName  <- "./datafiles/nation Response Data.csv"
+  nationFName  <- "./datafiles/nation_Response_Data.csv"
   
   f.nation <- getCensus(name = "dec/responserate", vintage="2020", key = KEY,
                         vars = c("RESP_DATE",	"NAME","CRRALL",	"CRRINT", "DRRALL",	"DRRINT"),
@@ -74,7 +74,7 @@ update_data <- function(selDate, KEY) {
   
   
   #Create state data for current date
-  stateFName  <- "./datafiles/state Response Data.csv"
+  stateFName  <- "./datafiles/state_Response_Data.csv"
   
   f.state <- getCensus(name = "dec/responserate", vintage="2020", key = KEY,
                        vars = c("RESP_DATE",	"NAME","CRRALL",	"CRRINT", "DRRALL",	"DRRINT"),
@@ -95,7 +95,7 @@ update_data <- function(selDate, KEY) {
 
   
   #Create county data for current date
-  countyFName <- "./datafiles/county Response Data.csv"
+  countyFName <- "./datafiles/county_Response_Data.csv"
   
   f.county <- getCensus(name = "dec/responserate", vintage="2020", key = KEY,
                         vars = c("RESP_DATE",	"NAME","CRRALL",	"CRRINT", "DRRALL",	"DRRINT"),
@@ -119,7 +119,7 @@ update_data <- function(selDate, KEY) {
   
   
   #Create place data for current date
-  placeFName <- "./datafiles/place Response Data.csv"
+  placeFName <- "./datafiles/place_Response_Data.csv"
   
   f.place <- getCensus(name = "dec/responserate", vintage="2020", key = KEY, 
                        vars = c("RESP_DATE",	"NAME","CRRALL",	"CRRINT", "DRRALL",	"DRRINT"),
@@ -142,7 +142,7 @@ update_data <- function(selDate, KEY) {
   
   
   #Create tract data for current date
-  tractFName <- "./datafiles/tract Response Data.csv"
+  tractFName <- "./datafiles/tract_Response_Data.csv"
   
   f.tract <- getCensus(name = "dec/responserate", vintage="2020", key = KEY,
                        vars = c("RESP_DATE",	"NAME","CRRALL",	"CRRINT", "DRRALL",	"DRRINT"),
@@ -171,7 +171,7 @@ Date_Check <- function(KEY){
                         region = "us:*")
   
   currentDate <- f.curdate$RESP_DATE
-  dateFName  <- "./datafiles/nation Response Data.csv"
+  dateFName  <- "./datafiles/nation_Response_Data.csv"
   
   f.dateList <- read.csv(dateFName, header=TRUE,
                          colClasses = c(rep("character",3),rep("numeric",4))) %>% 
@@ -192,7 +192,7 @@ genMap <- function(selDate) {
   # Building Tract Map
   # Reading and coding up tract data into 20% catergories
 
-  tractFName <- "./datafiles/tract Response Data.csv"
+  tractFName <- "./datafiles/tract_Response_Data.csv"
   f.tractCum <- read.csv(tractFName, header = TRUE,
                          colClasses = c(rep("character",5),rep("numeric",4))) %>% 
                 filter(RESP_DATE == selDate)
@@ -252,7 +252,7 @@ genReport <- function(selDate) {
   # National and Colorado Tab
   
   # National Tab
-  nationFName  <- "./datafiles/nation Response Data.csv"
+  nationFName  <- "./datafiles/nation_Response_Data.csv"
   f.nationCum <- read.csv(nationFName, header = TRUE,
                           colClasses = c(rep("character",3),rep("numeric",4)))
   
@@ -263,7 +263,7 @@ genReport <- function(selDate) {
   
   
   # State tab
-  stateFName  <- "./datafiles/state Response Data.csv"
+  stateFName  <- "./datafiles/state_Response_Data.csv"
   f.stateCum <- read.csv(stateFName, header=TRUE,
                          colClasses = c(rep("character",3),rep("numeric",4)))
   
@@ -352,7 +352,7 @@ genReport <- function(selDate) {
   
   
   # County Ranking Table All Counties
-  countyFName <- "./datafiles/county Response Data.csv"
+  countyFName <- "./datafiles/county_Response_Data.csv"
   f.countyCum <- read.csv(countyFName, header=TRUE,
                           colClasses = c(rep("character",3),rep("numeric",4)))
   
@@ -446,7 +446,7 @@ genReport <- function(selDate) {
   
 
   #Place Ranking Table  outputs the first 25 and the last 50
-  placeFName <- "./datafiles/place Response Data.csv"
+  placeFName <- "./datafiles/place_Response_Data.csv"
   f.placeCum <- read.csv(placeFName,header=TRUE,
                          colClasses = c(rep("character",4),rep("numeric",4)))
   
@@ -550,7 +550,7 @@ genReport <- function(selDate) {
   
   #Tract Charts...
   
-  tractFName <- "./datafiles/tract Response Data.csv"
+  tractFName <- "./datafiles/tract_Response_Data.csv"
   f.tractCum <- read.csv(tractFName, header=TRUE,
                          colClasses = c(rep("character",5),rep("numeric",4)))
   f.tractCum$GEOID20 <- paste0(f.tractCum$state, f.tractCum$county, f.tractCum$tract) 
