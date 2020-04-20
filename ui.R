@@ -4,7 +4,7 @@
 
 library(tidyverse)
 library(shiny)
-library(profvis)
+
 
 source("setup.R")
   CENSUS_KEY="08fe07c2a7bf781b7771d7cccb264fe7ff8965ce"

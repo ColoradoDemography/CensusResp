@@ -10,7 +10,6 @@
 
 library(tidyverse)
 library(censusapi)
-library(tidycensus)
 library(scales)
 library(officer)
 library(flextable)
@@ -18,7 +17,7 @@ library(leaflet)
 library(sf)
 library(tigris)
 library(htmltools)
-library(profvis)
+
 
 
 
