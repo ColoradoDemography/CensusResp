@@ -10,13 +10,15 @@
 
 library(tidyverse)
 library(censusapi)
+library(tidycensus)
 library(scales)
 library(officer)
 library(flextable)
 library(leaflet)
-library(rgdal)
+library(sf)
 library(tigris)
 library(htmltools)
+library(profvis)
 
 
 
@@ -49,9 +51,9 @@ rowTab <- function(quart,crossVar,tabType) {
   return(outTab)
 }
 
-# Populates Date Dropdown Box
+# Checks for Latest Date, Checks for Processed Shape file, and Populates Date Dropdown Box
 Date_Check <- function(KEY){
-  
+
   f.curdate <- getCensus(name = "dec/responserate", vintage="2020", key = KEY,
                          vars = "RESP_DATE",
                          region = "us:*")
@@ -69,11 +71,19 @@ Date_Check <- function(KEY){
     update_data(currentDate, KEY)
     dateList <- c(currentDate, dateList)
   }
+  
+  #Checking for Shapefile...
+#  if(!file.exists("./datafiles/tracts.Rdata")) {
+#    
+#  }
+  
   return(dateList) 
+  
 }
 
 # Updates data from Census API
 update_data <- function(selDate, KEY) {
+
   #Create nation data for current date
   nationFName  <- "./datafiles/nation_Response_Data.csv"
 
@@ -179,6 +189,7 @@ update_data <- function(selDate, KEY) {
     f.tractCum <- bind_rows(f.tractCum, f.tract)
     write.csv(f.tractCum, tractFName, row.names = FALSE)
   } 
+
 }
 
 
@@ -189,6 +200,7 @@ genMap <- function(selDate) {
   # Building Tract Map
   # Reading and coding up tract data into 20% catergories
 
+
   tractFName <- "./datafiles/tract_Response_Data.csv"
   f.tractCum <- read.csv(tractFName, header = TRUE,
                          colClasses = c(rep("character",5),rep("numeric",4))) %>% 
@@ -197,47 +209,52 @@ genMap <- function(selDate) {
   
   #Reading tract_bas20_sr_500k shapefile
   
-  f.shape <- readOGR(dsn = "./datafiles/sr20_500k",
-                     layer = "tract_bas20_sr_500k",
-                     verbose = FALSE)
+
+  f.COShape <- st_read("datafiles/sr20_500k/tract_bas20_sr_500k.shp")  %>%
+    st_transform(crs="+init=epsg:4326") %>% filter(STATE == "08") %>%
+    mutate(GEOID20 = paste0(STATE, COUNTY, TRACT))
+ 
   
+  f.COTractsM <- geo_join(f.COShape, f.tractCum, by = "GEOID20", how="left") %>% filter(!is.na(state))
   
-  f.COShape <- subset(f.shape,f.shape$STATE == "08")
-  f.COShape <- spTransform(f.COShape, CRS("+proj=longlat +datum=WGS84 +no_defs"))
+  f.COTractsM$RespCat <- ifelse(f.COTractsM$CRRALL <= 0.15, 1,
+                         ifelse(f.COTractsM$CRRALL <= 0.30, 2,
+                         ifelse(f.COTractsM$CRRALL <= 0.40, 3,
+                         ifelse(f.COTractsM$CRRALL <= 0.50, 4,
+                         ifelse(f.COTractsM$CRRALL <= 0.56, 5,
+                         ifelse(f.COTractsM$CRRALL <= 0.62, 6,
+                         ifelse(f.COTractsM$CRRALL <= 0.68, 7,
+                         ifelse(f.COTractsM$CRRALL <= 0.74, 8,
+                         ifelse(f.COTractsM$CRRALL <= 0.85, 9,10)))))))))
+ 
+  f.COTractsM$RespCat <- factor(f.COTractsM$RespCat, levels = c(1:10),
+                                labels = c("00% to 15%", "16% to 30%",
+                                           "31% to 40%", "41% to 50%",
+                                           "51% to 56%", "57% to 62%",
+                                           "63% to 68%", "69% to 74%",
+                                           "75% to 85%", "86% to 100%"))
+  f.COTractsM$VLabel <- paste0(f.COTractsM$NAME.y," ",percent(f.COTractsM$CRRALL * 100,1))
   
-  f.COShape$GEOID20 <- paste0(f.COShape$STATE, f.COShape$COUNTY, f.COShape$TRACT)
+  #Creating colors...
+  cols <- c("chocolate4","chocolate3","chocolate2","chocolate1",
+            "cyan1","cyan2","cyan3","cyan4","darkcyan","darkblue")
   
-  
-  f.COTractsM <- geo_join(f.COShape, f.tractCum, by = "GEOID20", how="left") 
-  f.COTractsM <- subset(f.COTractsM,!is.na(f.COTractsM$state))
-  
-  f.COTractsM$RespCat <- (f.COTractsM$CRRALL%/%0.10) + 1
-  
-  f.COTractsM$RespLeg <- ifelse(f.COTractsM$RespCat  == 1, "00% to 10%", 
-                                ifelse(f.COTractsM$RespCat  == 2, "11% to 20%",
-                                       ifelse(f.COTractsM$RespCat  == 3, "21% to 30%",
-                                              ifelse(f.COTractsM$RespCat  == 4, "31% to 40%",
-                                                     ifelse(f.COTractsM$RespCat == 5, "41% to 50%",
-                                                            ifelse(f.COTractsM$RespCat == 6, "51% to 60%",  
-                                                                   ifelse(f.COTractsM$RespCat == 7, "61% to 70%",
-                                                                          ifelse(f.COTractsM$RespCat == 8, "71% to 80%",
-                                                                                 ifelse(f.COTractsM$RespCat == 9, "81% to 90%", "91% to 100%")))))))))
-  
-  f.COTractsM$RespLeg <- as.factor(f.COTractsM$RespLeg)
-  f.COTractsM$VLabel <- paste0(f.COTractsM$NAME.1," ",percent(f.COTractsM$CRRALL * 100,1))
-  
-  pal <- colorFactor("YlGnBu", f.COTractsM$RespLeg)
+  pal <- colorFactor(cols, f.COTractsM$RespCat, n = 10)
   
   mapTitle <- "Cumulative Response Rate"
   
-  outMap <- leaflet(f.COTractsM) %>%
-    addTiles() %>% setView(lng = -105.358887, lat = 39.113014, zoom=6) %>%
+  outMap <- f.COTractsM %>%
+   leaflet(width = "100%") %>%
+    addTiles() %>% setView(lng = -105.358887, lat = 39.113014, zoom=7) %>%
     addPolygons(stroke = TRUE, color="black", weight = 0.7, opacity = 0.4, smoothFactor = 0.2, fillOpacity = 0.4,
-                fillColor = ~pal(RespLeg), label =  ~htmlEscape(VLabel)
+                fillColor = ~pal(RespCat), label =  ~htmlEscape(VLabel)
     ) %>%
-    addLegend(pal=pal, values = ~RespLeg, opacity = 1, title = mapTitle,
+    addLegend(pal=pal, values = ~RespCat, opacity = 1, title = mapTitle,
               position = "topright")
+ 
+  
  return(outMap) 
+
 }
 
 # Generates Report
