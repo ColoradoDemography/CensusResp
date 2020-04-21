@@ -216,15 +216,15 @@ genMap <- function(selDate) {
   
   f.COTractsM <- geo_join(f.COShape, f.tractCum, by = "GEOID20", how="left") %>% filter(!is.na(state))
   
-  f.COTractsM$RespCat <- ifelse(f.COTractsM$CRRALL <= 0.15, 1,
-                         ifelse(f.COTractsM$CRRALL <= 0.30, 2,
-                         ifelse(f.COTractsM$CRRALL <= 0.40, 3,
-                         ifelse(f.COTractsM$CRRALL <= 0.50, 4,
-                         ifelse(f.COTractsM$CRRALL <= 0.56, 5,
-                         ifelse(f.COTractsM$CRRALL <= 0.62, 6,
-                         ifelse(f.COTractsM$CRRALL <= 0.68, 7,
-                         ifelse(f.COTractsM$CRRALL <= 0.74, 8,
-                         ifelse(f.COTractsM$CRRALL <= 0.85, 9,10)))))))))
+  f.COTractsM$RespCat <- ifelse(f.COTractsM$CRRALL <= 0.159, 1,
+                         ifelse(f.COTractsM$CRRALL <= 0.309, 2,
+                         ifelse(f.COTractsM$CRRALL <= 0.409, 3,
+                         ifelse(f.COTractsM$CRRALL <= 0.509, 4,
+                         ifelse(f.COTractsM$CRRALL <= 0.569, 5,
+                         ifelse(f.COTractsM$CRRALL <= 0.629, 6,
+                         ifelse(f.COTractsM$CRRALL <= 0.689, 7,
+                         ifelse(f.COTractsM$CRRALL <= 0.749, 8,
+                         ifelse(f.COTractsM$CRRALL <= 0.859, 9,10)))))))))
  
   f.COTractsM$RespCat <- factor(f.COTractsM$RespCat, levels = c(1:10),
                                 labels = c("00% to 15%", "16% to 30%",
@@ -290,12 +290,12 @@ genReport <- function(selDate) {
   f.CRRALL <- rbind(f.nationCRRALL, f.COCRRALL) %>% spread(NAME, CRRALL)
   
   f.CRRINT <- rbind(f.nationCRRINT, f.COCRRINT) %>%   spread(NAME, CRRINT)
- 
+
   f.nationTab <- inner_join(f.CRRALL, f.CRRINT, by="RESP_DATE") %>% 
              arrange(desc(RESP_DATE))
   f.nationTab$date <- as.Date(f.nationTab$RESP_DATE,"%Y-%m-%d")
   SDate <- as.Date(selDate,"%Y-%m-%d")
-  
+ 
   f.nationTab <- f.nationTab %>%  filter(date <= SDate) %>% filter(date >= SDate - 6)
   
   names(f.nationTab) <- c("V1", "V2","V3","V4","V5")
