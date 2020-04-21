@@ -332,10 +332,10 @@ genReport <- function(selDate) {
   
   
   f.stateCO <- f.stateN %>% filter( state == "08")
-  f.stateTop <- f.stateN %>% filter(CRRALL_Rank <= 5)
+  f.stateTop <- f.stateN %>% filter(CRRALL_Rank <= f.COloRank$CRRALL_Rank)
   f.stateBot <- f.stateN %>% filter(CRRALL_Rank >= 48) 
   
-  f.stateBar <- bind_rows(f.stateCO, f.stateTop, f.stateBot) %>%
+  f.stateBar <- bind_rows( f.stateTop, f.stateBot) %>%
     select(CRRALL_Rank, NAME, CRRALL) %>% arrange(CRRALL_Rank)
   
   stateLst <- unlist(f.stateBar$NAME)
@@ -353,8 +353,8 @@ genReport <- function(selDate) {
     scale_fill_manual(values=barCol) +
     coord_flip() +
     labs(title = "Response Rate by State (Rank)" ,
-         subtitle = "Top 5 Ranked States, Bottom 5 Ranked States and Colorado",
-         caption = paste0("State Demography Office.  Data for: ",selDate),
+         subtitle = selDate,
+         caption = "Rank LE Colorado, Rank GE 48, and Colorado",
          x = "State",
          y= "Cumulative Total Response Rate") +
     theme(plot.title = element_text(hjust = 0.5, size=16),
