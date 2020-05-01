@@ -376,17 +376,15 @@ genReport <- function(selDate) {
   
   f.countyMax <- f.countyMax %>% filter(RESP_DATE == selDate)
   
-  f.countyMax$RespCat <- (f.countyMax$CRRALL%/%0.10) + 1
-  
-  f.countyMax$RespLeg <- ifelse(f.countyMax$RespCat  == 1, "00% to 10%", 
-                                ifelse(f.countyMax$RespCat  == 2, "11% to 20%",
-                                       ifelse(f.countyMax$RespCat  == 3, "21% to 30%",
-                                              ifelse(f.countyMax$RespCat  == 4, "31% to 40%",
-                                                     ifelse(f.countyMax$RespCat == 5, "41% to 50%",
-                                                            ifelse(f.countyMax$RespCat == 6, "51% to 60%",  
-                                                                   ifelse(f.countyMax$RespCat == 7, "61% to 70%",
-                                                                          ifelse(f.countyMax$RespCat == 8, "71% to 80%",
-                                                                                 ifelse(f.countyMax$RespCat == 9, "81% to 90%", "91% to 100%")))))))))
+  f.countyMax$RespLeg <- ifelse(f.countyMax$CRRALL < 0.11, "00% to 10%", 
+                                ifelse(f.countyMax$CRRALL < 0.21, "11% to 20%",
+                                       ifelse(f.countyMax$CRRALL < 0.31, "21% to 30%",
+                                              ifelse(f.countyMax$CRRALL < 0.41, "31% to 40%",
+                                                     ifelse(f.countyMax$CRRALL < 0.51, "41% to 50%",
+                                                            ifelse(f.countyMax$CRRALL < 0.61, "51% to 60%",  
+                                                                   ifelse(f.countyMax$CRRALL < 0.71, "61% to 70%",
+                                                                          ifelse(f.countyMax$CRRALL < 0.81, "71% to 80%",
+                                                                                 ifelse(f.countyMax$CRRALL < 0.91, "81% to 90%", "91% to 100%")))))))))
   
   f.countyMax$RespLeg <- as.factor(f.countyMax$RespLeg)
   
@@ -446,32 +444,26 @@ genReport <- function(selDate) {
   names(f.CTYSumPop)[3:11] <-sapply(names(f.CTYSumPop)[3:11], function(x) paste0(x,"_Pop"))
   
   
-  f.countyMaxUL <- inner_join(f.countyMax,f.CTYSumCTY, by = "county") %>%
-                   inner_join(., f.CTYSumHU, by= "county") %>%
-                   inner_join(.,f.CTYSumPop, by="county")
-  f.countyMaxUL$housingunits <- format(f.countyMaxUL$housingunits,big.mark=",",scientific=FALSE)
-  f.countyMaxUL$population <- format(f.countyMaxUL$population,big.mark=",",scientific=FALSE)
+  f.countyMaxUL <- inner_join(f.countyMax,f.CTYSumHU, by= "county") %>%
+    inner_join(.,f.CTYSumPop, by="county")
+  f.countyMaxUL$total_HU <- format(f.countyMaxUL$total_HU,digits=0, big.mark=",",scientific=FALSE)
+  f.countyMaxUL$total_Pop <- format(f.countyMaxUL$total_Pop,digits=0, big.mark=",",scientific=FALSE)
   
-  
-  countyTAB <- flextable(f.countyMaxUL[,c(2,11,12,23,33,4,5,10)]) %>% 
+  countyTAB <- flextable(f.countyMaxUL[,c(2,15,25,19,29,4,5,9)]) %>% 
     set_header_labels(NAME = "County", 
-                      housingunits = "Housing Units in County",
-                      population = "Estimated Population in County",
-                      ULPCT_HU = "Percent of Housing Units in Update/ Leave Blocks",
-                      ULPCT_Pop =  "Percent of Population in Update/ Leave Blocks",
-                      CRRALL = "Cumulative Total Response Rate", 
-                      CRRINT = "Cumulative Internet Response Rate", 
-                      CRRALL_Rank = "County Ranking") %>%
+                      total_HU = "Housing Units in County",
+                      total_Pop = "Estimated Population in County",
+                      CRRALL = "Cumulative Total Response Rate", CRRINT = "Cumulative Internet Response Rate", 
+                      "ULPCT_HU" = "Percent of Housing Units in Update/ Leave Blocks",
+                      "ULPCT_Pop" =  "Percent of Population in Update/ Leave Blocks",
+                      "CRRALL_Rank" = "County Ranking") %>%
     align(i=1, part= "header", align="center") %>%
     align(j=1,part= "body", align="left") %>%
     align(j=2:8,part= "body", align="right") %>%
-    border(border.top = fp_border(color = "black"),
-           border.bottom = fp_border(color = "black"),
-           border.left = fp_border(color = "black"),
-           border.right = fp_border(color = "black"), part="all") %>%
-    autofit() %>%
-    width(width=1)  
-    
+    width(j=1, width=1.4) %>%
+    width(j=2:5, width=0.9) %>%
+    width(j=6:7, width=1) %>%
+    width(j=8,width = 0.8)
   
 
   #Place Ranking Table  outputs the first 25 and the last 50
