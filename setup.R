@@ -235,7 +235,7 @@ genMap <- function(selDate) {
                                            "51% to 56%", "57% to 62%",
                                            "63% to 68%", "69% to 74%",
                                            "75% to 85%", "86% to 100%"))
-  f.COTractsM$VLabel <- paste0(f.COTractsM$NAME.y," Ranking: ",(100 - f.COTractsM$CRRALL_Rank)," Response Rate: ",percent(f.COTractsM$CRRALL * 100,1))
+  f.COTractsM$VLabel <- paste0(f.COTractsM$NAME.y," Ranking: ",(101 - f.COTractsM$CRRALL_Rank)," Response Rate: ",percent(f.COTractsM$CRRALL * 100,1))
   
   #Creating colors...
   cols <- c("chocolate4","chocolate3","chocolate2","chocolate1",
