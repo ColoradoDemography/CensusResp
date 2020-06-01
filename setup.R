@@ -209,9 +209,14 @@ genMap <- function(selDate) {
   
   f.tractCum$GEOID20 <- paste0(f.tractCum$state, f.tractCum$county, f.tractCum$tract) 
   
+  # Reading County Boundaries
+ 
+  f.COcty <- st_read("datafiles/sr20_500k/county_bas20_sr_500k.shp")  %>%
+    st_transform(crs="+init=epsg:4326") %>% filter(STATE == "08") 
+  
   #Reading tract_bas20_sr_500k shapefile
   
-
+   
   f.COShape <- st_read("datafiles/sr20_500k/tract_bas20_sr_500k.shp")  %>%
     st_transform(crs="+init=epsg:4326") %>% filter(STATE == "08") %>%
     mutate(GEOID20 = paste0(STATE, COUNTY, TRACT))
@@ -245,15 +250,17 @@ genMap <- function(selDate) {
   
   mapTitle <- "Cumulative Response Rate"
   
-  outMap <- f.COTractsM %>%
-   leaflet(width = "100%") %>%
+  outMap <- f.COcty %>%
+    leaflet(width = "100%") %>%
     addTiles() %>% setView(lng = -105.358887, lat = 39.113014, zoom=7) %>%
-    addPolygons(stroke = TRUE, color="black", weight = 0.7, opacity = 0.4, smoothFactor = 0.2, fillOpacity = 0.4,
-                fillColor = ~pal(RespCat), label =  ~htmlEscape(VLabel)
+    addPolygons(color="black", weight = 0.9) %>%
+    addPolygons(data = f.COTractsM, stroke = TRUE, color="black", weight = 0.7, opacity = 0.4, smoothFactor = 0.2, fillOpacity = 0.4,
+                fillColor = ~pal(f.COTractsM$RespCat), label =  ~htmlEscape(f.COTractsM$VLabel)
     ) %>%
-    addLegend(pal=pal, values = ~RespCat, opacity = 1, title = mapTitle,
-              position = "topright")
- 
+    addLegend(pal=pal, values = ~f.COTractsM$RespCat, opacity = 1, title = mapTitle,
+              position = "bottomright")  
+
+    
   
  return(outMap) 
 
