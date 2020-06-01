@@ -202,8 +202,11 @@ genMap <- function(selDate) {
 
   tractFName <- "./datafiles/tract_Response_Data.csv"
   f.tractCum <- read.csv(tractFName, header = TRUE,
-                         colClasses = c(rep("character",5),rep("numeric",4))) %>% 
-                filter(RESP_DATE == selDate)
+                         colClasses = c(rep("character",5),rep("numeric",4)))  %>% 
+                filter(RESP_DATE == selDate) %>%  
+                mutate(CRRALL_Rank = rank(CRRALL, na.last = TRUE, ties.method = "first"))   %>% 
+                filter(CRRALL_Rank <= 100)
+  
   f.tractCum$GEOID20 <- paste0(f.tractCum$state, f.tractCum$county, f.tractCum$tract) 
   
   #Reading tract_bas20_sr_500k shapefile
@@ -232,7 +235,7 @@ genMap <- function(selDate) {
                                            "51% to 56%", "57% to 62%",
                                            "63% to 68%", "69% to 74%",
                                            "75% to 85%", "86% to 100%"))
-  f.COTractsM$VLabel <- paste0(f.COTractsM$NAME.y," ",percent(f.COTractsM$CRRALL * 100,1))
+  f.COTractsM$VLabel <- paste0(f.COTractsM$NAME.y," Ranking: ",(100 - f.COTractsM$CRRALL_Rank)," Response Rate: ",percent(f.COTractsM$CRRALL * 100,1))
   
   #Creating colors...
   cols <- c("chocolate4","chocolate3","chocolate2","chocolate1",
