@@ -520,7 +520,7 @@ genReport <- function(selDate) {
   
   placeTABHI <- flextable(f.placehi) %>% 
     set_header_labels(V1 = "County", V2 = "Place/ Municipality", V3 = "Cumulative Total Response Rate", 
-                      V4 = "Cumulative Internet Response Rate", V5="Statewide Rank") %>%
+                      V4 = "Cumulative Internet Response Rate", V5="Rank") %>%
     align(i = 1, part= "header", align="center") %>%
     align(j=1:2, part= "body", align="left") %>%
     align(j=3:5,part= "body", align="right") %>%
@@ -624,21 +624,21 @@ genReport <- function(selDate) {
     width(width=0.8)
   
   TR100TAB <- flextable(f.tractCum100[,c(4,6:9,11)]) %>%
-    set_header_labels("NAME" = "Ttact and County", 
+    set_header_labels("NAME" = "Tract and County", 
                       "CRRALL" = "Cumulative Total Response Rate", 
                       "CRRINT" = "Cumulative Internet Response Rate",
                       "DRRALL" = "Daily Total Response Rate", 
                       "DRRINT" = "Daily Internet Response Rate",
-                      "CRRALL_Rank"="Statewide Rank") %>%
+                      "CRRALL_Rank"="Rank") %>%
     align(i = 1, part= "header", align="center") %>%
     align(j=1, part="body", align = "left") %>%
-    align(j = 2:5,part= "body", align="right") %>%
+    align(j = 2:6,part= "body", align="right") %>%
     border(border.top = fp_border(color = "black"),
            border.bottom = fp_border(color = "black"),
            border.left = fp_border(color = "black"),
            border.right = fp_border(color = "black"), part="all") %>%
     width(j = 1, width = 3) %>%
-    width(j = 2:5,width = 1)
+    width(j = 2:6,width = 1) 
   
 
   
