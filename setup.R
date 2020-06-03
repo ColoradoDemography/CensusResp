@@ -204,8 +204,9 @@ genMap <- function(selDate) {
   f.tractCum <- read.csv(tractFName, header = TRUE,
                          colClasses = c(rep("character",5),rep("numeric",4)))  %>% 
                 filter(RESP_DATE == selDate) %>%  
-                mutate(CRRALL_Rank = rank(CRRALL, na.last = TRUE, ties.method = "first"))   %>% 
-                filter(CRRALL_Rank <= 100)
+                mutate(CRRALL_Rank =  rank(CRRALL, na.last = TRUE, ties.method = "first"))   %>% 
+                filter(CRRALL_Rank <= 100) %>%
+                mutate(CRRALL_Rank = 101 - CRRALL_Rank)
   
   f.tractCum$GEOID20 <- paste0(f.tractCum$state, f.tractCum$county, f.tractCum$tract) 
   
@@ -240,7 +241,7 @@ genMap <- function(selDate) {
                                            "51% to 56%", "57% to 62%",
                                            "63% to 68%", "69% to 74%",
                                            "75% to 85%", "86% to 100%"))
-  f.COTractsM$VLabel <- paste0(f.COTractsM$NAME.y," Ranking: ",(101 - f.COTractsM$CRRALL_Rank)," Response Rate: ",percent(f.COTractsM$CRRALL * 100,1))
+  f.COTractsM$VLabel <- paste0(f.COTractsM$NAME.y,"<br>Ranking: ",(101 - f.COTractsM$CRRALL_Rank)," Response Rate: ",percent(f.COTractsM$CRRALL * 100,1))
   
   #Creating colors...
   cols <- c("chocolate4","chocolate3","chocolate2","chocolate1",
@@ -255,7 +256,7 @@ genMap <- function(selDate) {
     addTiles() %>% setView(lng = -105.358887, lat = 39.113014, zoom=7) %>%
     addPolygons(color="black", weight = 0.9) %>%
     addPolygons(data = f.COTractsM, stroke = TRUE, color="black", weight = 0.7, opacity = 0.4, smoothFactor = 0.2, fillOpacity = 0.4,
-                fillColor = ~pal(f.COTractsM$RespCat), label =  ~htmlEscape(f.COTractsM$VLabel)
+                fillColor = ~pal(f.COTractsM$RespCat), label =  lapply( f.COTractsM$VLabel, htmltools::HTML)
     ) %>%
     addLegend(pal=pal, values = ~f.COTractsM$RespCat, opacity = 1, title = mapTitle,
               position = "bottomright")  
@@ -322,6 +323,10 @@ genReport <- function(selDate) {
     align(j=1,part= "body", align="left") %>%
     align(j=2:5,part= "body", align="right") %>%
     autofit() %>%
+    border(border.top = fp_border(color = "black"),
+           border.bottom = fp_border(color = "black"),
+           border.left = fp_border(color = "black"),
+           border.right = fp_border(color = "black"), part="all") %>%
     width(j=1:5, width=1.5) 
   
   # State Table, top 5 bottom 5 Colorado
@@ -408,6 +413,10 @@ genReport <- function(selDate) {
     align(j = 1, part="body", align ="left") %>%
     align(j=2:3, part="body", align="right") %>%
     autofit() %>%
+    border(border.top = fp_border(color = "black"),
+           border.bottom = fp_border(color = "black"),
+           border.left = fp_border(color = "black"),
+           border.right = fp_border(color = "black"), part="all") %>%
     width(j=1:3, width=1.5)
   
   
@@ -473,51 +482,43 @@ genReport <- function(selDate) {
     width(j=1, width=1.4) %>%
     width(j=2:5, width=0.9) %>%
     width(j=6:7, width=1) %>%
+    border(border.top = fp_border(color = "black"),
+           border.bottom = fp_border(color = "black"),
+           border.left = fp_border(color = "black"),
+           border.right = fp_border(color = "black"), part="all") %>%
     width(j=8,width = 0.8)
   
-
-  #Place Ranking Table  outputs the first 25 and the last 50
+  #Place Ranking Table  This Is the first and last quartile..
+  
   placeFName <- "./datafiles/place_Response_Data.csv"
-  f.placeCum <- read.csv(placeFName,header=TRUE,
+  f.placeCum <- read.csv(placeFName, header = TRUE,
                          colClasses = c(rep("character",4),rep("numeric",4)))
   
   f.placeMax <- f.placeCum
   
   f.placeN <- f.placeMax %>% filter(RESP_DATE == selDate) %>%
-    mutate(CRRALL_Rank = 271 - rank(CRRALL, na.last = TRUE, ties.method = "first")) 
-  f.placeN$CRRALL <- f.placeN$CRRALL * 100
+    mutate(CRRALL = CRRALL * 100, 
+           CRRINT = CRRINT * 100, 
+          CRRALL_Rank = 271 - rank(CRRALL, na.last = TRUE, ties.method = "first")) 
   
-  f.placeNames <- read.csv("./datafiles/places.csv", header=TRUE,
-                           colClasses=c(rep("character",4)))
-  f.placeN <- inner_join(f.placeNames[,c(2,4)],f.placeN, by="place") 
   
-  f.placehi <- f.placeN %>% filter(CRRALL_Rank <= 25) %>% arrange(CRRALL_Rank,NAME) %>%
+  f.placeNames <- read.csv("./datafiles/places.csv", header = TRUE,
+                           colClasses = c(rep("character",4)))
+  
+  f.placeN <- inner_join(f.placeNames,f.placeN, by="place") 
+  
+  f.placehi <- f.placeN %>% 
+    arrange(CRRALL_Rank,NAME) %>%
     mutate(CRRALL = percent(CRRALL,1),
-           CRRINT = percent(CRRINT * 100,1)) %>%
+           CRRINT = percent(CRRINT,1)) %>%
     select(county, NAME, CRRALL, CRRINT, CRRALL_Rank)
-  f.placelow <- f.placeN %>% filter(CRRALL_Rank >= 220) %>% arrange(desc(CRRALL_Rank),NAME) %>%
-    mutate(CRRALL = percent(CRRALL,1),
-           CRRINT = percent(CRRINT * 100,1)) %>%
-    select(county, NAME, CRRALL, CRRINT, CRRALL_Rank) 
   
-   names(f.placehi) <- c("V1", "V2", "V3","V4", "V5")
-  names(f.placelow) <- c("V1", "V2", "V3", "V4","V5")
   
+  
+  
+  names(f.placehi) <- c("V1", "V2", "V3","V4", "V5")
   
   placeTABHI <- flextable(f.placehi) %>% 
-    set_header_labels(V1 = "County", V2 = "Place/ Municipality", V3 = "Cumulative Total Response Rate", 
-                      V4 = "Cumulative Internet Response Rate", V5="Statewide Rank") %>%
-    align(i = 1, part= "header", align="center") %>%
-    align(j=1:2, part= "body", align="left") %>%
-    align(j=3:5,part= "body", align="right") %>%
-    border(border.top = fp_border(color = "black"),
-           border.bottom = fp_border(color = "black"),
-           border.left = fp_border(color = "black"),
-           border.right = fp_border(color = "black"), part="all") %>%
-    width(width=1.5)
-  
-  
-  placeTABLOW <- flextable(f.placelow) %>% 
     set_header_labels(V1 = "County", V2 = "Place/ Municipality", V3 = "Cumulative Total Response Rate", 
                       V4 = "Cumulative Internet Response Rate", V5="Statewide Rank") %>%
     align(i = 1, part= "header", align="center") %>%
@@ -576,269 +577,70 @@ genReport <- function(selDate) {
     align(j = 1, part="body", align ="left") %>%
     align(j=2:3, part="body", align="right") %>%
     autofit() %>%
+    border(border.top = fp_border(color = "black"),
+           border.bottom = fp_border(color = "black"),
+           border.left = fp_border(color = "black"),
+           border.right = fp_border(color = "black"), part="all") %>%
     width(j=1:3, width=1.5)
   
   
   #Tract Charts...
-  
+
   tractFName <- "./datafiles/tract_Response_Data.csv"
   f.tractCum <- read.csv(tractFName, header=TRUE,
-                         colClasses = c(rep("character",5),rep("numeric",4)))
-  f.tractCum$GEOID20 <- paste0(f.tractCum$state, f.tractCum$county, f.tractCum$tract) 
-  
-  # CRRALL by Contact Type
-  #Contact Type
-  contactType <- "./datafiles/Tract_Pop_Housing_by_Contact_Type.csv"
-  f.contact <- read.csv(contactType, header=TRUE,
-                        colClasses = c(rep("character",4),rep("numeric",5))) %>% 
-                filter(CType2 != "Other")
-  
-  f.contactSum <- f.contact %>%
-    group_by(TRACTGEOID) %>%
-    summarize(HDL = sum(HDL),
-              HDP = sum(HDP),
-              UL = sum(UL))
-  
-  f.contactSum$GEOID10 <- f.contactSum$TRACTGEOID
-  
-  #Tract CrossWALK
-  relWalk <-"./datafiles/rr_tract_rel/rr_tract_rel.txt"
-  
-  f.trrel <- read.csv(relWalk, header= TRUE, 
-                      colClasses = c(rep("character",4), rep("numeric",2),
-                                     rep("character",4), rep("numeric",12)))  %>% filter(STATEFP10 == "08")
-  
-  
-  #Joining to tracts
-  
-  f.tractRel <- inner_join(f.tractCum,f.trrel, by= "GEOID20")
-  
-  f.TrContact <- inner_join(f.contactSum, f.tractRel, by="GEOID10" )
-  f.TrContact$CRRALL <- f.TrContact$CRRALL * 100
-  
-  
-  f.TrTrend <- f.TrContact
-  f.TrContact <- f.TrContact %>% filter(RESP_DATE == selDate)
-  f.TrContact <- f.TrContact[!duplicated(f.TrContact$NAME),]
-  
-  # Update/Leave
-  f.ulplot <- f.TrContact %>%
-    group_by(UL) %>%
-    summarize(meanALL = mean(CRRALL),
-              sdALL = sd(CRRALL),
-              seALL = sdALL/sqrt(length(CRRALL)),
-              minALL = meanALL - seALL,
-              maxALL =  meanALL + seALL,
-              meanINT = mean(CRRINT),
-              sdINT = sd(CRRINT),
-              seINT = sdINT/sqrt(length(CRRINT)),
-              minINT = meanINT - seINT,
-              maxINT =  meanINT + seINT)
-  
-  f.ulplot$UL <- as.factor(f.ulplot$UL)
-  
-  ALLULplot <- f.ulplot %>% ggplot() +
-    aes(x = UL, y = meanALL, fill=UL) +
-    geom_bar(stat="identity") +
-    geom_text(aes(x= UL, y= 70, label=percent(meanALL,1)), size = 4) +
-    scale_y_continuous(limits=c(0,80), breaks=seq(0,80, by=10), labels = percent, expand = c(0,0)) +
-    scale_x_discrete(breaks=c(0,1), labels=c("No","Yes")) +
-    scale_fill_manual(values=c("grey60","cadetblue3")) +
-    labs(title = "Average Cumulative Total Response Rate" ,
-         subtitle = "Tracts containing Update/Leave Blocks",
-         caption = paste0("State Demography Office.  Data for: ",selDate),
-         x = "Update/Leave",
-         y= "Cumulative Total Response Rate") +
-    theme(plot.title = element_text(hjust = 0.5, size=16),
-          axis.text=element_text(size=12),
-          panel.background = element_rect(fill = "white", colour = "gray50"),
-          panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-          legend.position = "none")
-  
-  
-  
-  #Home Delivery Letter
-  f.HDLplot <- f.TrContact %>%
-    group_by(HDL) %>%
-    summarize(meanALL = mean(CRRALL),
-              sdALL = sd(CRRALL),
-              seALL = sdALL/sqrt(length(CRRALL)),
-              minALL = meanALL - seALL,
-              maxALL =  meanALL + seALL,
-              meanINT = mean(CRRINT),
-              sdINT = sd(CRRINT),
-              seINT = sdINT/sqrt(length(CRRINT)),
-              minINT = meanINT - seINT,
-              maxINT =  meanINT + seINT)
-  
-  f.HDLplot$HDL <- as.factor(f.HDLplot$HDL)
-  
-  ALLHDLplot <- f.HDLplot %>% ggplot() +
-    aes(x = HDL, y = meanALL, fill=HDL) +
-    geom_bar(stat="identity") +
-    geom_text(aes(x= HDL, y= 70, label=percent(meanALL,1)), size = 4) +
-    scale_y_continuous(limits=c(0,80), breaks=seq(0,80, by=10), labels = percent, expand = c(0,0)) +
-    scale_x_discrete(breaks=c(0,1), labels=c("No","Yes")) +
-    scale_fill_manual(values=c("grey60","cadetblue3")) +
-    labs(title = "Average Cumulative Total Response Rate" ,
-         subtitle = "Tracts containing Home Delivery Letter (Internet First) Blocks",
-         caption = paste0("State Demography Office.  Data for: ", selDate),
-         x = "Home Delivery Letter (Internet First)",
-         y= "Cumulative Total Response Rate") +
-    theme(plot.title = element_text(hjust = 0.5, size=16),
-          axis.text=element_text(size=12),
-          panel.background = element_rect(fill = "white", colour = "gray50"),
-          panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-          legend.position = "none")
-  
-  
-  
-  #Home Delivery Package
-  f.HDPplot <- f.TrContact %>%
-    group_by(HDP) %>%
-    summarize(meanALL = mean(CRRALL),
-              sdALL = sd(CRRALL),
-              seALL = sdALL/sqrt(length(CRRALL)),
-              minALL = meanALL - seALL,
-              maxALL =  meanALL + seALL,
-              meanINT = mean(CRRINT),
-              sdINT = sd(CRRINT),
-              seINT = sdINT/sqrt(length(CRRINT)),
-              minINT = meanINT - seINT,
-              maxINT =  meanINT + seINT)
-  
-  f.HDPplot$HDP <- as.factor(f.HDPplot$HDP)
-  
-  ALLHDPplot <- f.HDPplot %>% ggplot() +
-    aes(x = HDP, y = meanALL, fill=HDP) +
-    geom_bar(stat="identity") +
-    geom_text(aes(x= HDP, y= 70, label=percent(meanALL,1)), size = 4) +
-    scale_y_continuous(limits=c(0,80), breaks=seq(0,80, by=10), labels = percent, expand = c(0,0)) +
-    scale_x_discrete(breaks=c(0,1), labels=c("No","Yes")) +
-    scale_fill_manual(values=c("grey60","cadetblue3")) +
-    labs(title = "Average Cumulative Total Response Rate" ,
-         subtitle = "Tracts containing Home Delivery Package (Internet Choice) Blocks",
-         caption = paste0("State Demography Office.  Data for: ", selDate),
-         x = "Home Delivery Package (Internet Choice)",
-         y= "Cumulative Total Response Rate") +
-    theme(plot.title = element_text(hjust = 0.5, size=16),
-          axis.text=element_text(size=12),
-          panel.background = element_rect(fill = "white", colour = "gray50"),
-          panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-          legend.position = "none")
-  
-  
-  #Trend by Contact Type
-  f.StTrend <- f.COTrend %>% 
-    mutate(NAME2 = "Statewide",
-           CRRALL = CRRALL * 100) %>%
-    select(NAME2, RESP_DATE, CRRALL)
-  
-  f.AllTrend <- f.TrTrend %>% 
-    mutate(NAME2 = "All Tracts") %>%
-    select(NAME2, RESP_DATE, CRRALL)
-  
-  f.HDLTrend <- f.TrTrend %>% filter(HDL == 1) %>%
-    mutate(NAME2 = "Home Delivery Letter Tracts (Internet First)") %>%
-    select(NAME2, RESP_DATE, CRRALL)
-  
-  f.HDPTrend <- f.TrTrend %>% filter(HDP == 1) %>%
-    mutate(NAME2 = "Home Delivery Package Tracts (Internet Choice)") %>%
-    select(NAME2, RESP_DATE, CRRALL)
-  
-  f.ULTrend <- f.TrTrend %>% filter(UL == 1) %>%
-    mutate(NAME2 = "Update/Leave Tracts") %>%
-    select(NAME2, RESP_DATE, CRRALL)
-  
-  f.TrendTR  <- bind_rows(f.StTrend, f.AllTrend, f.HDLTrend, f.HDPTrend,f.ULTrend)
-  f.TrendTR$NAME2 <- factor(f.TrendTR$NAME2, levels= c("Statewide", "All Tracts",
-                                                       "Home Delivery Letter Tracts (Internet First)", 
-                                                       "Home Delivery Package Tracts (Internet Choice)",
-                                                       "Update/Leave Tracts"))
+                         colClasses = c(rep("character",5),rep("numeric",4))) %>%
+              filter(RESP_DATE == selDate)
 
+  f.tractCum100 <- f.tractCum %>%
+      mutate(GEOID20 = paste0(f.tractCum$state, f.tractCum$county, f.tractCum$tract),
+             CRRALL_Rank = rank(CRRALL, na.last = TRUE, ties.method = "first"))   %>% 
+    filter(CRRALL_Rank <= 100) %>%
+    mutate(CRRALL_Rank = 101 - CRRALL_Rank) %>%
+    arrange(desc(CRRALL_Rank))
+  f.tractCum100[,6:9] <- sapply(f.tractCum100[,6:9],function(x) percent(x*100,1))           
 
-    f.TrendTR$date <- as.Date(f.TrendTR$RESP_DATE,"%Y-%m-%d")
- 
-  
-  
-  f.TrendAvg <- f.TrendTR %>% filter(date <= SDate) %>%
-    group_by(NAME2, date) %>%
-    summarize(MeanRR = mean(CRRALL))
-  
-  minDate <- min(f.TrendAvg$date)
-  maxDate <- max(f.TrendAvg$date)
-  
-  TrendAvgLine <- f.TrendAvg  %>%
-    ggplot(aes(x=date,y=MeanRR, color=NAME2)) +
-    geom_line(size=1.2) +
-    scale_x_date(limits = as.Date(c(minDate,maxDate)),breaks= seq(as.Date(minDate),as.Date(maxDate), by=2)) +
-    scale_y_continuous(limits=c(0,60), breaks=seq(0,60, by=5), labels = percent, expand = c(0,0)) +
-    scale_color_manual(values=c('gray','forestgreen', 'red2', 'orange', 'blue'), 
-                       name = "Contact Type") +
-    labs(title = "Response Rate Trend by Conttact Type" ,
-         subtitle = "Statewide and by Tracts containing Contact Type blocks",
-         caption = paste0("State Demography Office.  Data for: ",selDate),
-         x = "Date",
-         y= "Average Cumulative Total Response Rate") +
-    guides(color=guide_legend(nrow=2,byrow=TRUE)) +
-    theme(plot.title = element_text(hjust = 0.5, size=16),
-          axis.text=element_text(size=10),
-          axis.text.x = element_text(angle = 45, hjust = 1),
-          panel.background = element_rect(fill = "white", colour = "gray50"),
-          panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-          legend.position = "bottom")
-  
-  
-  
   # Tract Response by Quartile
   
-  f.TrQuartile <- f.TrContact %>%
-    summarize(MinVal = min(CRRALL),
-              Q1 = quantile(CRRALL,0.25),
-              Q2 = quantile(CRRALL,0.50),
-              Q3 = quantile(CRRALL,0.75),
-              MaxVal = max(CRRALL),
-              MeanVal = mean(CRRALL),
-              sdVal = sd(CRRALL))
-  
-  f.TrContact$quartiles <- ifelse(f.TrContact$CRRALL <= f.TrQuartile$Q1,1,
-                                  ifelse(f.TrContact$CRRALL <= f.TrQuartile$Q2,2,
-                                         ifelse(f.TrContact$CRRALL <= f.TrQuartile$Q3,3,4)))
-  f.TrContact$quartiles <- as.factor(f.TrContact$quartiles)
-  
-  f.TrQuartile2 <- sapply(f.TrQuartile, function(x) percent(x,1))
-  
-  f.TrQ <- data.frame(matrix(unlist(f.TrQuartile2), nrow=1, byrow=T),stringsAsFactors=FALSE)
-  
-  # Frequency by Quartile
-  
-  f.TRFreq <- as.data.frame(addmargins(table(f.TrContact$quartiles)))
-  
-  
-  f.TrLow <- f.TrContact %>% filter(quartiles == 1) %>%
-    arrange(CRRALL, county, tract) %>%
-    mutate(CRRALL = percent(CRRALL,1))
+  f.TrQuartile <- f.tractCum %>%
+    summarize(MinVal = percent(min(CRRALL)*100),
+              Q1 = percent(quantile(CRRALL,0.25)*100),
+              Q2 = percent(quantile(CRRALL,0.50)*100),
+              Q3 = percent(quantile(CRRALL,0.75)*100),
+              MaxVal = percent(max(CRRALL)*100),
+              MeanVal = percent(mean(CRRALL)*100),
+              sdVal = percent(sd(CRRALL)*100))
   
   # Output Tables
-  TRQuantTab <- flextable(f.TrQ) %>%
-    set_header_labels("X1" = "Minimum", "X2" = "First Quartile",
-                      "X3" = "Median", "X4" = "Third Quartile",
-                      "X5" = "Maximum","X6" ="Average", "X7" = "Standard Deviation") %>%
+  TRQuantTab <- flextable(f.TrQuartile) %>%
+    set_header_labels("MinVal" = "Minimum", "Q1" = "First Quartile",
+                      "Q2" = "Median", "Q3" = "Third Quartile",
+                      "MaxVal" = "Maximum","MeanVal6" ="Average", "sdVal" = "Standard Deviation") %>%
     align(i = 1, part= "header", align="center") %>%
     align(i = 1,part= "body", align="right") %>%
+    border(border.top = fp_border(color = "black"),
+           border.bottom = fp_border(color = "black"),
+           border.left = fp_border(color = "black"),
+           border.right = fp_border(color = "black"), part="all") %>%
     width(width=0.8)
   
-  TRQuantFREQ <- flextable(f.TRFreq) %>%
-    set_header_labels("Var1" = "Quartile", "Freq" = "Frequency") %>%
+  TR100TAB <- flextable(f.tractCum100[,c(4,6:9,11)]) %>%
+    set_header_labels("NAME" = "Ttact and County", 
+                      "CRRALL" = "Cumulative Total Response Rate", 
+                      "CRRINT" = "Cumulative Internet Response Rate",
+                      "DRRALL" = "Daily Total Response Rate", 
+                      "DRRINT" = "Daily Internet Response Rate",
+                      "CRRALL_Rank"="Statewide Rank") %>%
     align(i = 1, part= "header", align="center") %>%
     align(j=1, part="body", align = "left") %>%
-    align(j = 2,part= "body", align="right") %>%
-    width(width=1)
+    align(j = 2:5,part= "body", align="right") %>%
+    border(border.top = fp_border(color = "black"),
+           border.bottom = fp_border(color = "black"),
+           border.left = fp_border(color = "black"),
+           border.right = fp_border(color = "black"), part="all") %>%
+    width(j = 1, width = 3) %>%
+    width(j = 2:5,width = 1)
   
-  TRHDLQTAB <- rowTab(f.TrContact$quartiles,f.TrContact$HDL,"Hand Delivery Letter (Internet First)")
-  TRHDPQTAB <- rowTab(f.TrContact$quartiles,f.TrContact$HDP,"Hand Delivery Package (Internet Choice)")
-  TRULQTAB <- rowTab(f.TrContact$quartiles,f.TrContact$UL,"Update/Leave")
- 
+
   
   #Preparing output document
   titleTxt <- paste0("Colorado Census Response Rate Report for ",selDate)
@@ -869,64 +671,26 @@ genReport <- function(selDate) {
     body_add_break(pos="after") %>%
     body_add_par("Place Results", style= "heading 2") %>%
     body_add_par("", style="Normal") %>% 
-    body_add_par("Place Comparison Tables", style="heading 3") %>%
+    body_add_par("Municipalities/Places Summary Table", style="heading 3") %>%
     body_add_par("", style="Normal") %>%
-    body_add_par("Distribution of Places", style="Normal") %>% 
+    body_add_par("Distribution of Municipalities/Places", style="Normal") %>% 
     body_add_flextable(value = placeSUM) %>%  
     body_add_par("", style="Normal") %>%
     body_add_par("Frequency Table", style="Normal") %>% 
     body_add_flextable(value = placeFreq) %>%  
     body_add_par("", style="Normal") %>%
-   # body_add_par("High and Low Response Places", style="heading 3") %>%  
-   # body_add_par("This table extracts response rate for places using the Cumulative Total Response Rate. ", style="Normal") %>%
-   # body_add_par("", style="Normal") %>%
-   # body_add_par("25 Places/Municipalities with the Highest Cumulative Total Response Rate", style="Normal") %>%
-   # body_add_flextable(value = placeTABHI) %>%
-   # body_add_break(pos="after") %>%
-   # body_add_par("50 Places/Municipalities with the Lowest Cumulative Total Response Rate", style="Normal") %>%
-   # body_add_flextable(value = placeTABLOW) %>%
+    body_add_par("Municipalities/Places by Cumulative Total Response Rate", style="Normal") %>%
+    body_add_flextable(value = placeTABHI) %>%
     body_add_break(pos="after") %>%
     body_add_par("Tract-level Results", style= "heading 2") %>%
     body_add_par("", style="Normal") %>% 
-    body_add_par("Response Rate by Contact Type for Census Tracts", style="heading 3") %>% 
+    body_add_par("Tract Summary Table", style="heading 3") %>%
     body_add_par("", style="Normal") %>%
-    body_add_par("Contact type (through the Colorado Census Contact Type Map) is assigned at the block level, but response rate data is available to the Tract Level.
-   Tracts can have more than one type of 'Contact Type.'  e.g., any tract with at least one 'Update/Leave' block is classified as an 'Update Leave' tract.
-   The charts show three types of contact type: 'Home Delivery Letter (Internet First)', 'Home Delivery Package (Internet Choice)' and 'Update/Leave'.", style="Normal") %>%
-    body_add_par("", style="Normal") %>%
-    body_add_par("Distribution of Response Rate by Tracts", style="Normal") %>%
     body_add_flextable(value = TRQuantTab) %>% 
+    body_add_par("Response Rate by For 100 Lowest Responding Census Tracts", style="heading 3") %>% 
     body_add_par("", style="Normal") %>%
-    body_add_par("Frequency of Tracts by Quartile", style="Normal") %>%
-    body_add_flextable(value = TRQuantFREQ) %>%
-    body_add_par("", style="Normal") %>%
-    body_add_par("Percentage of Tracts by Quartile", style="heading 3") %>%
-    body_add_par("", style="Normal") %>%
-    body_add_par("Percentage of Tracts by Quartile: Hand Delivery Letter (Internet First)", style="Normal") %>%
-    body_add_flextable(value = TRHDLQTAB) %>% 
-    body_add_par("", style="Normal") %>%
-    body_add_par("Percentage of Tracts by Quartile: Hand Delivery Package (Internet Choice)", style="Normal") %>%
-    body_add_flextable(value = TRHDPQTAB) %>% 
-    body_add_par("", style="Normal") %>%
-    body_add_par("Percentage of Tracts by Quartile: Update/Leave", style="Normal") %>%
-    body_add_flextable(value = TRULQTAB) %>% 
-    body_end_section_portrait() %>%
-    body_add_par("Response Rate Trend by Contact Type", style="Normal") %>%
-    body_add_par("", style="Normal") %>%
-    body_add_gg(value=TrendAvgLine, width = 8, height = 5, res = 300) %>%
-    body_end_section_landscape() %>%
-    body_add_par("Response Rate for Contact Types", style="heading 3") %>%
-    body_add_par("", style="Normal") %>%
-    body_add_par("Home Delivery Letter (Internet First)", style="Normal") %>%
-    body_add_par("", style="Normal") %>%
-    body_add_gg(value=ALLHDLplot, width = 6, height = 2.5, res = 300) %>%
-    body_add_par("Home Delivery Package (Internet Choice)", style="Normal") %>%
-    body_add_par("", style="Normal") %>%
-    body_add_gg(value=ALLHDPplot, width = 6, height = 2.5, res = 300) %>%
-    body_add_par("", style="Normal") %>%
-    body_add_par("Update/Leave", style="Normal") %>%
-    body_add_par("", style="Normal") %>%
-    body_add_gg(value=ALLULplot, width = 6, height = 2.5, res = 300)
+    body_add_flextable(value = TR100TAB)
+   
   
   return(reportDoc)
 }
