@@ -209,7 +209,7 @@ genMap <- function(selDate) {
                 mutate(CRRALL_Rank = 101 - CRRALL_Rank)
   
   f.tractCum$GEOID20 <- paste0(f.tractCum$state, f.tractCum$county, f.tractCum$tract) 
-  
+
   # Reading County Boundaries
  
   f.COcty <- st_read("datafiles/sr20_500k/county_bas20_sr_500k.shp")  %>%
@@ -241,7 +241,7 @@ genMap <- function(selDate) {
                                            "51% to 56%", "57% to 62%",
                                            "63% to 68%", "69% to 74%",
                                            "75% to 85%", "86% to 100%"))
-  f.COTractsM$VLabel <- paste0(f.COTractsM$NAME.y,"<br>Ranking: ",(101 - f.COTractsM$CRRALL_Rank)," Response Rate: ",percent(f.COTractsM$CRRALL * 100,1))
+  f.COTractsM$VLabel <- paste0(f.COTractsM$NAME.y,"<br>Ranking: ",f.COTractsM$CRRALL_Rank," Response Rate: ",percent(f.COTractsM$CRRALL * 100,1))
   
   #Creating colors...
   cols <- c("chocolate4","chocolate3","chocolate2","chocolate1",
