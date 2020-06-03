@@ -614,14 +614,14 @@ genReport <- function(selDate) {
   TRQuantTab <- flextable(f.TrQuartile) %>%
     set_header_labels("MinVal" = "Minimum", "Q1" = "First Quartile",
                       "Q2" = "Median", "Q3" = "Third Quartile",
-                      "MaxVal" = "Maximum","MeanVal6" ="Average", "sdVal" = "Standard Deviation") %>%
+                      "MaxVal" = "Maximum","MeanVal" ="Average", "sdVal" = "Standard Deviation") %>%
     align(i = 1, part= "header", align="center") %>%
     align(i = 1,part= "body", align="right") %>%
     border(border.top = fp_border(color = "black"),
            border.bottom = fp_border(color = "black"),
            border.left = fp_border(color = "black"),
            border.right = fp_border(color = "black"), part="all") %>%
-    width(width=0.8)
+    width(width=1)
   
   TR100TAB <- flextable(f.tractCum100[,c(4,6:9,11)]) %>%
     set_header_labels("NAME" = "Tract and County", 
