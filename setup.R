@@ -655,7 +655,7 @@ genReport <- function(selDate) {
     body_add_flextable(value = nationTAB) %>% 
     body_add_par("", style="Normal") %>%
     body_add_par("State Comparison Chart", style="heading 3") %>%
-    body_add_par("This chart compares the top 5 states, the bottom 5 states, and Colorado in terms of the Cumulative Total Response Rate.", style="Normal") %>%
+    body_add_par("This chart ranks states in terms of the Cumulative Total Response Rate.", style="Normal") %>%
     body_add_par(coloranktxt, style="Normal") %>%
     body_add_par("", style="Normal") %>%
     body_add_gg(value=stateBar, width = 6, height = 4, res = 300) %>%
