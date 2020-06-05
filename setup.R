@@ -347,10 +347,13 @@ genReport <- function(selDate) {
   
   
   f.stateCO <- f.stateN %>% filter( state == "08")
-  f.stateTop <- f.stateN %>% filter(CRRALL_Rank <= f.COloRank$CRRALL_Rank)
-  f.stateBot <- f.stateN %>% filter(CRRALL_Rank >= 48) 
+  f.stateTop <- f.stateN %>% filter(CRRALL_Rank <= 26)
+  #f.stateBot <- f.stateN %>% filter(CRRALL_Rank >= 48) 
   
-  f.stateBar <- bind_rows( f.stateTop, f.stateBot) %>%
+  #f.stateBar <- bind_rows( f.stateTop, f.stateBot) %>%
+  #     select(CRRALL_Rank, NAME, CRRALL) %>% arrange(CRRALL_Rank)
+  
+  f.stateBar <-  f.stateTop %>%
     select(CRRALL_Rank, NAME, CRRALL) %>% arrange(CRRALL_Rank)
   
   stateLst <- unlist(f.stateBar$NAME)
