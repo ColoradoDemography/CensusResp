@@ -610,6 +610,37 @@ genReport <- function(selDate) {
               MeanVal = percent(mean(CRRALL)*100),
               sdVal = percent(sd(CRRALL)*100))
   
+  
+  #Tract Sum
+  f.tractCum$RespLeg <- ifelse(f.tractCum$CRRALL < 0.11, "00% to 10.9%", 
+                                ifelse(f.tractCum$CRRALL < 0.21, "11.0% to 20.9%",
+                                       ifelse(f.tractCum$CRRALL < 0.31, "21.0% to 30.9%",
+                                              ifelse(f.tractCum$CRRALL < 0.41, "31.0% to 40.9%",
+                                                     ifelse(f.tractCum$CRRALL < 0.51, "41.0% to 50.9%",
+                                                            ifelse(f.tractCum$CRRALL < 0.61, "51.0% to 60.9%",  
+                                                                   ifelse(f.tractCum$CRRALL < 0.71, "61.0% to 70.9%",
+                                                                          ifelse(f.tractCum$CRRALL < 0.81, "71.0% to 80.9%",
+                                                                                 ifelse(f.tractCum$CRRALL < 0.91, "81.0% to 90.9%", "91.0% to 100%")))))))))
+  
+  f.tractCum$RespLeg <- as.factor(f.tractCum$RespLeg)
+  
+  tractRespN <- as.data.frame(addmargins(table(f.tractCum$RespLeg)))
+  tractRespP <- as.data.frame(addmargins(prop.table(table(f.tractCum$RespLeg))))
+  tractresp <- inner_join(tractRespN, tractRespP, by="Var1")
+  tractresp$Freq.y <- percent(tractresp$Freq.y *100,1)
+  names(tractresp) <- c("Response Rate","Frequency","Percent")
+  tractFreq <- flextable(tractresp) %>%
+    align(i=1,part="header",align="center") %>%
+    align(j = 1, part="body", align ="left") %>%
+    align(j=2:3, part="body", align="right") %>%
+    autofit() %>%
+    border(border.top = fp_border(color = "black"),
+           border.bottom = fp_border(color = "black"),
+           border.left = fp_border(color = "black"),
+           border.right = fp_border(color = "black"), part="all") %>%
+    width(j=1:3, width=1.5)
+  
+  
   # Output Tables
   TRQuantTab <- flextable(f.TrQuartile) %>%
     set_header_labels("MinVal" = "Minimum", "Q1" = "First Quartile",
@@ -659,9 +690,10 @@ genReport <- function(selDate) {
     body_add_par(coloranktxt, style="Normal") %>%
     body_add_par("", style="Normal") %>%
     body_add_gg(value=stateBar, width = 6, height = 4, res = 300) %>%
+    body_add_break(pos="after") %>%
     body_add_par("County Results", style= "heading 2") %>%
     body_add_par("", style="Normal") %>% 
-    body_add_par("County Summary Table", style="heading 3") %>%
+    body_add_par("County Frequency Table", style="heading 3") %>%
     body_add_par("", style="Normal") %>%
     body_add_flextable(value = countyFreq) %>% 
     body_add_par("", style="Normal") %>%
@@ -673,10 +705,10 @@ genReport <- function(selDate) {
     body_add_par("", style="Normal") %>% 
     body_add_par("Municipalities/Places Summary Table", style="heading 3") %>%
     body_add_par("", style="Normal") %>%
-    body_add_par("Distribution of Municipalities/Places", style="Normal") %>% 
+    body_add_par("Distribution of Municipalities/Places", style="heading 3") %>% 
     body_add_flextable(value = placeSUM) %>%  
     body_add_par("", style="Normal") %>%
-    body_add_par("Frequency Table", style="Normal") %>% 
+    body_add_par("Municipality/Place Frequency Table", style="heading 3") %>% 
     body_add_flextable(value = placeFreq) %>%  
     body_add_par("", style="Normal") %>%
     body_add_par("Municipalities/Places by Cumulative Total Response Rate", style="Normal") %>%
@@ -686,7 +718,11 @@ genReport <- function(selDate) {
     body_add_par("", style="Normal") %>% 
     body_add_par("Tract Summary Table", style="heading 3") %>%
     body_add_par("", style="Normal") %>%
-    body_add_flextable(value = TRQuantTab) %>% 
+    body_add_flextable(value = TRQuantTab) %>%  
+    body_add_par("", style="Normal") %>%
+    body_add_par("Tract Frequency Table", style="heading 3") %>%
+    body_add_flextable(value = tractFreq) %>% 
+    body_add_par("", style="Normal") %>%
     body_add_par("Response Rate by For 100 Lowest Responding Census Tracts", style="heading 3") %>% 
     body_add_par("", style="Normal") %>%
     body_add_flextable(value = TR100TAB)
