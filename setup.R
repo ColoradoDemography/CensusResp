@@ -363,7 +363,7 @@ genReport <- function(selDate) {
     geom_bar(stat="identity") +
     geom_text(data = f.stateBar, 
               aes(x= NAME, y = 75, label=percent(CRRALL,1)),
-              size = 4) +
+              size = 3) +
     scale_y_continuous(limits=c(0,80), breaks=seq(0,80, by=10), labels = percent, expand = c(0,0)) +
     scale_fill_manual(values=barCol) +
     coord_flip() +
@@ -373,7 +373,7 @@ genReport <- function(selDate) {
          x = "State",
          y= "Cumulative Total Response Rate") +
     theme(plot.title = element_text(hjust = 0.5, size=16),
-          axis.text=element_text(size=12),
+          axis.text=element_text(size=9),
           panel.background = element_rect(fill = "white", colour = "gray50"),
           panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
           legend.position = "none")
@@ -391,15 +391,15 @@ genReport <- function(selDate) {
   
   f.countyMax <- f.countyMax %>% filter(RESP_DATE == selDate)
   
-  f.countyMax$RespLeg <- ifelse(f.countyMax$CRRALL < 0.11, "00% to 10%", 
-                                ifelse(f.countyMax$CRRALL < 0.21, "11% to 20%",
-                                       ifelse(f.countyMax$CRRALL < 0.31, "21% to 30%",
-                                              ifelse(f.countyMax$CRRALL < 0.41, "31% to 40%",
-                                                     ifelse(f.countyMax$CRRALL < 0.51, "41% to 50%",
-                                                            ifelse(f.countyMax$CRRALL < 0.61, "51% to 60%",  
-                                                                   ifelse(f.countyMax$CRRALL < 0.71, "61% to 70%",
-                                                                          ifelse(f.countyMax$CRRALL < 0.81, "71% to 80%",
-                                                                                 ifelse(f.countyMax$CRRALL < 0.91, "81% to 90%", "91% to 100%")))))))))
+  f.countyMax$RespLeg <- ifelse(f.countyMax$CRRALL < 0.11, "00% to 10.9%", 
+                                ifelse(f.countyMax$CRRALL < 0.21, "11.0% to 20.9%",
+                                       ifelse(f.countyMax$CRRALL < 0.31, "21.0% to 30.9%",
+                                              ifelse(f.countyMax$CRRALL < 0.41, "31.0% to 40.9%",
+                                                     ifelse(f.countyMax$CRRALL < 0.51, "41.0% to 50.9%",
+                                                            ifelse(f.countyMax$CRRALL < 0.61, "51.0% to 60.9%",  
+                                                                   ifelse(f.countyMax$CRRALL < 0.71, "61.0% to 70.9%",
+                                                                          ifelse(f.countyMax$CRRALL < 0.81, "71.0% to 80.9%",
+                                                                                 ifelse(f.countyMax$CRRALL < 0.91, "81.0% to 90.9%", "91.0% to 100%")))))))))
   
   f.countyMax$RespLeg <- as.factor(f.countyMax$RespLeg)
   
@@ -495,7 +495,7 @@ genReport <- function(selDate) {
                          colClasses = c(rep("character",4),rep("numeric",4)))
   
   f.placeMax <- f.placeCum
-  
+
   f.placeN <- f.placeMax %>% filter(RESP_DATE == selDate) %>%
     mutate(CRRALL = CRRALL * 100, 
            CRRINT = CRRINT * 100, 
@@ -553,20 +553,17 @@ genReport <- function(selDate) {
            border.right = fp_border(color = "black"), part="all") %>%
     width(width=1)
   
-  f.placeN$RespCat <- ((f.placeN$CRRALL/100)%/%0.10) + 1
-  
-  f.placeN$RespLeg <- ifelse(f.placeN$RespCat  == 1, "00% to 10%", 
-                             ifelse(f.placeN$RespCat  == 2, "11% to 20%",
-                                    ifelse(f.placeN$RespCat  == 3, "21% to 30%",
-                                           ifelse(f.placeN$RespCat  == 4, "31% to 40%",
-                                                  ifelse(f.placeN$RespCat == 5, "41% to 50%",
-                                                         ifelse(f.placeN$RespCat == 6, "51% to 60%",  
-                                                                ifelse(f.placeN$RespCat == 7, "61% to 70%",
-                                                                       ifelse(f.placeN$RespCat == 8, "71% to 80%",
-                                                                              ifelse(f.placeN$RespCat == 9, "81% to 90%", "91% to 100%")))))))))
+ f.placeN$RespLeg <- ifelse(f.placeN$CRRALL < 11, "00% to 10.9%", 
+                                ifelse(f.placeN$CRRALL < 21, "11.0% to 20.9%",
+                                       ifelse(f.placeN$CRRALL < 31, "21.0% to 30.9%",
+                                              ifelse(f.placeN$CRRALL < 41, "31.0% to 40.9%",
+                                                     ifelse(f.placeN$CRRALL < 51, "41.0% to 50.9%",
+                                                            ifelse(f.placeN$CRRALL < 61, "51.0% to 60.9%",  
+                                                                   ifelse(f.placeN$CRRALL < 71, "61.0% to 70.9%",
+                                                                          ifelse(f.placeN$CRRALL < 81, "71.0% to 80.9%",
+                                                                                 ifelse(f.placeN$CRRALL < 91, "81.0% to 90.9%", "91.0% to 100%")))))))))
   
   f.placeN$RespLeg <- as.factor(f.placeN$RespLeg)
-  
   placeRespN <- as.data.frame(addmargins(table(f.placeN$RespLeg)))
   placeRespP <- as.data.frame(addmargins(prop.table(table(f.placeN$RespLeg))))
   placeresp <- inner_join(placeRespN, placeRespP, by="Var1")
@@ -655,7 +652,7 @@ genReport <- function(selDate) {
     body_add_flextable(value = nationTAB) %>% 
     body_add_par("", style="Normal") %>%
     body_add_par("State Comparison Chart", style="heading 3") %>%
-    body_add_par("This chart compares the top 5 states, the bottom 5 states, and Colorado in terms of the Cumulative Total Resonse Rate.", style="Normal") %>%
+    body_add_par("This chart compares the top 5 states, the bottom 5 states, and Colorado in terms of the Cumulative Total Response Rate.", style="Normal") %>%
     body_add_par(coloranktxt, style="Normal") %>%
     body_add_par("", style="Normal") %>%
     body_add_gg(value=stateBar, width = 6, height = 4, res = 300) %>%
