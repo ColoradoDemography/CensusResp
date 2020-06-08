@@ -394,15 +394,15 @@ genReport <- function(selDate) {
   
   f.countyMax <- f.countyMax %>% filter(RESP_DATE == selDate)
   
-  f.countyMax$RespLeg <- ifelse(f.countyMax$CRRALL < 0.11, "00% to 10.9%", 
-                                ifelse(f.countyMax$CRRALL < 0.21, "11.0% to 20.9%",
-                                       ifelse(f.countyMax$CRRALL < 0.31, "21.0% to 30.9%",
-                                              ifelse(f.countyMax$CRRALL < 0.41, "31.0% to 40.9%",
-                                                     ifelse(f.countyMax$CRRALL < 0.51, "41.0% to 50.9%",
-                                                            ifelse(f.countyMax$CRRALL < 0.61, "51.0% to 60.9%",  
-                                                                   ifelse(f.countyMax$CRRALL < 0.71, "61.0% to 70.9%",
-                                                                          ifelse(f.countyMax$CRRALL < 0.81, "71.0% to 80.9%",
-                                                                                 ifelse(f.countyMax$CRRALL < 0.91, "81.0% to 90.9%", "91.0% to 100%")))))))))
+  f.countyMax$RespLeg <- ifelse(f.countyMax$CRRALL < 0.10, "00% to 9.9%", 
+                                ifelse(f.countyMax$CRRALL < 0.20, "10.0% to 19.9%",
+                                       ifelse(f.countyMax$CRRALL < 0.30, "20.0% to 29.9%",
+                                              ifelse(f.countyMax$CRRALL < 0.40, "30.0% to 39.9%",
+                                                     ifelse(f.countyMax$CRRALL < 0.50, "40.0% to 49.9%",
+                                                            ifelse(f.countyMax$CRRALL < 0.60, "50.0% to 59.9%",  
+                                                                   ifelse(f.countyMax$CRRALL < 0.70, "60.0% to 69.9%",
+                                                                          ifelse(f.countyMax$CRRALL < 0.80, "70.0% to 79.9%",
+                                                                                 ifelse(f.countyMax$CRRALL < 0.90, "80.0% to 89.9%", "90.0% to 100%")))))))))
   
   f.countyMax$RespLeg <- as.factor(f.countyMax$RespLeg)
   
@@ -556,15 +556,15 @@ genReport <- function(selDate) {
            border.right = fp_border(color = "black"), part="all") %>%
     width(width=1)
   
- f.placeN$RespLeg <- ifelse(f.placeN$CRRALL < 11, "00% to 10.9%", 
-                                ifelse(f.placeN$CRRALL < 21, "11.0% to 20.9%",
-                                       ifelse(f.placeN$CRRALL < 31, "21.0% to 30.9%",
-                                              ifelse(f.placeN$CRRALL < 41, "31.0% to 40.9%",
-                                                     ifelse(f.placeN$CRRALL < 51, "41.0% to 50.9%",
-                                                            ifelse(f.placeN$CRRALL < 61, "51.0% to 60.9%",  
-                                                                   ifelse(f.placeN$CRRALL < 71, "61.0% to 70.9%",
-                                                                          ifelse(f.placeN$CRRALL < 81, "71.0% to 80.9%",
-                                                                                 ifelse(f.placeN$CRRALL < 91, "81.0% to 90.9%", "91.0% to 100%")))))))))
+  f.placeN$RespLeg <- ifelse(f.placeN$CRRALL < 10, "00% to 9.9%", 
+                             ifelse(f.placeN$CRRALL < 20, "10.0% to 19.9%",
+                                    ifelse(f.placeN$CRRALL < 30, "20.0% to 29.9%",
+                                           ifelse(f.placeN$CRRALL < 40, "30.0% to 39.9%",
+                                                  ifelse(f.placeN$CRRALL < 50, "40.0% to 49.9%",
+                                                         ifelse(f.placeN$CRRALL < 60, "50.0% to 59.9%",  
+                                                                ifelse(f.placeN$CRRALL < 70, "60.0% to 69.9%",
+                                                                       ifelse(f.placeN$CRRALL < 80, "70.0% to 79.9%",
+                                                                              ifelse(f.placeN$CRRALL < 90, "80.0% to 89.9%", "90.0% to 100%")))))))))
   
   f.placeN$RespLeg <- as.factor(f.placeN$RespLeg)
   placeRespN <- as.data.frame(addmargins(table(f.placeN$RespLeg)))
@@ -612,15 +612,15 @@ genReport <- function(selDate) {
   
   
   #Tract Sum
-  f.tractCum$RespLeg <- ifelse(f.tractCum$CRRALL < 0.11, "00% to 10.9%", 
-                                ifelse(f.tractCum$CRRALL < 0.21, "11.0% to 20.9%",
-                                       ifelse(f.tractCum$CRRALL < 0.31, "21.0% to 30.9%",
-                                              ifelse(f.tractCum$CRRALL < 0.41, "31.0% to 40.9%",
-                                                     ifelse(f.tractCum$CRRALL < 0.51, "41.0% to 50.9%",
-                                                            ifelse(f.tractCum$CRRALL < 0.61, "51.0% to 60.9%",  
-                                                                   ifelse(f.tractCum$CRRALL < 0.71, "61.0% to 70.9%",
-                                                                          ifelse(f.tractCum$CRRALL < 0.81, "71.0% to 80.9%",
-                                                                                 ifelse(f.tractCum$CRRALL < 0.91, "81.0% to 90.9%", "91.0% to 100%")))))))))
+  f.tractCum$RespLeg <- ifelse(f.tractCum$CRRALL < 0.10, "00% to 9.9%", 
+                                ifelse(f.tractCum$CRRALL < 0.20, "10.0% to 19.9%",
+                                       ifelse(f.tractCum$CRRALL < 0.30, "20.0% to 29.9%",
+                                              ifelse(f.tractCum$CRRALL < 0.40, "30.0% to 39.9%",
+                                                     ifelse(f.tractCum$CRRALL < 0.50, "40.0% to 49.9%",
+                                                            ifelse(f.tractCum$CRRALL < 0.60, "50.0% to 59.9%",  
+                                                                   ifelse(f.tractCum$CRRALL < 0.70, "60.0% to 69.9%",
+                                                                          ifelse(f.tractCum$CRRALL < 0.80, "70.0% to 79.9%",
+                                                                                 ifelse(f.tractCum$CRRALL < 0.90, "80.0% to 89.9%", "90.0% to 100%")))))))))
   
   f.tractCum$RespLeg <- as.factor(f.tractCum$RespLeg)
   
