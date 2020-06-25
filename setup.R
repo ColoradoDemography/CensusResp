@@ -199,16 +199,17 @@ genMap <- function(selDate) {
   # Building Tract Map
   # Reading and coding up tract data into 20% catergories
 
-
   tractFName <- "./datafiles/tract_Response_Data.csv"
   f.tractCum <- read.csv(tractFName, header = TRUE,
                          colClasses = c(rep("character",5),rep("numeric",4)))  %>% 
-                filter(RESP_DATE == selDate) %>%  
-                mutate(CRRALL_Rank =  rank(CRRALL, na.last = TRUE, ties.method = "first"))   %>% 
-                filter(CRRALL_Rank <= 100) %>%
-                mutate(CRRALL_Rank = 101 - CRRALL_Rank)
+    filter(RESP_DATE == selDate) %>%
+    mutate(GEOID20 = paste0(state, county, tract),
+           CRRALL_Rank =  rank(CRRALL, na.last = TRUE, ties.method = "first"))   %>% 
+    filter(CRRALL_Rank <= 100) %>%
+    mutate(CRRALL_Rank = 101 - CRRALL_Rank)
   
-  f.tractCum$GEOID20 <- paste0(f.tractCum$state, f.tractCum$county, f.tractCum$tract) 
+    
+  
 
   # Reading County Boundaries
  
@@ -221,9 +222,31 @@ genMap <- function(selDate) {
   f.COShape <- st_read("datafiles/sr20_500k/tract_bas20_sr_500k.shp")  %>%
     st_transform(crs="+init=epsg:4326") %>% filter(STATE == "08") %>%
     mutate(GEOID20 = paste0(STATE, COUNTY, TRACT))
- 
   
-  f.COTractsM <- geo_join(f.COShape, f.tractCum, by = "GEOID20", how="left") %>% filter(!is.na(state))
+  #Tract CrossWALK
+  relWalk <-"./datafiles/rr_tract_rel/rr_tract_rel.txt"
+  
+  f.trrel <- read.csv(relWalk, header= TRUE, 
+                      colClasses = c(rep("character",4), rep("numeric",2),
+                                     rep("character",4), rep("numeric",12)))  %>% filter(STATEFP10 == "08")
+ 
+  #Reading Race Variables
+
+  raceFName <- "./datafiles/ACS1418Race.csv"
+  
+  f.race <- read.csv(raceFName, header = TRUE,
+                     colClasses = c(rep("character",2), rep("numeric",5)))
+  names(f.race)[1] <- "GEOID10"
+  
+  f.trxwalk <- inner_join(f.race,f.trrel,by="GEOID10") %>%
+               filter(B03002_001E > 0) %>%
+               select("GEOID10", "GEOID20","pct_hisp","pct_aa")
+  
+  f.tractCumx <- inner_join(f.tractCum,f.trxwalk,by="GEOID20") %>% replace(is.na(.),0)
+  
+  f.COTractsM <- geo_join(f.COShape, f.tractCumx, by = "GEOID20", how="left") %>% filter(!is.na(state))
+ 
+  f.COTractsM$NAME.y <- sub(", Colorado","",f.COTractsM$NAME.y)
   
   f.COTractsM$RespCat <- ifelse(f.COTractsM$CRRALL <= 0.159, 1,
                          ifelse(f.COTractsM$CRRALL <= 0.309, 2,
@@ -241,7 +264,10 @@ genMap <- function(selDate) {
                                            "51% to 56%", "57% to 62%",
                                            "63% to 68%", "69% to 74%",
                                            "75% to 85%", "86% to 100%"))
-  f.COTractsM$VLabel <- paste0(f.COTractsM$NAME.y,"<br>Ranking: ",f.COTractsM$CRRALL_Rank," Response Rate: ",percent(f.COTractsM$CRRALL * 100,1))
+  f.COTractsM$VLabel <- paste0(f.COTractsM$NAME.y,"<br>Ranking: ",f.COTractsM$CRRALL_Rank,
+                               "<br>Response Rate: ",percent(f.COTractsM$CRRALL * 100,1),
+                               "<br>Percent Hispanic/Latino: ",percent(f.COTractsM$pct_hisp * 100,1),
+                               "<br>Percent African American: ",percent(f.COTractsM$pct_aa * 100,1))
   
   #Creating colors...
   cols <- c("chocolate4","chocolate3","chocolate2","chocolate1",
