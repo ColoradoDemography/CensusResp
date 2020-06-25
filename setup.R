@@ -279,7 +279,9 @@ genMap <- function(selDate) {
   
   outMap <- f.COcty %>%
     leaflet(width = "100%") %>%
-    addTiles() %>% setView(lng = -105.358887, lat = 39.113014, zoom=7) %>%
+    #addTiles() %>% 
+    addProviderTiles(providers$Stamen.Toner) %>%
+    setView(lng = -105.358887, lat = 39.113014, zoom=7) %>%
     addPolygons(color="black", weight = 0.9) %>%
     addPolygons(data = f.COTractsM, stroke = TRUE, color="black", weight = 0.7, opacity = 0.4, smoothFactor = 0.2, fillOpacity = 0.4,
                 fillColor = ~pal(f.COTractsM$RespCat), label =  lapply( f.COTractsM$VLabel, htmltools::HTML)
