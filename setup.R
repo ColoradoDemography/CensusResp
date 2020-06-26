@@ -27,6 +27,9 @@ percent <- function(x, digits = 1, format = "f", ...) {
   paste0(formatC( x, format = format, digits = digits, ...), "%")
 }
 
+numFmt <- function(x) {
+  format(x,big.mark=",",scientific=FALSE)
+}
 
 #Creates row percentage table.
 rowTab <- function(quart,crossVar,tabType) {
@@ -235,12 +238,11 @@ genMap <- function(selDate) {
   raceFName <- "./datafiles/ACS1418Race.csv"
   
   f.race <- read.csv(raceFName, header = TRUE,
-                     colClasses = c(rep("character",2), rep("numeric",5)))
+                     colClasses = c(rep("character",2), rep("numeric",13)))
   names(f.race)[1] <- "GEOID10"
   
   f.trxwalk <- inner_join(f.race,f.trrel,by="GEOID10") %>%
-               filter(B03002_001E > 0) %>%
-               select("GEOID10", "GEOID20","pct_hisp","pct_aa")
+               select(GEOID10, GEOID20,N_tot:Pct_oth)
   
   f.tractCumx <- inner_join(f.tractCum,f.trxwalk,by="GEOID20") %>% replace(is.na(.),0)
   
@@ -266,8 +268,14 @@ genMap <- function(selDate) {
                                            "75% to 85%", "86% to 100%"))
   f.COTractsM$VLabel <- paste0(f.COTractsM$NAME.y,"<br>Ranking: ",f.COTractsM$CRRALL_Rank,
                                "<br>Response Rate: ",percent(f.COTractsM$CRRALL * 100,1),
-                               "<br>Percent Hispanic/Latino: ",percent(f.COTractsM$pct_hisp * 100,1),
-                               "<br>Percent African American: ",percent(f.COTractsM$pct_aa * 100,1))
+                               "<br>Total Population: ", numFmt(f.COTractsM$N_tot),
+                               "<br>Hispanic/Latino <b>Number</b>: ",numFmt(f.COTractsM$N_hisp)," <b>Percent</b>: ",percent(f.COTractsM$Pct_hisp * 100,1),
+                               "<br>Black, Non-Hispanic <b>Number</b>: ",numFmt(f.COTractsM$N_aa)," <b>Percent</b>: ",percent(f.COTractsM$Pct_aa * 100,1),
+                               "<br>Native American, non-Hispanic <b>Number</b>: ",numFmt(f.COTractsM$N_am)," <b>Percent</b>: ",percent(f.COTractsM$Pct_am * 100,1),
+                               "<br>Asian/Pacific Islander, Non-Hispanic <b>Number</b>: ",numFmt(f.COTractsM$N_as)," <b>Percent</b>: ",percent(f.COTractsM$Pct_as * 100,1),
+                               "<br>Other, Non-Hispanic <b>Number</b>: ",numFmt(f.COTractsM$N_oth)," <b>Percent</b>: ",percent(f.COTractsM$Pct_oth * 100,1),
+                               "<br>White, Non-Hispanic <b>Number</b>: ",numFmt(f.COTractsM$N_wh)," <b>Percent</b>: ",percent(f.COTractsM$Pct_wh * 100,1)
+                               )
   
   #Creating colors...
   cols <- c("chocolate4","chocolate3","chocolate2","chocolate1",
