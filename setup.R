@@ -269,12 +269,15 @@ genMap <- function(selDate) {
   f.COTractsM$VLabel <- paste0(f.COTractsM$NAME.y,"<br>Ranking: ",f.COTractsM$CRRALL_Rank,
                                "<br>Response Rate: ",percent(f.COTractsM$CRRALL * 100,1),
                                "<br>Total Population: ", numFmt(f.COTractsM$N_tot),
-                               "<br>Hispanic/Latino <b>Number</b>: ",numFmt(f.COTractsM$N_hisp)," <b>Percent</b>: ",percent(f.COTractsM$Pct_hisp * 100,1),
-                               "<br>Black, Non-Hispanic <b>Number</b>: ",numFmt(f.COTractsM$N_aa)," <b>Percent</b>: ",percent(f.COTractsM$Pct_aa * 100,1),
-                               "<br>Native American, non-Hispanic <b>Number</b>: ",numFmt(f.COTractsM$N_am)," <b>Percent</b>: ",percent(f.COTractsM$Pct_am * 100,1),
-                               "<br>Asian/Pacific Islander, Non-Hispanic <b>Number</b>: ",numFmt(f.COTractsM$N_as)," <b>Percent</b>: ",percent(f.COTractsM$Pct_as * 100,1),
-                               "<br>Other, Non-Hispanic <b>Number</b>: ",numFmt(f.COTractsM$N_oth)," <b>Percent</b>: ",percent(f.COTractsM$Pct_oth * 100,1),
-                               "<br>White, Non-Hispanic <b>Number</b>: ",numFmt(f.COTractsM$N_wh)," <b>Percent</b>: ",percent(f.COTractsM$Pct_wh * 100,1)
+                               "<table border='1'>",
+                               "<tr><td>Race/Ethnicity</td><td>Number</td><td>Percent</td></tr>",
+                               "<tr><td>Hispanic/Latino</td><td style='text-align:right'>",numFmt(f.COTractsM$N_hisp),"</td><td style='text-align:right'>",percent(f.COTractsM$Pct_hisp * 100,1),"</td></tr>",
+                               "<tr><td>Black</td><td style='text-align:right'>",numFmt(f.COTractsM$N_aa),"</td><td style='text-align:right'>",percent(f.COTractsM$Pct_aa * 100,1),"</td></tr>",
+                               "<tr><td>Native American</td><td style='text-align:right'>",numFmt(f.COTractsM$N_am),"</td><td style='text-align:right'>",percent(f.COTractsM$Pct_am * 100,1),"</td></tr>",
+                               "<tr><td>Asian/Pacific Islander</td><td style='text-align:right'>",numFmt(f.COTractsM$N_as),"</td><td style='text-align:right'>",percent(f.COTractsM$Pct_as * 100,1),"</td></tr>",
+                               "<tr><td>Other</td><td style='text-align:right'>",numFmt(f.COTractsM$N_oth),"</td><td style='text-align:right'>",percent(f.COTractsM$Pct_oth * 100,1),"</td></tr>",
+                               "<tr><td>White</td><td style='text-align:right'>",numFmt(f.COTractsM$N_wh),"</td><td style='text-align:right'>",percent(f.COTractsM$Pct_wh * 100,1),"</td></tr>",
+                               "</table>"
                                )
   
   #Creating colors...
